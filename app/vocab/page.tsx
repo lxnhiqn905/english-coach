@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabase";
 import { useSpeechSynthesis } from "@/hooks/useSpeechSynthesis";
+import { useVoiceSettings } from "@/lib/useVoiceSettings";
 import { ReadModal } from "@/components/ReadModal";
 
 interface VocabEntry {
@@ -22,10 +23,12 @@ export default function VocabularyPage() {
   const [form, setForm] = useState({ word: "", phonetic: "", vietnamese: "", usage: "" });
   const [saving, setSaving] = useState(false);
   const [readModal, setReadModal] = useState<{ text: string; label: string } | null>(null);
-  const { speak, stop, isSpeaking } = useSpeechSynthesis();
+  const { speak, stop, isSpeaking, voices } = useSpeechSynthesis();
+  const { rate, getVoice } = useVoiceSettings();
 
   function handleListen(text: string) {
-    if (isSpeaking) stop(); else speak(text);
+    if (isSpeaking) { stop(); return; }
+    speak(text, { voice: getVoice(voices), rate });
   }
 
   async function fetchEntries() {

@@ -6,7 +6,8 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/practice", label: "Practice" },
-  { href: "/history", label: "My Words" },
+  { href: "/vocab", label: "My Words" },
+  { href: "/settings", label: "Settings" },
 ];
 
 export default function Navigation() {
