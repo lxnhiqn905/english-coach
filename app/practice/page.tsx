@@ -30,7 +30,7 @@ const scenarios = [
     id: 3,
     title: "Budget approval request",
     prompt:
-      'Roleplay scenario: A client is questioning a budget increase. Client message: "We received your revised proposal and noticed the budget has increased by 20% compared to the original estimate. Could you walk us through what's driving that increase?"',
+      "Roleplay scenario: A client is questioning a budget increase. Client message: \"We received your revised proposal and noticed the budget has increased by 20% compared to the original estimate. Could you walk us through what's driving that increase?\"",
     clientMessage:
       "We received your revised proposal and noticed the budget has increased by 20% compared to the original estimate. Could you walk us through what's driving that increase?",
     suggestedAnswer:
