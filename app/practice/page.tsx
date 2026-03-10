@@ -186,7 +186,7 @@ export default function PracticePage() {
       usage: item.example,
     });
     setSavingId(null);
-    if (!error) setSavedIds(prev => new Set([...prev, item.id]));
+    if (!error) setSavedIds(prev => new Set(Array.from(prev).concat(item.id)));
   }
 
   return (
