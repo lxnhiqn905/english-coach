@@ -21,10 +21,21 @@ function getInitialVocab() { return pickRandomVocab(5); }
 export default function PracticePage() {
   const [activeTab, setActiveTab] = useState<Tab>("practice");
 
-  // Practice tab
-  const [practiceItems, setPracticeItems] = useState<Scenario[]>(getInitialPractice);
-  const [openId, setOpenId] = useState<number | null>(null);
+  // Practice tab — all items expanded by default
+  const [{ practiceItems, openIds }, setPracticeState] = useState(() => {
+    const items = getInitialPractice();
+    return { practiceItems: items, openIds: new Set(items.map(s => s.id)) };
+  });
   const [showSuggestedId, setShowSuggestedId] = useState<number | null>(null);
+
+  function toggleOpen(id: number) {
+    setPracticeState(prev => {
+      const next = new Set(prev.openIds);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      return { ...prev, openIds: next };
+    });
+    setShowSuggestedId(null);
+  }
 
   // Lesson tab
   const [lessonData, setLessonData] = useState(getInitialLesson);
@@ -45,8 +56,8 @@ export default function PracticePage() {
   }
 
   function refreshPractice() {
-    setPracticeItems(pickRandom(scenarios, 5));
-    setOpenId(null);
+    const items = pickRandom(scenarios, 5);
+    setPracticeState({ practiceItems: items, openIds: new Set(items.map(s => s.id)) });
     setShowSuggestedId(null);
   }
 
@@ -96,13 +107,13 @@ export default function PracticePage() {
             </div>
 
             {practiceItems.map((s, i) => {
-              const isOpen = openId === s.id;
+              const isOpen = openIds.has(s.id);
               const showSuggested = showSuggestedId === s.id;
               return (
                 <div key={s.id} className="rounded-2xl border border-white/10 bg-[#1a2035] overflow-hidden">
                   {/* Title row */}
                   <button
-                    onClick={() => { setOpenId(isOpen ? null : s.id); setShowSuggestedId(null); }}
+                    onClick={() => toggleOpen(s.id)}
                     className="flex w-full items-center gap-3 px-4 py-3 text-left hover:bg-white/5 transition-colors"
                   >
                     <span className="flex-shrink-0 w-5 h-5 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-[10px] text-blue-400 font-bold">{i + 1}</span>
