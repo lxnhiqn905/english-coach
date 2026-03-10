@@ -41,6 +41,8 @@ export function useSpeechRecognition(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const recognitionRef = useRef<any>(null);
   const isListeningRef = useRef(false);
+  const savedTextRef = useRef(""); // text accumulated from previous sessions (after Android auto-restart)
+  const currentFinalsRef = useRef(""); // finals in the current session
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -72,16 +74,17 @@ export function useSpeechRecognition(
       let interim = "";
 
       for (let i = 0; i < event.results.length; i++) {
+        const text = event.results[i][0].transcript.trim();
         if (event.results[i].isFinal) {
-          finals += event.results[i][0].transcript;
+          finals += (finals ? " " : "") + text;
         } else {
-          interim += event.results[i][0].transcript;
+          interim += text;
         }
       }
 
-      // Chrome Android gửi lại toàn bộ kết quả mỗi lần restart
-      // → chỉ cần set trực tiếp, không cộng dồn
-      setTranscript(finals);
+      currentFinalsRef.current = finals;
+      const saved = savedTextRef.current;
+      setTranscript(saved ? saved + (finals ? " " + finals : "") : finals);
       setInterimTranscript(interim);
     };
 
@@ -97,7 +100,14 @@ export function useSpeechRecognition(
       setInterimTranscript("");
 
       if (isListeningRef.current) {
-        // Android tự dừng sau silence → restart, Chrome sẽ re-send toàn bộ text
+        // Save finals from this session before restarting (Android restarts after silence)
+        const current = currentFinalsRef.current;
+        if (current) {
+          savedTextRef.current = savedTextRef.current
+            ? savedTextRef.current + " " + current
+            : current;
+        }
+        currentFinalsRef.current = "";
         try {
           recognition.start();
         } catch {
@@ -122,6 +132,8 @@ export function useSpeechRecognition(
     setTranscript("");
     setInterimTranscript("");
     setError(null);
+    savedTextRef.current = "";
+    currentFinalsRef.current = "";
 
     if (recognitionRef.current) {
       recognitionRef.current.abort();
