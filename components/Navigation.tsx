@@ -5,11 +5,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/practice", label: "Practice" },
-  { href: "/speech-to-text", label: "Speech to Text" },
-  { href: "/text-to-speech", label: "Text to Speech" },
-  { href: "/history", label: "History" },
+  { href: "/history", label: "My Words" },
 ];
 
 export default function Navigation() {
@@ -21,26 +18,16 @@ export default function Navigation() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/practice" className="flex items-center gap-2 group">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-purple-500 to-blue-500 shadow-lg shadow-purple-500/25 group-hover:shadow-purple-500/50 transition-shadow">
-              <svg
-                className="h-4 w-4 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"
-                />
+              <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
               </svg>
             </div>
             <span className="text-lg font-bold gradient-text">Eko English</span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
@@ -78,9 +65,9 @@ export default function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-purple-900/30 py-3 space-y-1 animate-fade-in">
+          <div className="md:hidden border-t border-purple-900/30 py-3 space-y-1">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
