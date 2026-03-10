@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabase";
+import { useSpeechSynthesis } from "@/hooks/useSpeechSynthesis";
+import { ReadModal } from "@/components/ReadModal";
 
 interface VocabEntry {
   id: string;
@@ -19,6 +21,12 @@ export default function VocabularyPage() {
   const [showAdd, setShowAdd] = useState(false);
   const [form, setForm] = useState({ word: "", phonetic: "", vietnamese: "", usage: "" });
   const [saving, setSaving] = useState(false);
+  const [readModal, setReadModal] = useState<{ text: string; label: string } | null>(null);
+  const { speak, stop, isSpeaking } = useSpeechSynthesis();
+
+  function handleListen(text: string) {
+    if (isSpeaking) stop(); else speak(text);
+  }
 
   async function fetchEntries() {
     if (!supabase) { setLoading(false); return; }
@@ -154,9 +162,12 @@ export default function VocabularyPage() {
           </div>
         ) : (
           <div className="space-y-3">
+            {readModal && (
+              <ReadModal targetText={readModal.text} label={readModal.label} onClose={() => setReadModal(null)} />
+            )}
             {entries.map(entry => (
               <div key={entry.id} className="rounded-xl border border-white/10 bg-[#1a2035] p-4">
-                <div className="flex items-start justify-between gap-3">
+                <div className="flex items-start gap-3">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-baseline gap-2 flex-wrap">
                       <span className="text-base font-bold text-slate-100">{entry.word}</span>
@@ -164,9 +175,25 @@ export default function VocabularyPage() {
                     </div>
                     {entry.vietnamese && <p className="text-xs text-blue-300 mt-1">{entry.vietnamese}</p>}
                     {entry.usage && <p className="text-xs text-slate-400 italic mt-1">"{entry.usage}"</p>}
-                    <p className="text-[11px] text-slate-600 mt-2">
-                      {new Date(entry.created_at).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
-                    </p>
+                    <div className="flex items-center gap-2 mt-3">
+                      <button
+                        onClick={() => handleListen(`${entry.word}${entry.usage ? ". Example: " + entry.usage : ""}`)}
+                        className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1.5 text-[11px] text-slate-300 hover:bg-white/10 transition-colors"
+                      >
+                        <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                        Listen
+                      </button>
+                      <button
+                        onClick={() => setReadModal({ text: entry.word, label: entry.word })}
+                        className="inline-flex items-center gap-1 rounded-full border border-purple-500/30 bg-purple-500/10 px-2.5 py-1.5 text-[11px] text-purple-300 hover:bg-purple-500/20 transition-colors"
+                      >
+                        <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" /></svg>
+                        Read
+                      </button>
+                      <p className="text-[11px] text-slate-600 ml-auto">
+                        {new Date(entry.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                      </p>
+                    </div>
                   </div>
                   <button
                     onClick={() => deleteEntry(entry.id)}
