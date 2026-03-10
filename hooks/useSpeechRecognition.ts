@@ -40,9 +40,7 @@ export function useSpeechRecognition(
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const recognitionRef = useRef<any>(null);
-  const isListeningRef = useRef(false); // ref to track listening state inside callbacks
-  const savedTextRef = useRef(""); // accumulated text from completed recognition sessions
-  const currentSessionTextRef = useRef(""); // text from current active session
+  const isListeningRef = useRef(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -70,22 +68,20 @@ export function useSpeechRecognition(
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     recognition.onresult = (event: any) => {
-      // Rebuild from all results in this session (avoid duplicate append bug)
-      let sessionFinals = "";
+      let finals = "";
       let interim = "";
 
       for (let i = 0; i < event.results.length; i++) {
         if (event.results[i].isFinal) {
-          sessionFinals += event.results[i][0].transcript;
+          finals += event.results[i][0].transcript;
         } else {
           interim += event.results[i][0].transcript;
         }
       }
 
-      currentSessionTextRef.current = sessionFinals;
-
-      // Total = saved from previous sessions + current session
-      setTranscript(savedTextRef.current + sessionFinals);
+      // Chrome Android gửi lại toàn bộ kết quả mỗi lần restart
+      // → chỉ cần set trực tiếp, không cộng dồn
+      setTranscript(finals);
       setInterimTranscript(interim);
     };
 
@@ -101,10 +97,7 @@ export function useSpeechRecognition(
       setInterimTranscript("");
 
       if (isListeningRef.current) {
-        // Android Chrome auto-stops after silence → save current and restart
-        savedTextRef.current += currentSessionTextRef.current;
-        currentSessionTextRef.current = "";
-
+        // Android tự dừng sau silence → restart, Chrome sẽ re-send toàn bộ text
         try {
           recognition.start();
         } catch {
@@ -126,8 +119,6 @@ export function useSpeechRecognition(
     }
 
     // Reset session state
-    savedTextRef.current = "";
-    currentSessionTextRef.current = "";
     setTranscript("");
     setInterimTranscript("");
     setError(null);
@@ -155,10 +146,6 @@ export function useSpeechRecognition(
     isListeningRef.current = false;
 
     if (recognitionRef.current) {
-      // Save any remaining current session text before stopping
-      const finalText = savedTextRef.current + currentSessionTextRef.current;
-      if (finalText) setTranscript(finalText);
-
       recognitionRef.current.stop();
       recognitionRef.current = null;
     }
@@ -168,8 +155,6 @@ export function useSpeechRecognition(
   }, []);
 
   const resetTranscript = useCallback(() => {
-    savedTextRef.current = "";
-    currentSessionTextRef.current = "";
     setTranscript("");
     setInterimTranscript("");
   }, []);
