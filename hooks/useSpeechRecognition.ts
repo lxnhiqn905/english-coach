@@ -41,8 +41,8 @@ export function useSpeechRecognition(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const recognitionRef = useRef<any>(null);
   const isListeningRef = useRef(false);
-  const savedTextRef = useRef(""); // text accumulated from previous sessions (after Android auto-restart)
-  const currentFinalsRef = useRef(""); // finals in the current session
+  const savedTextRef = useRef(""); // text from completed sessions (after Android auto-restart)
+  const sessionFinalsRef = useRef(""); // finals accumulated incrementally in current session
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -70,21 +70,27 @@ export function useSpeechRecognition(
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     recognition.onresult = (event: any) => {
-      let finals = "";
+      let newFinals = "";
       let interim = "";
 
-      for (let i = 0; i < event.results.length; i++) {
+      // Use event.resultIndex to only process newly added results, avoiding re-processing old finals
+      for (let i = event.resultIndex; i < event.results.length; i++) {
         const text = event.results[i][0].transcript.trim();
         if (event.results[i].isFinal) {
-          finals += (finals ? " " : "") + text;
+          newFinals += (newFinals ? " " : "") + text;
         } else {
-          interim += text;
+          interim = text;
         }
       }
 
-      currentFinalsRef.current = finals;
-      const saved = savedTextRef.current;
-      setTranscript(saved ? saved + (finals ? " " + finals : "") : finals);
+      if (newFinals) {
+        sessionFinalsRef.current = sessionFinalsRef.current
+          ? sessionFinalsRef.current + " " + newFinals
+          : newFinals;
+      }
+
+      const parts = [savedTextRef.current, sessionFinalsRef.current].filter(Boolean);
+      setTranscript(parts.join(" "));
       setInterimTranscript(interim);
     };
 
@@ -101,13 +107,12 @@ export function useSpeechRecognition(
 
       if (isListeningRef.current) {
         // Save finals from this session before restarting (Android restarts after silence)
-        const current = currentFinalsRef.current;
-        if (current) {
+        if (sessionFinalsRef.current) {
           savedTextRef.current = savedTextRef.current
-            ? savedTextRef.current + " " + current
-            : current;
+            ? savedTextRef.current + " " + sessionFinalsRef.current
+            : sessionFinalsRef.current;
+          sessionFinalsRef.current = "";
         }
-        currentFinalsRef.current = "";
         try {
           recognition.start();
         } catch {
@@ -133,7 +138,7 @@ export function useSpeechRecognition(
     setInterimTranscript("");
     setError(null);
     savedTextRef.current = "";
-    currentFinalsRef.current = "";
+    sessionFinalsRef.current = "";
 
     if (recognitionRef.current) {
       recognitionRef.current.abort();
