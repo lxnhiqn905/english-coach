@@ -1,22 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { unitSummaries } from "@/lib/data/essentialWords";
+import type { BookConfig } from "@/lib/data/essentialBooks";
 
-export default function EssentialWordsPage() {
+export default function EssentialListPage({ book }: { book: BookConfig }) {
   return (
     <div className="min-h-screen pt-16 pb-8 px-4">
       <div className="max-w-lg mx-auto py-6 space-y-4">
         <div>
-          <h1 className="text-xl font-bold text-slate-100">4000 Essential English Words</h1>
-          <p className="text-xs text-slate-500 mt-1">{unitSummaries.length} units · 20 words each</p>
+          <h1 className="text-xl font-bold text-slate-100">4000 Essential English Words · Book {book.id}</h1>
+          <p className="text-xs text-slate-500 mt-1">{book.unitSummaries.length} units · 20 words each</p>
         </div>
 
         <div className="space-y-2">
-          {unitSummaries.map((u) => (
+          {book.unitSummaries.map((u) => (
             <Link
               key={u.id}
-              href={`/essential/${u.id}`}
+              href={`${book.href}/${u.id}`}
               className="flex items-center gap-4 rounded-2xl border border-white/10 bg-[#1a2035] px-4 py-4 hover:border-purple-500/30 hover:bg-[#1e2645] transition-all"
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-purple-500/15 border border-purple-500/20">

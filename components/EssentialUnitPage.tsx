@@ -3,21 +3,21 @@
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import {
-  fetchUnit,
   parseExerciseHtml,
-  unitSummaries,
-  wordAudioUrl,
-  wordImageUrl,
-  readingAudioUrl,
-  readingImageUrl,
   playAudio,
   type EssentialUnit,
   type ParsedBlock,
 } from "@/lib/data/essentialWords";
+import {
+  fetchBookUnit,
+  bookWordAudioUrl,
+  bookWordImageUrl,
+  bookReadingAudioUrl,
+  bookReadingImageUrl,
+  type BookConfig,
+} from "@/lib/data/essentialBooks";
 
 type Tab = "words" | "exercises" | "story";
-
-// ─── Shared option button style ───────────────────────────────────────────────
 
 function optCls(state: "default" | "selected" | "correct" | "wrong" | "dim") {
   const base = "w-full text-left rounded-xl border px-3 py-2.5 text-sm transition-all ";
@@ -27,8 +27,6 @@ function optCls(state: "default" | "selected" | "correct" | "wrong" | "dim") {
   if (state === "dim")      return base + "border-white/5 text-slate-600";
   return base + "border-white/10 bg-white/5 text-slate-300 hover:border-white/20";
 }
-
-// ─── Block renderers ──────────────────────────────────────────────────────────
 
 function SingleBlock({ b, index, checked }: { b: Extract<ParsedBlock, { kind: "single" }>; index: number; checked: boolean }) {
   const [sel, setSel] = useState<number | null>(null);
@@ -222,8 +220,6 @@ function TextareaBlock({ b, index, checked }: { b: Extract<ParsedBlock, { kind: 
   );
 }
 
-// ─── Exercise section ─────────────────────────────────────────────────────────
-
 function ExerciseSection({ title, html }: { title: string; html: string }) {
   const [blocks, setBlocks] = useState<ParsedBlock[]>([]);
   const [checked, setChecked] = useState(false);
@@ -236,7 +232,6 @@ function ExerciseSection({ title, html }: { title: string; html: string }) {
   const questionBlocks = blocks.filter((b) => b.kind !== "header");
   if (questionBlocks.length === 0) return null;
 
-  // Track per-question index (only increment for non-header blocks)
   let qIndex = 0;
 
   return (
@@ -274,22 +269,14 @@ function ExerciseSection({ title, html }: { title: string; html: string }) {
   );
 }
 
-// ─── Word card ───────────────────────────────────────────────────────────────
-
-function WordCard({
-  word,
-  unitId,
-}: {
-  word: EssentialUnit["wordlist"][0];
-  unitId: number;
-}) {
+function WordCard({ word, book, unitId }: { word: EssentialUnit["wordlist"][0]; book: BookConfig; unitId: number }) {
   return (
     <div className="rounded-2xl border border-white/10 bg-[#1a2035] overflow-hidden">
       <div className="flex gap-3 p-4">
         {word.image && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={wordImageUrl(unitId, word.image)}
+            src={bookWordImageUrl(book, unitId, word.image)}
             alt={word.en}
             className="h-16 w-16 shrink-0 rounded-xl object-cover"
           />
@@ -302,7 +289,7 @@ function WordCard({
             </div>
             {word.sound && (
               <button
-                onClick={() => playAudio(wordAudioUrl(unitId, word.sound))}
+                onClick={() => playAudio(bookWordAudioUrl(book, unitId, word.sound))}
                 className="shrink-0 rounded-lg border border-white/10 bg-white/5 p-1.5 text-slate-400 hover:border-purple-500/30 hover:text-purple-300 transition-all"
                 title="Listen"
               >
@@ -313,19 +300,14 @@ function WordCard({
             )}
           </div>
           <p className="text-sm text-slate-300">{word.desc}</p>
-          <p
-            className="text-xs text-slate-500 italic"
-            dangerouslySetInnerHTML={{ __html: `→ ${word.exam}` }}
-          />
+          <p className="text-xs text-slate-500 italic" dangerouslySetInnerHTML={{ __html: `→ ${word.exam}` }} />
         </div>
       </div>
     </div>
   );
 }
 
-// ─── Main page ───────────────────────────────────────────────────────────────
-
-export default function UnitDetailPage() {
+export default function EssentialUnitPage({ book }: { book: BookConfig }) {
   const params = useParams();
   const router = useRouter();
   const unitId = Number(params.unitId);
@@ -334,25 +316,22 @@ export default function UnitDetailPage() {
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState<Tab>("words");
 
-  const summary = unitSummaries.find((u) => u.id === unitId);
+  const summary = book.unitSummaries.find((u) => u.id === unitId);
 
   useEffect(() => {
     setLoading(true);
-    fetchUnit(unitId)
+    fetchBookUnit(book, unitId)
       .then(setUnit)
-      .catch(() => router.push("/essential"))
+      .catch(() => router.push(book.href))
       .finally(() => setLoading(false));
-  }, [unitId, router]);
+  }, [unitId, book, router]);
 
   const storyReading = unit?.reading.find((r) => r.type === "story");
-  const faqReading = unit?.reading.find((r) => r.type === "faq");
-  const exercises = unit?.exercise.filter((e) =>
-    e.en.startsWith("Exercise")
-  ) ?? [];
+  const faqReading   = unit?.reading.find((r) => r.type === "faq");
+  const exercises    = unit?.exercise.filter((e) => e.en.startsWith("Exercise")) ?? [];
 
   return (
     <div className="min-h-screen pt-16 pb-8">
-      {/* Header */}
       <div className="sticky top-14 z-10 border-b border-white/10 bg-[#0f1629]/95 backdrop-blur px-4 py-3">
         <div className="max-w-lg mx-auto flex items-center gap-3">
           <button
@@ -370,15 +349,12 @@ export default function UnitDetailPage() {
           </div>
         </div>
 
-        {/* Tabs */}
         <div className="max-w-lg mx-auto mt-3 flex gap-1">
-          {(
-            [
-              { key: "words", label: "Word List" },
-              { key: "exercises", label: "Exercises" },
-              { key: "story", label: "Story" },
-            ] as { key: Tab; label: string }[]
-          ).map(({ key, label }) => (
+          {([
+            { key: "words",     label: "Word List" },
+            { key: "exercises", label: "Exercises" },
+            { key: "story",     label: "Story" },
+          ] as { key: Tab; label: string }[]).map(({ key, label }) => (
             <button
               key={key}
               onClick={() => setTab(key)}
@@ -394,25 +370,20 @@ export default function UnitDetailPage() {
         </div>
       </div>
 
-      {/* Content */}
       <div className="max-w-lg mx-auto px-4 py-5">
         {loading ? (
-          <div className="flex items-center justify-center py-20 text-slate-500 text-sm">
-            Loading…
-          </div>
+          <div className="flex items-center justify-center py-20 text-slate-500 text-sm">Loading…</div>
         ) : !unit ? null : (
           <>
-            {/* Words Tab */}
             {tab === "words" && (
               <div className="space-y-3">
                 <p className="text-xs text-slate-500">{unit.wordlist.length} words in this unit</p>
                 {unit.wordlist.map((word) => (
-                  <WordCard key={word.en} word={word} unitId={unitId} />
+                  <WordCard key={word.en} word={word} book={book} unitId={unitId} />
                 ))}
               </div>
             )}
 
-            {/* Exercises Tab */}
             {tab === "exercises" && (
               <div className="space-y-5">
                 {exercises.length === 0 ? (
@@ -425,7 +396,6 @@ export default function UnitDetailPage() {
               </div>
             )}
 
-            {/* Story Tab */}
             {tab === "story" && (
               <div className="space-y-5">
                 {storyReading && (
@@ -435,7 +405,7 @@ export default function UnitDetailPage() {
                         {storyReading.image && (
                           // eslint-disable-next-line @next/next/no-img-element
                           <img
-                            src={readingImageUrl(unitId, storyReading.image)}
+                            src={bookReadingImageUrl(book, unitId, storyReading.image)}
                             alt={storyReading.en}
                             className="h-20 w-20 shrink-0 rounded-xl object-contain bg-white/5"
                           />
@@ -446,7 +416,7 @@ export default function UnitDetailPage() {
                           </h3>
                           {storyReading.sound && (
                             <button
-                              onClick={() => playAudio(readingAudioUrl(unitId, storyReading.sound!))}
+                              onClick={() => playAudio(bookReadingAudioUrl(book, unitId, storyReading.sound!))}
                               className="shrink-0 flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5 text-xs text-slate-400 hover:text-purple-300 hover:border-purple-500/30 transition-all"
                             >
                               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -466,10 +436,7 @@ export default function UnitDetailPage() {
                 )}
 
                 {faqReading && (
-                  <ExerciseSection
-                    title="Reading Comprehension"
-                    html={faqReading.story}
-                  />
+                  <ExerciseSection title="Reading Comprehension" html={faqReading.story} />
                 )}
               </div>
             )}
@@ -477,16 +444,9 @@ export default function UnitDetailPage() {
         )}
       </div>
 
-      {/* Story styles */}
       <style jsx global>{`
-        .prose-story strong.idiom-tip,
-        .prose-story strong {
-          color: #4ade80;
-          font-weight: 700;
-        }
-        .prose-story p {
-          margin-bottom: 0.75rem;
-        }
+        .prose-story strong { color: #4ade80; font-weight: 700; }
+        .prose-story p { margin-bottom: 0.75rem; }
       `}</style>
     </div>
   );
