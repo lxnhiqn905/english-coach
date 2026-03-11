@@ -50,7 +50,7 @@ export default function SentenceTopicPage() {
   return (
     <div className="min-h-screen pt-16 pb-8 flex flex-col">
       {/* Header */}
-      <div className="border-b border-white/10 bg-[#111827]/80 backdrop-blur-sm px-4 py-3">
+      <div className="sticky top-16 z-40 border-b border-white/10 bg-[#111827]/80 backdrop-blur-sm px-4 py-3">
         <div className="max-w-4xl mx-auto flex items-center gap-3">
           <Link
             href="/sentences"
