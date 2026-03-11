@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/practice", label: "Practice" },
+  { href: "/essential", label: "Essential" },
   { href: "/vocab", label: "My Words" },
   { href: "/settings", label: "Settings" },
 ];
@@ -31,7 +32,7 @@ export default function Navigation() {
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
               return (
                 <Link
                   key={link.href}
@@ -70,7 +71,7 @@ export default function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden border-t border-purple-900/30 py-3 space-y-1">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
               return (
                 <Link
                   key={link.href}
