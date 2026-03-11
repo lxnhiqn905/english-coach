@@ -188,6 +188,14 @@ export function parseExerciseHtml(html: string): ParsedBlock[] {
             .map((s) => s.trim().replace(/<[^>]+>/g, ""))
             .filter(Boolean);
           blocks.push({ kind: "betterfit", words, sentences, answers });
+        } else if (cls === "answer-the-questions-CI") {
+          const answer = li.getAttribute("value") ?? "";
+          const sentenceHtml = li.innerHTML.replace(/^_{2,}\s*/, "");
+          blocks.push({ kind: "fillblank", sentenceHtml, prefix: "C / I:", answer });
+        } else if (cls === "answer-the-questions-word-similar") {
+          const answer = li.getAttribute("value") ?? "";
+          const sentenceHtml = li.innerHTML.split(/<br\s*\/?>/i)[0];
+          blocks.push({ kind: "fillblank", sentenceHtml, prefix: "→", answer });
         } else if (cls === "answer-the-questions-textarea") {
           const answer = li.getAttribute("value") ?? "";
           const questionHtml = li.innerHTML
