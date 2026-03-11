@@ -137,13 +137,25 @@ export function parseExerciseHtml(html: string): ParsedBlock[] {
         pendingWordBank = Array.from(freeOpts).map((li) => li.textContent?.trim() ?? "");
       }
     } else if (tag === "OL") {
-      const items = Array.from(el.querySelectorAll("li"));
+      const items = Array.from(el.querySelectorAll(":scope > li"));
       if (!items.length) return;
 
-      const cls = items[0].className;
+      // Word-blank: all items share word-bank — handle as one block
+      if (items[0].className === "answer-the-questions-section-word-blank") {
+        const wbItems = items.map((li) => ({
+          sentenceHtml: li.innerHTML.replace(/<[^>]+>/g, ""),
+          answer: li.getAttribute("value") ?? "",
+        }));
+        blocks.push({ kind: "wordbank", wordBank: pendingWordBank, items: wbItems });
+        pendingWordBank = [];
+        return;
+      }
 
-      if (cls === "answer-the-questions-section") {
-        items.forEach((li) => {
+      // Process each <li> individually (OLs can mix types, e.g. section + textarea)
+      items.forEach((li) => {
+        const cls = li.className;
+
+        if (cls === "answer-the-questions-section") {
           const answerAttr = li.getAttribute("answer-index") ?? "0";
           const ul = li.querySelector(".ul-choose-answer");
           const ulMulti = li.querySelector(".ul-multi-choose-answer");
@@ -159,16 +171,12 @@ export function parseExerciseHtml(html: string): ParsedBlock[] {
             const count = parseInt(ulMulti.getAttribute("q") ?? "2");
             blocks.push({ kind: "multi", options, answerIndices, count });
           }
-        });
-      } else if (cls === "answer-the-questions-section-char") {
-        items.forEach((li) => {
+        } else if (cls === "answer-the-questions-section-char") {
           const prefix = li.getAttribute("pre") ?? "";
           const answer = li.getAttribute("value") ?? "";
           const sentenceHtml = li.innerHTML.split(/<br\s*\/?>/i)[0];
           blocks.push({ kind: "fillblank", sentenceHtml, prefix, answer });
-        });
-      } else if (cls === "answer-the-questions-section-better-fit") {
-        items.forEach((li) => {
+        } else if (cls === "answer-the-questions-section-better-fit") {
           const answerStr = li.getAttribute("answer-index") ?? "";
           const answers = answerStr.split("/").map((s) => s.trim());
           const span = li.querySelector("span");
@@ -180,16 +188,7 @@ export function parseExerciseHtml(html: string): ParsedBlock[] {
             .map((s) => s.trim().replace(/<[^>]+>/g, ""))
             .filter(Boolean);
           blocks.push({ kind: "betterfit", words, sentences, answers });
-        });
-      } else if (cls === "answer-the-questions-section-word-blank") {
-        const wbItems = items.map((li) => ({
-          sentenceHtml: li.innerHTML.replace(/<[^>]+>/g, ""),
-          answer: li.getAttribute("value") ?? "",
-        }));
-        blocks.push({ kind: "wordbank", wordBank: pendingWordBank, items: wbItems });
-        pendingWordBank = [];
-      } else if (cls === "answer-the-questions-textarea") {
-        items.forEach((li) => {
+        } else if (cls === "answer-the-questions-textarea") {
           const answer = li.getAttribute("value") ?? "";
           const questionHtml = li.innerHTML
             .replace(/<br\s*\/?>/gi, " ")
@@ -197,8 +196,8 @@ export function parseExerciseHtml(html: string): ParsedBlock[] {
             .replace(/<[^>]+>/g, "")
             .trim();
           blocks.push({ kind: "textarea", questionHtml, answer });
-        });
-      }
+        }
+      });
     }
   });
 
