@@ -3,7 +3,10 @@
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { useState, useRef } from "react";
+import dynamic from "next/dynamic";
 import { sentenceTopics } from "@/lib/data/sentences";
+
+const PdfViewer = dynamic(() => import("@/components/PdfViewer"), { ssr: false });
 
 export default function SentenceTopicPage() {
   const { topicId } = useParams<{ topicId: string }>();
@@ -93,13 +96,7 @@ export default function SentenceTopicPage() {
 
       {/* PDF Viewer */}
       <div className="flex-1 max-w-4xl w-full mx-auto px-4 py-4">
-        <div className="w-full h-[calc(100vh-160px)] rounded-xl overflow-hidden border border-white/10 bg-white">
-          <iframe
-            src={`${pdfUrl}#toolbar=0&navpanes=0`}
-            className="w-full h-full"
-            title={topic.title}
-          />
-        </div>
+        <PdfViewer url={pdfUrl} />
       </div>
     </div>
   );
