@@ -76,6 +76,29 @@ export async function fetchUnit(id: number): Promise<EssentialUnit> {
   return res.json();
 }
 
+const BASE_AUDIO = "https://www.essentialenglish.review/apps-data/4000-essential-english-words-1/data";
+
+export function wordAudioUrl(unitId: number, sound: string): string {
+  return `${BASE_AUDIO}/unit-${unitId}/wordlist/${sound}`;
+}
+
+export function readingAudioUrl(unitId: number, sound: string): string {
+  return `${BASE_AUDIO}/unit-${unitId}/reading/${sound}`;
+}
+
+let currentAudio: HTMLAudioElement | null = null;
+
+export function playAudio(url: string): void {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio = null;
+  }
+  const audio = new Audio(url);
+  currentAudio = audio;
+  audio.play().catch(() => {});
+  audio.onended = () => { currentAudio = null; };
+}
+
 export interface ParsedQuestion {
   questionHtml: string;
   options: string[];

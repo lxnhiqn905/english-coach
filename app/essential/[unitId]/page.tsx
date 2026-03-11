@@ -6,11 +6,12 @@ import {
   fetchUnit,
   parseExerciseHtml,
   unitSummaries,
+  wordAudioUrl,
+  readingAudioUrl,
+  playAudio,
   type EssentialUnit,
   type ParsedQuestion,
 } from "@/lib/data/essentialWords";
-import { useSpeechSynthesis } from "@/hooks/useSpeechSynthesis";
-import { useVoiceSettings } from "@/lib/useVoiceSettings";
 
 type Tab = "words" | "exercises" | "story";
 
@@ -134,14 +135,11 @@ function ExerciseSection({
 
 function WordCard({
   word,
-  onListen,
+  unitId,
 }: {
   word: EssentialUnit["wordlist"][0];
-  onListen: (text: string) => void;
+  unitId: number;
 }) {
-  // strip html tags from exam for clean display
-  const cleanExam = word.exam.replace(/<[^>]+>/g, "");
-
   return (
     <div className="rounded-2xl border border-white/10 bg-[#1a2035] p-4 space-y-2">
       <div className="flex items-start justify-between gap-2">
@@ -149,15 +147,17 @@ function WordCard({
           <span className="text-base font-bold text-purple-300">{word.en}</span>
           <span className="ml-2 text-xs text-slate-500">{word.pron}</span>
         </div>
-        <button
-          onClick={() => onListen(word.en)}
-          className="shrink-0 rounded-lg border border-white/10 bg-white/5 p-1.5 text-slate-400 hover:border-purple-500/30 hover:text-purple-300 transition-all"
-          title="Listen"
-        >
-          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072M12 6a7.975 7.975 0 015.657 2.343M6.343 17.657A8 8 0 016 12m0 0a8 8 0 012.343-5.657M12 6V3m0 18v-3" />
-          </svg>
-        </button>
+        {word.sound && (
+          <button
+            onClick={() => playAudio(wordAudioUrl(unitId, word.sound))}
+            className="shrink-0 rounded-lg border border-white/10 bg-white/5 p-1.5 text-slate-400 hover:border-purple-500/30 hover:text-purple-300 transition-all"
+            title="Listen"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072M12 6a7.975 7.975 0 015.657 2.343M6.343 17.657A8 8 0 016 12m0 0a8 8 0 012.343-5.657M12 6V3m0 18v-3" />
+            </svg>
+          </button>
+        )}
       </div>
       <p className="text-sm text-slate-300">{word.desc}</p>
       <p
@@ -179,9 +179,6 @@ export default function UnitDetailPage() {
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState<Tab>("words");
 
-  const { voices, speak } = useSpeechSynthesis();
-  const { rate, getVoice } = useVoiceSettings();
-
   const summary = unitSummaries.find((u) => u.id === unitId);
 
   useEffect(() => {
@@ -191,11 +188,6 @@ export default function UnitDetailPage() {
       .catch(() => router.push("/essential"))
       .finally(() => setLoading(false));
   }, [unitId, router]);
-
-  function handleListen(text: string) {
-    const voice = getVoice(voices);
-    speak(text, { voice, rate });
-  }
 
   const storyReading = unit?.reading.find((r) => r.type === "story");
   const faqReading = unit?.reading.find((r) => r.type === "faq");
@@ -260,7 +252,7 @@ export default function UnitDetailPage() {
               <div className="space-y-3">
                 <p className="text-xs text-slate-500">{unit.wordlist.length} words in this unit</p>
                 {unit.wordlist.map((word) => (
-                  <WordCard key={word.en} word={word} onListen={handleListen} />
+                  <WordCard key={word.en} word={word} unitId={unitId} />
                 ))}
               </div>
             )}
@@ -287,18 +279,17 @@ export default function UnitDetailPage() {
                       <h3 className="text-sm font-bold text-purple-300 uppercase tracking-wide">
                         {storyReading.en}
                       </h3>
-                      <button
-                        onClick={() => {
-                          const text = storyReading.story.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-                          handleListen(text);
-                        }}
-                        className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5 text-xs text-slate-400 hover:text-purple-300 hover:border-purple-500/30 transition-all"
-                      >
-                        <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072M12 6a7.975 7.975 0 015.657 2.343" />
-                        </svg>
-                        Listen
-                      </button>
+                      {storyReading.sound && (
+                        <button
+                          onClick={() => playAudio(readingAudioUrl(unitId, storyReading.sound!))}
+                          className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5 text-xs text-slate-400 hover:text-purple-300 hover:border-purple-500/30 transition-all"
+                        >
+                          <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072M12 6a7.975 7.975 0 015.657 2.343" />
+                          </svg>
+                          Listen
+                        </button>
+                      )}
                     </div>
                     <div
                       className="prose-story text-sm leading-7 text-slate-300 space-y-3"
