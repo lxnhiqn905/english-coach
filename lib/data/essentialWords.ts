@@ -90,6 +90,10 @@ export function readingAudioUrl(unitId: number, sound: string): string {
   return `${BASE_AUDIO}/unit-${unitId}/reading/${sound}`;
 }
 
+export function readingImageUrl(unitId: number, image: string): string {
+  return `${BASE_AUDIO}/unit-${unitId}/reading/${image}`;
+}
+
 let currentAudio: HTMLAudioElement | null = null;
 
 export function playAudio(url: string): void {

@@ -9,6 +9,7 @@ import {
   wordAudioUrl,
   wordImageUrl,
   readingAudioUrl,
+  readingImageUrl,
   playAudio,
   type EssentialUnit,
   type ParsedBlock,
@@ -428,27 +429,37 @@ export default function UnitDetailPage() {
             {tab === "story" && (
               <div className="space-y-5">
                 {storyReading && (
-                  <div className="rounded-2xl border border-white/10 bg-[#1a2035] p-5 space-y-4">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-sm font-bold text-purple-300 uppercase tracking-wide">
-                        {storyReading.en}
-                      </h3>
-                      {storyReading.sound && (
-                        <button
-                          onClick={() => playAudio(readingAudioUrl(unitId, storyReading.sound!))}
-                          className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5 text-xs text-slate-400 hover:text-purple-300 hover:border-purple-500/30 transition-all"
-                        >
-                          <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072M12 6a7.975 7.975 0 015.657 2.343" />
-                          </svg>
-                          Listen
-                        </button>
-                      )}
+                  <div className="rounded-2xl border border-white/10 bg-[#1a2035] overflow-hidden">
+                    {storyReading.image && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={readingImageUrl(unitId, storyReading.image)}
+                        alt={storyReading.en}
+                        className="w-full h-44 object-cover"
+                      />
+                    )}
+                    <div className="p-5 space-y-4">
+                      <div className="flex items-center justify-between">
+                        <h3 className="text-sm font-bold text-purple-300 uppercase tracking-wide">
+                          {storyReading.en}
+                        </h3>
+                        {storyReading.sound && (
+                          <button
+                            onClick={() => playAudio(readingAudioUrl(unitId, storyReading.sound!))}
+                            className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5 text-xs text-slate-400 hover:text-purple-300 hover:border-purple-500/30 transition-all"
+                          >
+                            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072M12 6a7.975 7.975 0 015.657 2.343" />
+                            </svg>
+                            Listen
+                          </button>
+                        )}
+                      </div>
+                      <div
+                        className="prose-story text-sm leading-7 text-slate-300 space-y-3"
+                        dangerouslySetInnerHTML={{ __html: storyReading.story }}
+                      />
                     </div>
-                    <div
-                      className="prose-story text-sm leading-7 text-slate-300 space-y-3"
-                      dangerouslySetInnerHTML={{ __html: storyReading.story }}
-                    />
                   </div>
                 )}
 
