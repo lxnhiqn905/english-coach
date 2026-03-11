@@ -1,0 +1,778 @@
+{
+  "id": "school-life",
+  "label": "School Life",
+  "vocab": [
+    {
+      "en": "Classroom",
+      "type": "",
+      "vi": "phòng học",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "Library",
+      "type": "",
+      "vi": "thư viện",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "Canteen",
+      "type": "",
+      "vi": "căn tin",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "Playground",
+      "type": "",
+      "vi": "sân chơi",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "Gym",
+      "type": "",
+      "vi": "phòng thể dục",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "Laboratory",
+      "type": "",
+      "vi": "phòng thí nghiệm",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "Music room",
+      "type": "",
+      "vi": "phòng âm nhạc",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "Computer room",
+      "type": "",
+      "vi": "phòng máy tính",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "Principal’s office",
+      "type": "",
+      "vi": "phòng hiệu trưởng",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "School yard",
+      "type": "",
+      "vi": "sân trường",
+      "category": "School Places (Địa điểm trong trường)"
+    },
+    {
+      "en": "Math",
+      "type": "",
+      "vi": "toán",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "English",
+      "type": "",
+      "vi": "tiếng Anh",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "Literature",
+      "type": "",
+      "vi": "văn học",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "History",
+      "type": "",
+      "vi": "lịch sử",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "Geography",
+      "type": "",
+      "vi": "địa lý",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "Biology",
+      "type": "",
+      "vi": "sinh học",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "Physics",
+      "type": "",
+      "vi": "vật lý",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "Chemistry",
+      "type": "",
+      "vi": "hóa học",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "PE (Physical Education)",
+      "type": "",
+      "vi": "thể dục",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "Arts",
+      "type": "",
+      "vi": "mỹ thuật",
+      "category": "Subjects (Môn học)"
+    },
+    {
+      "en": "Notebook",
+      "type": "",
+      "vi": "vở ghi",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Textbook",
+      "type": "",
+      "vi": "sách giáo khoa",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Pen",
+      "type": "",
+      "vi": "bút mực",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Pencil",
+      "type": "",
+      "vi": "bút chì",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Eraser",
+      "type": "",
+      "vi": "cục tẩy",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Ruler",
+      "type": "",
+      "vi": "thước kẻ",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Backpack",
+      "type": "",
+      "vi": "ba lô",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Marker",
+      "type": "",
+      "vi": "bút lông",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Highlighter",
+      "type": "",
+      "vi": "bút đánh dấu",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Calculator",
+      "type": "",
+      "vi": "máy tính cầm tay",
+      "category": "School Supplies (Dụng cụ học tập)"
+    },
+    {
+      "en": "Student",
+      "type": "",
+      "vi": "học sinh",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Teacher",
+      "type": "",
+      "vi": "giáo viên",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Principal",
+      "type": "",
+      "vi": "hiệu trưởng",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Classmate",
+      "type": "",
+      "vi": "bạn cùng lớp",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Monitor",
+      "type": "",
+      "vi": "lớp trưởng",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Counselor",
+      "type": "",
+      "vi": "cố vấn học tập",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Janitor",
+      "type": "",
+      "vi": "bảo vệ/ lao công",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Librarian",
+      "type": "",
+      "vi": "thủ thư",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Coach",
+      "type": "",
+      "vi": "huấn luyện viên",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Tutor",
+      "type": "",
+      "vi": "gia sư",
+      "category": "School People (Con người trong trường)"
+    },
+    {
+      "en": "Study",
+      "type": "",
+      "vi": "học",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Read books",
+      "type": "",
+      "vi": "đọc sách",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Do homework",
+      "type": "",
+      "vi": "làm bài tập về nhà",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Take notes",
+      "type": "",
+      "vi": "ghi chú",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Take a test",
+      "type": "",
+      "vi": "làm bài kiểm tra",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Join clubs",
+      "type": "",
+      "vi": "tham gia câu lạc bộ",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Play sports",
+      "type": "",
+      "vi": "chơi thể thao",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Raise your hand",
+      "type": "",
+      "vi": "giơ tay",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Discuss",
+      "type": "",
+      "vi": "thảo luận",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Present",
+      "type": "",
+      "vi": "thuyết trình",
+      "category": "Activities (Hoạt động trong trường)"
+    },
+    {
+      "en": "Difficult",
+      "type": "",
+      "vi": "khó",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Easy",
+      "type": "",
+      "vi": "dễ",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Fun",
+      "type": "",
+      "vi": "vui",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Boring",
+      "type": "",
+      "vi": "chán",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Interesting",
+      "type": "",
+      "vi": "thú vị",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Stressful",
+      "type": "",
+      "vi": "căng thẳng",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Helpful",
+      "type": "",
+      "vi": "hữu ích",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Strict",
+      "type": "",
+      "vi": "nghiêm",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Friendly",
+      "type": "",
+      "vi": "thân thiện",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Noisy",
+      "type": "",
+      "vi": "ồn ào",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Wear uniform",
+      "type": "",
+      "vi": "mặc đồng phục",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "Be on time",
+      "type": "",
+      "vi": "đúng giờ",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "Don’t skip class",
+      "type": "",
+      "vi": "không trốn học",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "Keep quiet",
+      "type": "",
+      "vi": "giữ trật tự",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "Don’t cheat",
+      "type": "",
+      "vi": "không gian lận",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "Follow instructions",
+      "type": "",
+      "vi": "làm theo hướng dẫn",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "Respect teachers",
+      "type": "",
+      "vi": "tôn trọng giáo viên",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "Keep the school clean",
+      "type": "",
+      "vi": "giữ trường sạch",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "Queue properly",
+      "type": "",
+      "vi": "xếp hàng đúng",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "No phones in class",
+      "type": "",
+      "vi": "không dùng điện thoại trong lớp",
+      "category": "Rules & Regulations (Nội quy & quy định)"
+    },
+    {
+      "en": "Exam",
+      "type": "",
+      "vi": "kỳ thi",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "Test",
+      "type": "",
+      "vi": "bài kiểm tra",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "Score",
+      "type": "",
+      "vi": "điểm",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "Pass",
+      "type": "",
+      "vi": "đậu",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "Fail",
+      "type": "",
+      "vi": "trượt",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "Grade",
+      "type": "",
+      "vi": "điểm số/ học lực",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "Report card",
+      "type": "",
+      "vi": "phiếu điểm",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "Mid-term exam",
+      "type": "",
+      "vi": "thi giữa kỳ",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "Final exam",
+      "type": "",
+      "vi": "thi cuối kỳ",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "Revision",
+      "type": "",
+      "vi": "ôn tập",
+      "category": "Exams & Grades (Thi cử & điểm số)"
+    },
+    {
+      "en": "School trip",
+      "type": "",
+      "vi": "chuyến đi chơi",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "Camping",
+      "type": "",
+      "vi": "cắm trại",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "Volunteering",
+      "type": "",
+      "vi": "tình nguyện",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "Music club",
+      "type": "",
+      "vi": "câu lạc bộ âm nhạc",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "Science club",
+      "type": "",
+      "vi": "CLB khoa học",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "Art club",
+      "type": "",
+      "vi": "CLB mỹ thuật",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "Football team",
+      "type": "",
+      "vi": "đội bóng đá",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "Debate club",
+      "type": "",
+      "vi": "CLB tranh luận",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "School festival",
+      "type": "",
+      "vi": "lễ hội trường",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "Talent show",
+      "type": "",
+      "vi": "cuộc thi tài năng",
+      "category": "Extracurricular Activities (Hoạt động ngoại khóa)"
+    },
+    {
+      "en": "Go to school",
+      "type": "",
+      "vi": "đến trường",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Attend classes",
+      "type": "",
+      "vi": "đi học",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Have a break",
+      "type": "",
+      "vi": "giải lao",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Eat lunch",
+      "type": "",
+      "vi": "ăn trưa",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Change classrooms",
+      "type": "",
+      "vi": "đổi phòng học",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Do group work",
+      "type": "",
+      "vi": "làm việc nhóm",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Listen to the teacher",
+      "type": "",
+      "vi": "nghe giảng",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Write assignments",
+      "type": "",
+      "vi": "viết bài tập",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Pack the bag",
+      "type": "",
+      "vi": "chuẩn bị cặp",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Go home",
+      "type": "",
+      "vi": "về nhà",
+      "category": "Daily Routines at School (Sinh hoạt hằng ngày ở trường)"
+    },
+    {
+      "en": "Excited",
+      "type": "",
+      "vi": "hào hứng",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Nervous",
+      "type": "",
+      "vi": "lo lắng",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Confident",
+      "type": "",
+      "vi": "tự tin",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Bored",
+      "type": "",
+      "vi": "chán",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Tired",
+      "type": "",
+      "vi": "mệt",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Proud",
+      "type": "",
+      "vi": "tự hào",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "",
+      "vi": "thư giãn",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Worried",
+      "type": "",
+      "vi": "lo ngại",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Curious",
+      "type": "",
+      "vi": "tò mò",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Motivated",
+      "type": "",
+      "vi": "có động lực",
+      "category": "Feelings (Cảm xúc liên quan đến trường học)"
+    },
+    {
+      "en": "Educational",
+      "type": "",
+      "vi": "mang tính giáo dục",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    },
+    {
+      "en": "Interactive",
+      "type": "",
+      "vi": "tương tác",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    },
+    {
+      "en": "Challenging",
+      "type": "",
+      "vi": "đầy thử thách",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    },
+    {
+      "en": "Rewarding",
+      "type": "",
+      "vi": "đáng giá",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    },
+    {
+      "en": "Competitive",
+      "type": "",
+      "vi": "cạnh tranh",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    },
+    {
+      "en": "Creative",
+      "type": "",
+      "vi": "sáng tạo",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    },
+    {
+      "en": "Busy",
+      "type": "",
+      "vi": "bận rộn",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    },
+    {
+      "en": "Supportive",
+      "type": "",
+      "vi": "hỗ trợ",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    },
+    {
+      "en": "Productive",
+      "type": "",
+      "vi": "hiệu quả",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    },
+    {
+      "en": "Inspiring",
+      "type": "",
+      "vi": "truyền cảm hứng",
+      "category": "Adjectives for School Life (Tính từ mô tả cuộc sống học đường)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I have a lot of homework today.",
+      "vi": "Hôm nay tôi có nhiều bài tập về nhà.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "My favorite subject is English.",
+      "vi": "Môn yêu thích của tôi là tiếng Anh.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "Our teacher is very friendly.",
+      "vi": "Giáo viên của chúng tôi rất thân thiện.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "Class starts at 7 AM.",
+      "vi": "Lớp học bắt đầu lúc 7 giờ sáng.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "I study with my classmates.",
+      "vi": "Tôi học với bạn cùng lớp.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "Our school has a big library with many useful books.",
+      "vi": "Trường tôi có một thư viện lớn",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "I enjoy group projects because they help us learn teamwork.",
+      "vi": "Tôi thích các dự án nhóm",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "During the break, we usually play in the school yard.",
+      "vi": "Giờ giải lao chúng tôi thường",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "The final exam is difficult, so I need to revise carefully.",
+      "vi": "Bài thi cuối kỳ khó nên tôi cần",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "My teachers always encourage us to ask questions and be creative.",
+      "vi": "Giáo viên luôn",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    }
+  ]
+}

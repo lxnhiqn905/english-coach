@@ -1,0 +1,819 @@
+{
+  "id": "internet",
+  "label": "Internet & Social Networks",
+  "vocab": [
+    {
+      "en": "Internet",
+      "type": "n",
+      "vi": "mạng internet",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Website",
+      "type": "n",
+      "vi": "trang web",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Homepage",
+      "type": "n",
+      "vi": "trang chủ",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Web browser",
+      "type": "n",
+      "vi": "trình duyệt web (ví dụ: Chrome, Firefox)",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Search engine",
+      "type": "n",
+      "vi": "công cụ tìm kiếm (ví dụ: Google, Bing)",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Link",
+      "type": "n",
+      "vi": "liên kết",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Download",
+      "type": "v",
+      "vi": "tải xuống",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Upload",
+      "type": "v",
+      "vi": "tải lên",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Log in/Log out",
+      "type": "v",
+      "vi": "đăng nhập/đăng xuất",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Sign up",
+      "type": "v",
+      "vi": "đăng ký tài khoản",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Wi-Fi",
+      "type": "n",
+      "vi": "mạng không dây",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Network",
+      "type": "n",
+      "vi": "mạng lưới",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Internet connection",
+      "type": "n",
+      "vi": "kết nối internet",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Online",
+      "type": "adj",
+      "vi": "trực tuyến",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Offline",
+      "type": "adj",
+      "vi": "ngoại tuyến",
+      "category": "Từ vựng về Internet (Internet Vocabulary)"
+    },
+    {
+      "en": "Surf the internet",
+      "type": "v",
+      "vi": "lướt web",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Watch videos",
+      "type": "v",
+      "vi": "xem video",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Stream",
+      "type": "v",
+      "vi": "phát trực tuyến (ví dụ: YouTube, Netflix)",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Play online games",
+      "type": "v",
+      "vi": "chơi trò chơi trực tuyến",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Shop online",
+      "type": "v",
+      "vi": "mua sắm trực tuyến",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Browse",
+      "type": "v",
+      "vi": "duyệt (tìm kiếm thông tin trên web)",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Search for information",
+      "type": "v",
+      "vi": "tìm kiếm thông tin",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Check emails",
+      "type": "v",
+      "vi": "kiểm tra email",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Download music/movies",
+      "type": "v",
+      "vi": "tải nhạc/phim",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Join online forums",
+      "type": "v",
+      "vi": "tham gia các diễn đàn trực tuyến",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Create content",
+      "type": "v",
+      "vi": "tạo nội dung",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Social media",
+      "type": "n",
+      "vi": "mạng xã hội",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Profile",
+      "type": "n",
+      "vi": "hồ sơ cá nhân",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Friend request",
+      "type": "n",
+      "vi": "yêu cầu kết bạn",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Follow",
+      "type": "v",
+      "vi": "theo dõi",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Unfollow",
+      "type": "v",
+      "vi": "hủy theo dõi",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Like",
+      "type": "v",
+      "vi": "thích",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Comment",
+      "type": "v",
+      "vi": "bình luận",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Post",
+      "type": "v",
+      "vi": "đăng bài",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Share",
+      "type": "v",
+      "vi": "chia sẻ",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Tag",
+      "type": "v",
+      "vi": "gắn thẻ",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Story",
+      "type": "n",
+      "vi": "tin (trên Instagram, Facebook)",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Newsfeed",
+      "type": "n",
+      "vi": "bảng tin",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Group",
+      "type": "n",
+      "vi": "nhóm",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Emoji",
+      "type": "n",
+      "vi": "biểu tượng cảm xúc",
+      "category": "Từ vựng về các hoạt động trực tuyến (Online Activities)"
+    },
+    {
+      "en": "Social networking sites",
+      "type": "n",
+      "vi": "trang mạng xã hội (Facebook, Instagram)",
+      "category": "Từ vựng về các loại hình mạng xã hội (Types of Social Networks)"
+    },
+    {
+      "en": "Video-sharing platforms",
+      "type": "n",
+      "vi": "nền tảng chia sẻ video (YouTube, TikTok)",
+      "category": "Từ vựng về các loại hình mạng xã hội (Types of Social Networks)"
+    },
+    {
+      "en": "Photo-sharing apps",
+      "type": "n",
+      "vi": "ứng dụng chia sẻ ảnh (Instagram, Pinterest)",
+      "category": "Từ vựng về các loại hình mạng xã hội (Types of Social Networks)"
+    },
+    {
+      "en": "Messaging apps",
+      "type": "n",
+      "vi": "ứng dụng nhắn tin (WhatsApp, Messenger)",
+      "category": "Từ vựng về các loại hình mạng xã hội (Types of Social Networks)"
+    },
+    {
+      "en": "Streaming platforms",
+      "type": "n",
+      "vi": "nền tảng phát trực tuyến (Netflix, Twitch)",
+      "category": "Từ vựng về các loại hình mạng xã hội (Types of Social Networks)"
+    },
+    {
+      "en": "Online communities",
+      "type": "n",
+      "vi": "cộng đồng trực tuyến (Reddit, Quora)",
+      "category": "Từ vựng về các loại hình mạng xã hội (Types of Social Networks)"
+    },
+    {
+      "en": "Dating apps",
+      "type": "n",
+      "vi": "ứng dụng hẹn hò (Tinder, Bumble)",
+      "category": "Từ vựng về các loại hình mạng xã hội (Types of Social Networks)"
+    },
+    {
+      "en": "Scroll through",
+      "type": "v",
+      "vi": "lướt qua (trang mạng xã hội)",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Upload a story",
+      "type": "v",
+      "vi": "tải lên một câu chuyện",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Go live",
+      "type": "v",
+      "vi": "phát trực tiếp",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "React to a post",
+      "type": "v",
+      "vi": "phản ứng với bài đăng",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "DM (Direct Message) someone",
+      "type": "v",
+      "vi": "nhắn tin trực tiếp cho ai đó",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Block someone",
+      "type": "v",
+      "vi": "chặn ai đó",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Report a post",
+      "type": "v",
+      "vi": "báo cáo một bài đăng",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Edit a post",
+      "type": "v",
+      "vi": "chỉnh sửa bài đăng",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Pin a post",
+      "type": "v",
+      "vi": "ghim bài đăng lên đầu trang",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Leave a comment",
+      "type": "v",
+      "vi": "để lại bình luận",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Share a link",
+      "type": "v",
+      "vi": "chia sẻ liên kết",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Join a group",
+      "type": "v",
+      "vi": "tham gia nhóm",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Subscribe to a channel",
+      "type": "v",
+      "vi": "đăng ký kênh",
+      "category": "Từ vựng về các hành động trên mạng xã hội (Actions on Social Media)"
+    },
+    {
+      "en": "Spam",
+      "type": "n",
+      "vi": "thư rác",
+      "category": "Từ vựng về vấn đề và bảo mật (Problems & Security)"
+    },
+    {
+      "en": "Virus",
+      "type": "n",
+      "vi": "vi rút máy tính",
+      "category": "Từ vựng về vấn đề và bảo mật (Problems & Security)"
+    },
+    {
+      "en": "Hacker",
+      "type": "n",
+      "vi": "tin tặc",
+      "category": "Từ vựng về vấn đề và bảo mật (Problems & Security)"
+    },
+    {
+      "en": "Privacy settings",
+      "type": "n",
+      "vi": "cài đặt quyền riêng tư",
+      "category": "Từ vựng về vấn đề và bảo mật (Problems & Security)"
+    },
+    {
+      "en": "Password",
+      "type": "n",
+      "vi": "mật khẩu",
+      "category": "Từ vựng về vấn đề và bảo mật (Problems & Security)"
+    },
+    {
+      "en": "Account",
+      "type": "n",
+      "vi": "tài khoản",
+      "category": "Từ vựng về vấn đề và bảo mật (Problems & Security)"
+    },
+    {
+      "en": "Blocked account",
+      "type": "n",
+      "vi": "tài khoản bị khóa",
+      "category": "Từ vựng về vấn đề và bảo mật (Problems & Security)"
+    },
+    {
+      "en": "Cyberbullying",
+      "type": "n",
+      "vi": "bắt nạt trên mạng",
+      "category": "Từ vựng về vấn đề và bảo mật (Problems & Security)"
+    },
+    {
+      "en": "Two-factor authentication",
+      "type": "n",
+      "vi": "xác thực hai yếu tố",
+      "category": "Từ vựng về vấn đề và bảo mật (Problems & Security)"
+    },
+    {
+      "en": "Smartphone",
+      "type": "n",
+      "vi": "điện thoại thông minh",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "Tablet",
+      "type": "n",
+      "vi": "máy tính bảng",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "Laptop",
+      "type": "n",
+      "vi": "máy tính xách tay",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "Desktop computer",
+      "type": "n",
+      "vi": "máy tính để bàn",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "App/Application",
+      "type": "n",
+      "vi": "ứng dụng",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "Software",
+      "type": "n",
+      "vi": "phần mềm",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "Keyboard",
+      "type": "n",
+      "vi": "bàn phím",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "Mouse",
+      "type": "n",
+      "vi": "chuột máy tính",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "Screen",
+      "type": "n",
+      "vi": "màn hình",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "Headphones",
+      "type": "n",
+      "vi": "tai nghe",
+      "category": "Từ vựng về thiết bị và công cụ (Devices & Tools)"
+    },
+    {
+      "en": "Meme",
+      "type": "n",
+      "vi": "ảnh chế",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "GIF",
+      "type": "n",
+      "vi": "ảnh động",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Podcast",
+      "type": "n",
+      "vi": "chương trình phát thanh trực tuyến",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Vlog",
+      "type": "n",
+      "vi": "nhật ký video",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Infographic",
+      "type": "n",
+      "vi": "đồ họa thông tin",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Tutorial",
+      "type": "n",
+      "vi": "hướng dẫn (video hoặc bài viết)",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Live stream",
+      "type": "n",
+      "vi": "buổi phát trực tiếp",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Advertisement (Ad)",
+      "type": "n",
+      "vi": "quảng cáo",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Poll",
+      "type": "n",
+      "vi": "cuộc khảo sát",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Review",
+      "type": "n",
+      "vi": "bài đánh giá",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Hashtag",
+      "type": "n",
+      "vi": "thẻ bắt đầu bằng #",
+      "category": "Từ vựng về các loại nội dung (Types of Content)"
+    },
+    {
+      "en": "Viral",
+      "type": "adj",
+      "vi": "lan truyền nhanh",
+      "category": "Từ vựng về xu hướng và thuật ngữ phổ biến (Trends & Popular Terms)"
+    },
+    {
+      "en": "Trending",
+      "type": "adj",
+      "vi": "đang thịnh hành",
+      "category": "Từ vựng về xu hướng và thuật ngữ phổ biến (Trends & Popular Terms)"
+    },
+    {
+      "en": "Followers",
+      "type": "n",
+      "vi": "người theo dõi",
+      "category": "Từ vựng về xu hướng và thuật ngữ phổ biến (Trends & Popular Terms)"
+    },
+    {
+      "en": "Influencer",
+      "type": "n",
+      "vi": "người ảnh hưởng",
+      "category": "Từ vựng về xu hướng và thuật ngữ phổ biến (Trends & Popular Terms)"
+    },
+    {
+      "en": "Content creator",
+      "type": "n",
+      "vi": "người sáng tạo nội dung",
+      "category": "Từ vựng về xu hướng và thuật ngữ phổ biến (Trends & Popular Terms)"
+    },
+    {
+      "en": "Reach",
+      "type": "n",
+      "vi": "tầm tiếp cận",
+      "category": "Từ vựng về xu hướng và thuật ngữ phổ biến (Trends & Popular Terms)"
+    },
+    {
+      "en": "Follower count",
+      "type": "n",
+      "vi": "số lượng người theo dõi",
+      "category": "Từ vựng về xu hướng và thuật ngữ phổ biến (Trends & Popular Terms)"
+    },
+    {
+      "en": "Online addiction",
+      "type": "n",
+      "vi": "nghiện trực tuyến",
+      "category": "Từ vựng về các vấn đề xã hội và tâm lý trên mạng (Social and Psychological Issues)"
+    },
+    {
+      "en": "Social media anxiety",
+      "type": "n",
+      "vi": "lo lắng do mạng xã hội",
+      "category": "Từ vựng về các vấn đề xã hội và tâm lý trên mạng (Social and Psychological Issues)"
+    },
+    {
+      "en": "Fear of missing out (FOMO)",
+      "type": "n",
+      "vi": "nỗi sợ bỏ lỡ",
+      "category": "Từ vựng về các vấn đề xã hội và tâm lý trên mạng (Social and Psychological Issues)"
+    },
+    {
+      "en": "Screen time",
+      "type": "n",
+      "vi": "thời gian sử dụng thiết bị màn hình",
+      "category": "Từ vựng về các vấn đề xã hội và tâm lý trên mạng (Social and Psychological Issues)"
+    },
+    {
+      "en": "Digital detox",
+      "type": "n",
+      "vi": "giải độc kỹ thuật số (tạm ngưng sử dụng thiết bị số)",
+      "category": "Từ vựng về các vấn đề xã hội và tâm lý trên mạng (Social and Psychological Issues)"
+    },
+    {
+      "en": "Comparison trap",
+      "type": "n",
+      "vi": "cái bẫy so sánh (trên mạng xã hội)",
+      "category": "Từ vựng về các vấn đề xã hội và tâm lý trên mạng (Social and Psychological Issues)"
+    },
+    {
+      "en": "Cybercrime",
+      "type": "n",
+      "vi": "tội phạm mạng",
+      "category": "Từ vựng về các vấn đề xã hội và tâm lý trên mạng (Social and Psychological Issues)"
+    },
+    {
+      "en": "Trolling",
+      "type": "n",
+      "vi": "hành động gây rối trên mạng",
+      "category": "Từ vựng về các vấn đề xã hội và tâm lý trên mạng (Social and Psychological Issues)"
+    },
+    {
+      "en": "Cancel culture",
+      "type": "n",
+      "vi": "văn hóa \"tẩy chay\" trên mạng",
+      "category": "Từ vựng về các vấn đề xã hội và tâm lý trên mạng (Social and Psychological Issues)"
+    },
+    {
+      "en": "Spread awareness",
+      "type": "v",
+      "vi": "lan tỏa nhận thức",
+      "category": "Từ vựng về các hành vi tích cực và tiêu cực trên mạng (Online Behavior)"
+    },
+    {
+      "en": "Support a cause",
+      "type": "v",
+      "vi": "ủng hộ một lý do/chương trình",
+      "category": "Từ vựng về các hành vi tích cực và tiêu cực trên mạng (Online Behavior)"
+    },
+    {
+      "en": "Engage in healthy discussions",
+      "type": "v",
+      "vi": "tham gia thảo luận lành mạnh",
+      "category": "Từ vựng về các hành vi tích cực và tiêu cực trên mạng (Online Behavior)"
+    },
+    {
+      "en": "Share valuable content",
+      "type": "v",
+      "vi": "chia sẻ nội dung hữu ích",
+      "category": "Từ vựng về các hành vi tích cực và tiêu cực trên mạng (Online Behavior)"
+    },
+    {
+      "en": "Spread misinformation",
+      "type": "v",
+      "vi": "lan truyền thông tin sai lệch",
+      "category": "Từ vựng về các hành vi tích cực và tiêu cực trên mạng (Online Behavior)"
+    },
+    {
+      "en": "Engage in cyberbullying",
+      "type": "v",
+      "vi": "tham gia bắt nạt trực tuyến",
+      "category": "Từ vựng về các hành vi tích cực và tiêu cực trên mạng (Online Behavior)"
+    },
+    {
+      "en": "Overpost",
+      "type": "v",
+      "vi": "đăng bài quá nhiều",
+      "category": "Từ vựng về các hành vi tích cực và tiêu cực trên mạng (Online Behavior)"
+    },
+    {
+      "en": "Flame wars",
+      "type": "n",
+      "vi": "tranh cãi gay gắt trên mạng",
+      "category": "Từ vựng về các hành vi tích cực và tiêu cực trên mạng (Online Behavior)"
+    },
+    {
+      "en": "Ghost someone",
+      "type": "v",
+      "vi": "ngừng liên lạc đột ngột",
+      "category": "Từ vựng về các hành vi tích cực và tiêu cực trên mạng (Online Behavior)"
+    },
+    {
+      "en": "Connect with people worldwide",
+      "type": "v",
+      "vi": "kết nối với mọi người trên toàn thế giới",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Share experiences",
+      "type": "v",
+      "vi": "chia sẻ trải nghiệm",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Access information quickly",
+      "type": "v",
+      "vi": "tiếp cận thông tin nhanh chóng",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Build a personal brand",
+      "type": "v",
+      "vi": "xây dựng thương hiệu cá nhân",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Stay updated with trends",
+      "type": "v",
+      "vi": "cập nhật các xu hướng",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Waste time",
+      "type": "v",
+      "vi": "lãng phí thời gian",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Addiction",
+      "type": "n",
+      "vi": "sự nghiện ngập",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Fake news",
+      "type": "n",
+      "vi": "tin giả",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Online harassment",
+      "type": "n",
+      "vi": "quấy rối trực tuyến",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Privacy invasion",
+      "type": "n",
+      "vi": "xâm phạm quyền riêng tư",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    },
+    {
+      "en": "Data theft",
+      "type": "n",
+      "vi": "đánh cắp dữ liệu",
+      "category": "Từ vựng về lợi ích và tác hại của mạng xã hội (Advantages & Disadvantages)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I spend a lot of time on social media.",
+      "vi": "Tôi dành nhiều thời gian trên mạng xã hội.",
+      "category": "Các cụm từ thông dụng (Common Phrases)"
+    },
+    {
+      "en": "I follow my favorite celebrities online. (Tôi theo dõi những người nổi tiếng mà tôi yêu thích trên",
+      "vi": "",
+      "category": "Các cụm từ thông dụng (Common Phrases)"
+    },
+    {
+      "en": "I often share photos with my friends.",
+      "vi": "Tôi thường chia sẻ ảnh với bạn bè.",
+      "category": "Các cụm từ thông dụng (Common Phrases)"
+    },
+    {
+      "en": "Be careful with your personal information online. (Hãy cẩn thận với thông tin cá nhân của bạn",
+      "vi": "",
+      "category": "Các cụm từ thông dụng (Common Phrases)"
+    },
+    {
+      "en": "I prefer shopping online because it’s convenient.",
+      "vi": "Tôi thích mua sắm trực tuyến vì nó tiện lợi.",
+      "category": "Các cụm từ thông dụng (Common Phrases)"
+    },
+    {
+      "en": "I use the internet to stay in touch with my family. (Tôi sử dụng internet để giữ liên lạc với gia",
+      "vi": "",
+      "category": "Các cụm từ thông dụng (Common Phrases)"
+    },
+    {
+      "en": "I use social media to stay in touch with friends and family.",
+      "vi": "",
+      "category": "Các cụm từ thông dụng mở rộng (Advanced Phrases)"
+    },
+    {
+      "en": "Social media can be both a blessing and a curse.",
+      "vi": "",
+      "category": "Các cụm từ thông dụng mở rộng (Advanced Phrases)"
+    },
+    {
+      "en": "I prefer using private accounts to protect my information.",
+      "vi": "",
+      "category": "Các cụm từ thông dụng mở rộng (Advanced Phrases)"
+    },
+    {
+      "en": "Many influencers earn a living through social networks.",
+      "vi": "",
+      "category": "Các cụm từ thông dụng mở rộng (Advanced Phrases)"
+    },
+    {
+      "en": "Spending too much time online can affect your mental health.",
+      "vi": "",
+      "category": "Các cụm từ thông dụng mở rộng (Advanced Phrases)"
+    }
+  ]
+}

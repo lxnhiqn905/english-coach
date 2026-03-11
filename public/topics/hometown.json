@@ -1,0 +1,681 @@
+{
+  "id": "hometown",
+  "label": "Hometown",
+  "vocab": [
+    {
+      "en": "Village",
+      "type": "n",
+      "vi": "làng",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Town",
+      "type": "n",
+      "vi": "thị trấn",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "City",
+      "type": "n",
+      "vi": "thành phố",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Countryside",
+      "type": "n",
+      "vi": "vùng nông thôn",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Suburb",
+      "type": "n",
+      "vi": "vùng ngoại ô",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Capital city",
+      "type": "n",
+      "vi": "thủ đô",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Neighborhood",
+      "type": "n",
+      "vi": "khu dân cư",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Street",
+      "type": "n",
+      "vi": "con đường",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Square",
+      "type": "n",
+      "vi": "quảng trường",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Market",
+      "type": "n",
+      "vi": "chợ",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Quiet",
+      "type": "adj",
+      "vi": "yên tĩnh",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Busy",
+      "type": "adj",
+      "vi": "nhộn nhịp",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Peaceful",
+      "type": "adj",
+      "vi": "thanh bình",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Crowded",
+      "type": "adj",
+      "vi": "đông đúc",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Modern",
+      "type": "adj",
+      "vi": "hiện đại",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Traditional",
+      "type": "adj",
+      "vi": "truyền thống",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Beautiful",
+      "type": "adj",
+      "vi": "đẹp",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Small",
+      "type": "adj",
+      "vi": "nhỏ",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Big/large",
+      "type": "adj",
+      "vi": "lớn",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Famous",
+      "type": "adj",
+      "vi": "nổi tiếng",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "School",
+      "type": "n",
+      "vi": "trường học",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "Hospital",
+      "type": "n",
+      "vi": "bệnh viện",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "Park",
+      "type": "n",
+      "vi": "công viên",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "Library",
+      "type": "n",
+      "vi": "thư viện",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "Shopping mall",
+      "type": "n",
+      "vi": "trung tâm mua sắm",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "Restaurant",
+      "type": "n",
+      "vi": "nhà hàng",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "Cinema",
+      "type": "n",
+      "vi": "rạp chiếu phim",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "Museum",
+      "type": "n",
+      "vi": "bảo tàng",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "Train station",
+      "type": "n",
+      "vi": "ga tàu",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "Bus station",
+      "type": "n",
+      "vi": "bến xe buýt",
+      "category": "Từ vựng về tiện nghi (Facilities)"
+    },
+    {
+      "en": "River",
+      "type": "n",
+      "vi": "sông",
+      "category": "Từ vựng về thiên nhiên (Nature)"
+    },
+    {
+      "en": "Lake",
+      "type": "n",
+      "vi": "hồ",
+      "category": "Từ vựng về thiên nhiên (Nature)"
+    },
+    {
+      "en": "Mountain",
+      "type": "n",
+      "vi": "núi",
+      "category": "Từ vựng về thiên nhiên (Nature)"
+    },
+    {
+      "en": "Hill",
+      "type": "n",
+      "vi": "đồi",
+      "category": "Từ vựng về thiên nhiên (Nature)"
+    },
+    {
+      "en": "Forest",
+      "type": "n",
+      "vi": "rừng",
+      "category": "Từ vựng về thiên nhiên (Nature)"
+    },
+    {
+      "en": "Beach",
+      "type": "n",
+      "vi": "bãi biển",
+      "category": "Từ vựng về thiên nhiên (Nature)"
+    },
+    {
+      "en": "Field",
+      "type": "n",
+      "vi": "cánh đồng",
+      "category": "Từ vựng về thiên nhiên (Nature)"
+    },
+    {
+      "en": "Local people",
+      "type": "n",
+      "vi": "người dân địa phương",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Friendly",
+      "type": "adj",
+      "vi": "thân thiện",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Kind",
+      "type": "adj",
+      "vi": "tốt bụng",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Helpful",
+      "type": "adj",
+      "vi": "hay giúp đỡ",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Welcoming",
+      "type": "adj",
+      "vi": "mến khách",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Coast",
+      "type": "n",
+      "vi": "bờ biển",
+      "category": "Từ vựng về địa lý (Geography)"
+    },
+    {
+      "en": "Island",
+      "type": "n",
+      "vi": "hòn đảo",
+      "category": "Từ vựng về địa lý (Geography)"
+    },
+    {
+      "en": "Valley",
+      "type": "n",
+      "vi": "thung lũng",
+      "category": "Từ vựng về địa lý (Geography)"
+    },
+    {
+      "en": "Desert",
+      "type": "n",
+      "vi": "sa mạc",
+      "category": "Từ vựng về địa lý (Geography)"
+    },
+    {
+      "en": "Cliff",
+      "type": "n",
+      "vi": "vách đá",
+      "category": "Từ vựng về địa lý (Geography)"
+    },
+    {
+      "en": "Plain",
+      "type": "n",
+      "vi": "đồng bằng",
+      "category": "Từ vựng về địa lý (Geography)"
+    },
+    {
+      "en": "Bay",
+      "type": "n",
+      "vi": "vịnh",
+      "category": "Từ vựng về địa lý (Geography)"
+    },
+    {
+      "en": "Waterfall",
+      "type": "n",
+      "vi": "thác nước",
+      "category": "Từ vựng về địa lý (Geography)"
+    },
+    {
+      "en": "Bridge",
+      "type": "n",
+      "vi": "cầu",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Highway",
+      "type": "n",
+      "vi": "đường cao tốc",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Harbor/Port",
+      "type": "n",
+      "vi": "cảng",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Airport",
+      "type": "n",
+      "vi": "sân bay",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Factory",
+      "type": "n",
+      "vi": "nhà máy",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Stadium",
+      "type": "n",
+      "vi": "sân vận động",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Skyscraper",
+      "type": "n",
+      "vi": "tòa nhà chọc trời",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Apartment building",
+      "type": "n",
+      "vi": "tòa nhà chung cư",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Post office",
+      "type": "n",
+      "vi": "bưu điện",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Police station",
+      "type": "n",
+      "vi": "đồn cảnh sát",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure)"
+    },
+    {
+      "en": "Festival",
+      "type": "n",
+      "vi": "lễ hội",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "Temple",
+      "type": "n",
+      "vi": "đền thờ",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "Pagoda",
+      "type": "n",
+      "vi": "chùa",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "Church",
+      "type": "n",
+      "vi": "nhà thờ",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "Landmark",
+      "type": "n",
+      "vi": "cột mốc (địa điểm nổi tiếng)",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "Local food",
+      "type": "n",
+      "vi": "món ăn địa phương",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "Handicrafts",
+      "type": "n",
+      "vi": "đồ thủ công mỹ nghệ",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "Tradition",
+      "type": "n",
+      "vi": "truyền thống",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "History",
+      "type": "n",
+      "vi": "lịch sử",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "Folk songs",
+      "type": "n",
+      "vi": "dân ca",
+      "category": "Từ vựng về văn hóa và đặc sản (Culture & Specialties)"
+    },
+    {
+      "en": "Fishing",
+      "type": "n",
+      "vi": "câu cá",
+      "category": "Từ vựng về các hoạt động (Activities)"
+    },
+    {
+      "en": "Hiking",
+      "type": "n",
+      "vi": "đi bộ đường dài",
+      "category": "Từ vựng về các hoạt động (Activities)"
+    },
+    {
+      "en": "Camping",
+      "type": "n",
+      "vi": "cắm trại",
+      "category": "Từ vựng về các hoạt động (Activities)"
+    },
+    {
+      "en": "Cycling",
+      "type": "n",
+      "vi": "đạp xe",
+      "category": "Từ vựng về các hoạt động (Activities)"
+    },
+    {
+      "en": "Shopping",
+      "type": "n",
+      "vi": "mua sắm",
+      "category": "Từ vựng về các hoạt động (Activities)"
+    },
+    {
+      "en": "Sightseeing",
+      "type": "n",
+      "vi": "tham quan",
+      "category": "Từ vựng về các hoạt động (Activities)"
+    },
+    {
+      "en": "Picnic",
+      "type": "n",
+      "vi": "dã ngoại",
+      "category": "Từ vựng về các hoạt động (Activities)"
+    },
+    {
+      "en": "Taking photos",
+      "type": "v",
+      "vi": "chụp ảnh",
+      "category": "Từ vựng về các hoạt động (Activities)"
+    },
+    {
+      "en": "Visiting relatives",
+      "type": "v",
+      "vi": "thăm họ hàng",
+      "category": "Từ vựng về các hoạt động (Activities)"
+    },
+    {
+      "en": "Tropical",
+      "type": "adj",
+      "vi": "nhiệt đới",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Mild",
+      "type": "adj",
+      "vi": "ôn hòa",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Rainy",
+      "type": "adj",
+      "vi": "nhiều mưa",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Dry",
+      "type": "adj",
+      "vi": "khô ráo",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Windy",
+      "type": "adj",
+      "vi": "nhiều gió",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Foggy",
+      "type": "adj",
+      "vi": "có sương mù",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Cold",
+      "type": "adj",
+      "vi": "lạnh",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Hot",
+      "type": "adj",
+      "vi": "nóng",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Sunny",
+      "type": "adj",
+      "vi": "có nắng",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Cloudy",
+      "type": "adj",
+      "vi": "nhiều mây",
+      "category": "Từ vựng mô tả khí hậu và thời tiết (Climate & Weather)"
+    },
+    {
+      "en": "Proud",
+      "type": "adj",
+      "vi": "tự hào",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Nostalgic",
+      "type": "adj",
+      "vi": "hoài niệm",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Excited",
+      "type": "adj",
+      "vi": "hào hứng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Grateful",
+      "type": "adj",
+      "vi": "biết ơn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Comfortable",
+      "type": "adj",
+      "vi": "thoải mái",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Breathtaking",
+      "type": "adj",
+      "vi": "đẹp ngoạn mục",
+      "category": "Các tính từ gợi tả phong cảnh (Adjectives for landscapes)"
+    },
+    {
+      "en": "Charming",
+      "type": "adj",
+      "vi": "quyến rũ",
+      "category": "Các tính từ gợi tả phong cảnh (Adjectives for landscapes)"
+    },
+    {
+      "en": "Rustic",
+      "type": "adj",
+      "vi": "mộc mạc",
+      "category": "Các tính từ gợi tả phong cảnh (Adjectives for landscapes)"
+    },
+    {
+      "en": "Lively",
+      "type": "adj",
+      "vi": "sống động",
+      "category": "Các tính từ gợi tả phong cảnh (Adjectives for landscapes)"
+    },
+    {
+      "en": "Traditional",
+      "type": "adj",
+      "vi": "mang nét truyền thống",
+      "category": "Các tính từ gợi tả phong cảnh (Adjectives for landscapes)"
+    },
+    {
+      "en": "Scenic",
+      "type": "adj",
+      "vi": "có cảnh đẹp",
+      "category": "Các tính từ gợi tả phong cảnh (Adjectives for landscapes)"
+    },
+    {
+      "en": "Historic",
+      "type": "adj",
+      "vi": "mang tính lịch sử",
+      "category": "Các tính từ gợi tả phong cảnh (Adjectives for landscapes)"
+    },
+    {
+      "en": "Unique",
+      "type": "adj",
+      "vi": "độc đáo",
+      "category": "Các tính từ gợi tả phong cảnh (Adjectives for landscapes)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I live in a small/big town.",
+      "vi": "Tôi sống ở một thị trấn nhỏ/lớn.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "My hometown is famous for… (Quê tôi nổi tiếng với…)",
+      "vi": "",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "There are many beautiful places to visit.",
+      "vi": "Có nhiều nơi đẹp để tham quan.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "It’s a peaceful/quiet place.",
+      "vi": "Đó là một nơi yên bình/yên tĩnh.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I love my hometown because… (Tôi yêu quê hương mình vì…)",
+      "vi": "",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "My hometown is surrounded by mountains.",
+      "vi": "Quê hương tôi được bao quanh bởi núi non.",
+      "category": "Cụm từ mô tả quê hương chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "There is a beautiful river that flows through the town. (Có một dòng sông đẹp chảy qua thị",
+      "vi": "",
+      "category": "Cụm từ mô tả quê hương chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "It’s famous for its delicious food and friendly people. (Nơi đây nổi tiếng với đồ ăn ngon và",
+      "vi": "",
+      "category": "Cụm từ mô tả quê hương chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "The streets are narrow but full of charm.",
+      "vi": "Các con đường nhỏ hẹp nhưng rất quyến rũ.",
+      "category": "Cụm từ mô tả quê hương chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "It’s a perfect place to relax and escape from the busy city life. (Đây là nơi lý tưởng để thư giãn",
+      "vi": "",
+      "category": "Cụm từ mô tả quê hương chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "I grew up here and have many wonderful memories. (Tôi lớn lên ở đây và có rất nhiều kỷ niệm",
+      "vi": "",
+      "category": "Cụm từ mô tả quê hương chi tiết (Detailed phrases)"
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "id": "habit",
+  "label": "Habit",
+  "vocab": [
+    {
+      "en": "Habit",
+      "type": "n",
+      "vi": "thói quen",
+      "category": "Từ vựng cơ bản về thói quen (Basic Vocabulary about Habits)"
+    },
+    {
+      "en": "Routine",
+      "type": "n",
+      "vi": "lịch trình thường ngày",
+      "category": "Từ vựng cơ bản về thói quen (Basic Vocabulary about Habits)"
+    },
+    {
+      "en": "Good habit",
+      "type": "n",
+      "vi": "thói quen tốt",
+      "category": "Từ vựng cơ bản về thói quen (Basic Vocabulary about Habits)"
+    },
+    {
+      "en": "Bad habit",
+      "type": "n",
+      "vi": "thói quen xấu",
+      "category": "Từ vựng cơ bản về thói quen (Basic Vocabulary about Habits)"
+    },
+    {
+      "en": "Custom",
+      "type": "n",
+      "vi": "phong tục, tập quán",
+      "category": "Từ vựng cơ bản về thói quen (Basic Vocabulary about Habits)"
+    },
+    {
+      "en": "Addiction",
+      "type": "n",
+      "vi": "sự nghiện ngập",
+      "category": "Từ vựng cơ bản về thói quen (Basic Vocabulary about Habits)"
+    },
+    {
+      "en": "Lifestyle",
+      "type": "n",
+      "vi": "lối sống",
+      "category": "Từ vựng cơ bản về thói quen (Basic Vocabulary about Habits)"
+    },
+    {
+      "en": "Behavior",
+      "type": "n",
+      "vi": "hành vi",
+      "category": "Từ vựng cơ bản về thói quen (Basic Vocabulary about Habits)"
+    },
+    {
+      "en": "Practice",
+      "type": "n",
+      "vi": "thực hành, luyện tập",
+      "category": "Từ vựng cơ bản về thói quen (Basic Vocabulary about Habits)"
+    },
+    {
+      "en": "Wake up early",
+      "type": "v",
+      "vi": "dậy sớm",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Exercise regularly",
+      "type": "v",
+      "vi": "tập thể dục thường xuyên",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Eat healthy food",
+      "type": "v",
+      "vi": "ăn thức ăn lành mạnh",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Read books",
+      "type": "v",
+      "vi": "đọc sách",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Save money",
+      "type": "v",
+      "vi": "tiết kiệm tiền",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Be punctual",
+      "type": "v",
+      "vi": "đúng giờ",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Help others",
+      "type": "v",
+      "vi": "giúp đỡ người khác",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Drink enough water",
+      "type": "v",
+      "vi": "uống đủ nước",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Sleep well",
+      "type": "v",
+      "vi": "ngủ ngon",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Keep your promises",
+      "type": "v",
+      "vi": "giữ lời hứa",
+      "category": "Từ vựng về các thói quen tốt (Good Habits Vocabulary)"
+    },
+    {
+      "en": "Bite your nails",
+      "type": "v",
+      "vi": "cắn móng tay",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Procrastinate",
+      "type": "v",
+      "vi": "trì hoãn",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Stay up late",
+      "type": "v",
+      "vi": "thức khuya",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Skip meals",
+      "type": "v",
+      "vi": "bỏ bữa",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Eat junk food",
+      "type": "v",
+      "vi": "ăn đồ ăn vặt",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Overspend",
+      "type": "v",
+      "vi": "tiêu xài quá mức",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Be messy",
+      "type": "v",
+      "vi": "bừa bộn",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Smoke",
+      "type": "v",
+      "vi": "hút thuốc",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Waste time on social media",
+      "type": "v",
+      "vi": "lãng phí thời gian trên mạng xã hội",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Interrupt others",
+      "type": "v",
+      "vi": "ngắt lời người khác",
+      "category": "Từ vựng về các thói quen xấu (Bad Habits Vocabulary)"
+    },
+    {
+      "en": "Always",
+      "type": "adv",
+      "vi": "luôn luôn",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "Usually",
+      "type": "adv",
+      "vi": "thường xuyên",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "Often",
+      "type": "adv",
+      "vi": "thường",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "Sometimes",
+      "type": "adv",
+      "vi": "đôi khi",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "Rarely",
+      "type": "adv",
+      "vi": "hiếm khi",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "Never",
+      "type": "adv",
+      "vi": "không bao giờ",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "Every day",
+      "type": "adv",
+      "vi": "hàng ngày",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "Once a week",
+      "type": "adv",
+      "vi": "một lần một tuần",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "Twice a month",
+      "type": "adv",
+      "vi": "hai lần một tháng",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "From time to time",
+      "type": "phr",
+      "vi": "thỉnh thoảng",
+      "category": "Từ vựng miêu tả tần suất thói quen (Frequency Vocabulary)"
+    },
+    {
+      "en": "What’s your daily routine?",
+      "type": "",
+      "vi": "Lịch trình hàng ngày của bạn là gì?",
+      "category": "Các câu hỏi thông dụng về thói quen (Common Questions about Habits)"
+    },
+    {
+      "en": "Do you have any good habits?",
+      "type": "",
+      "vi": "Bạn có thói quen tốt nào không?",
+      "category": "Các câu hỏi thông dụng về thói quen (Common Questions about Habits)"
+    },
+    {
+      "en": "What bad habits would you like to quit?",
+      "type": "",
+      "vi": "Bạn muốn bỏ thói quen xấu nào?",
+      "category": "Các câu hỏi thông dụng về thói quen (Common Questions about Habits)"
+    },
+    {
+      "en": "How often do you exercise?",
+      "type": "",
+      "vi": "Bạn tập thể dục bao lâu một lần?",
+      "category": "Các câu hỏi thông dụng về thói quen (Common Questions about Habits)"
+    },
+    {
+      "en": "Is it easy for you to stick to a routine?",
+      "type": "",
+      "vi": "Bạn có dễ duy trì thói quen không?",
+      "category": "Các câu hỏi thông dụng về thói quen (Common Questions about Habits)"
+    },
+    {
+      "en": "Consistent",
+      "type": "adj",
+      "vi": "nhất quán",
+      "category": "Các từ miêu tả thói quen (Describing Habits)"
+    },
+    {
+      "en": "Healthy",
+      "type": "adj",
+      "vi": "lành mạnh",
+      "category": "Các từ miêu tả thói quen (Describing Habits)"
+    },
+    {
+      "en": "Unhealthy",
+      "type": "adj",
+      "vi": "không lành mạnh",
+      "category": "Các từ miêu tả thói quen (Describing Habits)"
+    },
+    {
+      "en": "Productive",
+      "type": "adj",
+      "vi": "hiệu quả",
+      "category": "Các từ miêu tả thói quen (Describing Habits)"
+    },
+    {
+      "en": "Lazy",
+      "type": "adj",
+      "vi": "lười biếng",
+      "category": "Các từ miêu tả thói quen (Describing Habits)"
+    },
+    {
+      "en": "Time-consuming",
+      "type": "adj",
+      "vi": "tốn thời gian",
+      "category": "Các từ miêu tả thói quen (Describing Habits)"
+    },
+    {
+      "en": "Automatic",
+      "type": "adj",
+      "vi": "tự động (làm không cần suy nghĩ)",
+      "category": "Các từ miêu tả thói quen (Describing Habits)"
+    },
+    {
+      "en": "Regular",
+      "type": "adj",
+      "vi": "thường xuyên",
+      "category": "Các từ miêu tả thói quen (Describing Habits)"
+    },
+    {
+      "en": "Occasional",
+      "type": "adj",
+      "vi": "thỉnh thoảng",
+      "category": "Các từ miêu tả thói quen (Describing Habits)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "Develop a habit (v)",
+      "vi": "hình thành thói quen",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Break a habit (v)",
+      "vi": "từ bỏ thói quen",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Stick to a routine (v)",
+      "vi": "duy trì thói quen",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Get into the habit of… (v)",
+      "vi": "bắt đầu có thói quen…",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Fall into a habit (v)",
+      "vi": "rơi vào thói quen",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Kick a bad habit (v)",
+      "vi": "bỏ một thói quen xấu",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Form a habit (v)",
+      "vi": "tạo thành thói quen",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Make it a habit to… (v)",
+      "vi": "tạo thói quen làm gì",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Be stuck in a routine (v)",
+      "vi": "mắc kẹt trong thói quen lặp lại",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Change your habits (v)",
+      "vi": "thay đổi thói quen",
+      "category": "Các cụm từ và động từ liên quan đến thói quen (Phrases & Verbs Related to Habits)"
+    },
+    {
+      "en": "Habits define your future.",
+      "vi": "",
+      "category": "Cụm từ mở rộng (Advanced Phrases)"
+    },
+    {
+      "en": "A good habit is the key to success.",
+      "vi": "",
+      "category": "Cụm từ mở rộng (Advanced Phrases)"
+    },
+    {
+      "en": "Breaking bad habits requires discipline.",
+      "vi": "",
+      "category": "Cụm từ mở rộng (Advanced Phrases)"
+    },
+    {
+      "en": "Start small, and your habits will grow.",
+      "vi": "",
+      "category": "Cụm từ mở rộng (Advanced Phrases)"
+    },
+    {
+      "en": "I believe in the power of good habits.",
+      "vi": "",
+      "category": "Cụm từ mở rộng (Advanced Phrases)"
+    }
+  ]
+}

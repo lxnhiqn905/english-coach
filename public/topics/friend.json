@@ -1,0 +1,646 @@
+{
+  "id": "friend",
+  "label": "Friend",
+  "vocab": [
+    {
+      "en": "Best friend",
+      "type": "n",
+      "vi": "bạn thân nhất",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Close friend",
+      "type": "n",
+      "vi": "bạn thân",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Childhood friend",
+      "type": "n",
+      "vi": "bạn thời thơ ấu",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Classmate",
+      "type": "n",
+      "vi": "bạn cùng lớp",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Teammate",
+      "type": "n",
+      "vi": "bạn cùng đội",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Neighbor",
+      "type": "n",
+      "vi": "bạn hàng xóm",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Online friend",
+      "type": "n",
+      "vi": "bạn trên mạng",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Pen pal",
+      "type": "n",
+      "vi": "bạn qua thư",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Colleague",
+      "type": "n",
+      "vi": "đồng nghiệp",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Acquaintance",
+      "type": "n",
+      "vi": "người quen",
+      "category": "Từ vựng về loại bạn bè (Types of friends)"
+    },
+    {
+      "en": "Loyal",
+      "type": "adj",
+      "vi": "trung thành",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Honest",
+      "type": "adj",
+      "vi": "thật thà",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Friendly",
+      "type": "adj",
+      "vi": "thân thiện",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Kind",
+      "type": "adj",
+      "vi": "tốt bụng",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Funny",
+      "type": "adj",
+      "vi": "hài hước",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Generous",
+      "type": "adj",
+      "vi": "hào phóng",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Trustworthy",
+      "type": "adj",
+      "vi": "đáng tin cậy",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Supportive",
+      "type": "adj",
+      "vi": "ủng hộ",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Sociable",
+      "type": "adj",
+      "vi": "hòa đồng",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Reliable",
+      "type": "adj",
+      "vi": "đáng tin",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "School",
+      "type": "n",
+      "vi": "trường học",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Playground",
+      "type": "n",
+      "vi": "sân chơi",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Café",
+      "type": "n",
+      "vi": "quán cà phê",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Park",
+      "type": "n",
+      "vi": "công viên",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Stadium",
+      "type": "n",
+      "vi": "sân vận động",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Club",
+      "type": "n",
+      "vi": "câu lạc bộ",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Classroom",
+      "type": "n",
+      "vi": "phòng học",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Office",
+      "type": "n",
+      "vi": "văn phòng",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Library",
+      "type": "n",
+      "vi": "thư viện",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Shopping mall",
+      "type": "n",
+      "vi": "trung tâm mua sắm",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Chat",
+      "type": "v",
+      "vi": "trò chuyện",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Hang out",
+      "type": "v",
+      "vi": "đi chơi",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Play games",
+      "type": "v",
+      "vi": "chơi trò chơi",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Study together",
+      "type": "v",
+      "vi": "học cùng nhau",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Share secrets",
+      "type": "v",
+      "vi": "chia sẻ bí mật",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Travel together",
+      "type": "v",
+      "vi": "đi du lịch cùng nhau",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go shopping",
+      "type": "v",
+      "vi": "đi mua sắm",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Celebrate birthdays",
+      "type": "v",
+      "vi": "mừng sinh nhật",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Play sports",
+      "type": "v",
+      "vi": "chơi thể thao",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Help each other",
+      "type": "v",
+      "vi": "giúp đỡ nhau",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Happy",
+      "type": "adj",
+      "vi": "hạnh phúc",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Excited",
+      "type": "adj",
+      "vi": "hào hứng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thoải mái",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Grateful",
+      "type": "adj",
+      "vi": "biết ơn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Comfortable",
+      "type": "adj",
+      "vi": "dễ chịu",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Proud",
+      "type": "adj",
+      "vi": "tự hào",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Nostalgic",
+      "type": "adj",
+      "vi": "hoài niệm",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Safe",
+      "type": "adj",
+      "vi": "an toàn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Loved",
+      "type": "adj",
+      "vi": "được yêu thương",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Respected",
+      "type": "adj",
+      "vi": "được tôn trọng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Friendship",
+      "type": "n",
+      "vi": "tình bạn",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Trust",
+      "type": "n",
+      "vi": "sự tin tưởng",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Bond",
+      "type": "n",
+      "vi": "mối gắn kết",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Support",
+      "type": "n",
+      "vi": "sự ủng hộ",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Respect",
+      "type": "n",
+      "vi": "sự tôn trọng",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Understanding",
+      "type": "n",
+      "vi": "sự thấu hiểu",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Connection",
+      "type": "n",
+      "vi": "sự kết nối",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Argument",
+      "type": "n",
+      "vi": "sự tranh cãi",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Reconciliation",
+      "type": "n",
+      "vi": "sự làm hòa",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Forgiveness",
+      "type": "n",
+      "vi": "sự tha thứ",
+      "category": "Từ vựng về mối quan hệ (Relationships)"
+    },
+    {
+      "en": "Honest",
+      "type": "adj",
+      "vi": "trung thực",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Caring",
+      "type": "adj",
+      "vi": "quan tâm",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Helpful",
+      "type": "adj",
+      "vi": "hay giúp đỡ",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Open-minded",
+      "type": "adj",
+      "vi": "cởi mở",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Thoughtful",
+      "type": "adj",
+      "vi": "chu đáo",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Humorous",
+      "type": "adj",
+      "vi": "vui tính",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Empathetic",
+      "type": "adj",
+      "vi": "biết đồng cảm",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Adventurous",
+      "type": "adj",
+      "vi": "thích phiêu lưu",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Positive",
+      "type": "adj",
+      "vi": "tích cực",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Respectful",
+      "type": "adj",
+      "vi": "tôn trọng",
+      "category": "Từ vựng về phẩm chất (Qualities of a friend)"
+    },
+    {
+      "en": "Misunderstanding",
+      "type": "n",
+      "vi": "sự hiểu lầm",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Jealousy",
+      "type": "n",
+      "vi": "sự ghen tị",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Betrayal",
+      "type": "n",
+      "vi": "sự phản bội",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Gossip",
+      "type": "n",
+      "vi": "chuyện ngồi lê đôi mách",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Argument",
+      "type": "n",
+      "vi": "cãi vã",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Lack of trust",
+      "type": "n",
+      "vi": "thiếu tin tưởng",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Distance",
+      "type": "n",
+      "vi": "xa cách",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Disagreement",
+      "type": "n",
+      "vi": "bất đồng",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Competition",
+      "type": "n",
+      "vi": "cạnh tranh",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Break-up",
+      "type": "n",
+      "vi": "chia rẽ",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Friendship Day",
+      "type": "n",
+      "vi": "Ngày tình bạn",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Birthday party",
+      "type": "n",
+      "vi": "tiệc sinh nhật",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "School reunion",
+      "type": "n",
+      "vi": "họp lớp",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Group outing",
+      "type": "n",
+      "vi": "chuyến đi nhóm",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Cultural exchange",
+      "type": "n",
+      "vi": "giao lưu văn hóa",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Team building",
+      "type": "n",
+      "vi": "hoạt động gắn kết",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Farewell party",
+      "type": "n",
+      "vi": "tiệc chia tay",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Holiday trip",
+      "type": "n",
+      "vi": "chuyến du lịch nghỉ lễ",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Close",
+      "type": "adj",
+      "vi": "gần gũi",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    },
+    {
+      "en": "True",
+      "type": "adj",
+      "vi": "thật sự",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    },
+    {
+      "en": "Best",
+      "type": "adj",
+      "vi": "tốt nhất",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    },
+    {
+      "en": "Lifelong",
+      "type": "adj",
+      "vi": "lâu dài, trọn đời",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    },
+    {
+      "en": "Genuine",
+      "type": "adj",
+      "vi": "chân thành",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    },
+    {
+      "en": "Unbreakable",
+      "type": "adj",
+      "vi": "không thể phá vỡ",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    },
+    {
+      "en": "Strong",
+      "type": "adj",
+      "vi": "bền chặt",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    },
+    {
+      "en": "Mutual",
+      "type": "adj",
+      "vi": "lẫn nhau",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    },
+    {
+      "en": "Valuable",
+      "type": "adj",
+      "vi": "quý giá",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    },
+    {
+      "en": "Special",
+      "type": "adj",
+      "vi": "đặc biệt",
+      "category": "Các tính từ gợi tả (Adjectives for friendship)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "We have been friends for many years.",
+      "vi": "Chúng tôi đã là bạn nhiều năm.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "A friend in need is a friend indeed.",
+      "vi": "Hoạn nạn mới biết bạn hiền.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "We always support each other.",
+      "vi": "Chúng tôi luôn ủng hộ nhau.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I can share everything with my best friend.",
+      "vi": "Tôi có thể chia sẻ mọi thứ với bạn thân.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "We sometimes argue but we always make up. (Chúng tôi đôi khi cãi nhau nhưng luôn",
+      "vi": "",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "My best friend and I met at primary school.",
+      "vi": "Tôi và bạn thân gặp nhau ở tiểu học.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "We often hang out at the park or café after school. (Chúng tôi thường đi chơi ở công",
+      "vi": "",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "My friend is very loyal and always listens to me. (Bạn tôi rất trung thành và luôn lắng",
+      "vi": "",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "We share both happiness and sadness together. (Chúng tôi cùng chia sẻ niềm vui và nỗi",
+      "vi": "",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Our friendship is one of the most important things in my life. (Tình bạn của chúng tôi là",
+      "vi": "",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    }
+  ]
+}

@@ -1,0 +1,778 @@
+{
+  "id": "environment",
+  "label": "Environment & Nature",
+  "vocab": [
+    {
+      "en": "River",
+      "type": "",
+      "vi": "sông",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Lake",
+      "type": "",
+      "vi": "hồ",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Ocean",
+      "type": "",
+      "vi": "đại dương",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Mountain",
+      "type": "",
+      "vi": "núi",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Valley",
+      "type": "",
+      "vi": "thung lũng",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Forest",
+      "type": "",
+      "vi": "rừng",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Desert",
+      "type": "",
+      "vi": "sa mạc",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Jungle",
+      "type": "",
+      "vi": "rừng rậm",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Waterfall",
+      "type": "",
+      "vi": "thác nước",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Cave",
+      "type": "",
+      "vi": "hang động",
+      "category": "Natural Features (Các đặc điểm tự nhiên)"
+    },
+    {
+      "en": "Pollution",
+      "type": "",
+      "vi": "ô nhiễm",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Air pollution",
+      "type": "",
+      "vi": "ô nhiễm không khí",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Water pollution",
+      "type": "",
+      "vi": "ô nhiễm nước",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Deforestation",
+      "type": "",
+      "vi": "phá rừng",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Climate change",
+      "type": "",
+      "vi": "biến đổi khí hậu",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Global warming",
+      "type": "",
+      "vi": "nóng lên toàn cầu",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Drought",
+      "type": "",
+      "vi": "hạn hán",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Flood",
+      "type": "",
+      "vi": "lũ lụt",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Litter",
+      "type": "",
+      "vi": "rác vứt bừa bãi",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Wildfire",
+      "type": "",
+      "vi": "cháy rừng",
+      "category": "Environmental Problems (Vấn đề môi trường)"
+    },
+    {
+      "en": "Wildlife",
+      "type": "",
+      "vi": "động vật hoang dã",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Species",
+      "type": "",
+      "vi": "loài",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Endangered animals",
+      "type": "",
+      "vi": "động vật có nguy cơ tuyệt chủng",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Bird",
+      "type": "",
+      "vi": "chim",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Fish",
+      "type": "",
+      "vi": "cá",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Insect",
+      "type": "",
+      "vi": "côn trùng",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Mammal",
+      "type": "",
+      "vi": "động vật có vú",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Reptile",
+      "type": "",
+      "vi": "bò sát",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Whale",
+      "type": "",
+      "vi": "cá voi",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Tiger",
+      "type": "",
+      "vi": "hổ",
+      "category": "Animals & Wildlife (Động vật & hoang dã)"
+    },
+    {
+      "en": "Recycle",
+      "type": "",
+      "vi": "tái chế",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Reduce",
+      "type": "",
+      "vi": "giảm",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Reuse",
+      "type": "",
+      "vi": "tái sử dụng",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Save energy",
+      "type": "",
+      "vi": "tiết kiệm năng lượng",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Save water",
+      "type": "",
+      "vi": "tiết kiệm nước",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Plant trees",
+      "type": "",
+      "vi": "trồng cây",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Clean up",
+      "type": "",
+      "vi": "dọn dẹp",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Protect",
+      "type": "",
+      "vi": "bảo vệ",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Conserve",
+      "type": "",
+      "vi": "giữ gìn",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Stop wasting",
+      "type": "",
+      "vi": "ngừng lãng phí",
+      "category": "Environmental Actions (Hành động bảo vệ môi trường)"
+    },
+    {
+      "en": "Clean",
+      "type": "",
+      "vi": "sạch",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Dirty",
+      "type": "",
+      "vi": "bẩn",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Natural",
+      "type": "",
+      "vi": "tự nhiên",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Harmful",
+      "type": "",
+      "vi": "gây hại",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Safe",
+      "type": "",
+      "vi": "an toàn",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Dangerous",
+      "type": "",
+      "vi": "nguy hiểm",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Green",
+      "type": "",
+      "vi": "xanh",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Fresh",
+      "type": "",
+      "vi": "trong lành",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Wild",
+      "type": "",
+      "vi": "hoang dã",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Protected",
+      "type": "",
+      "vi": "được bảo vệ",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Sunny",
+      "type": "",
+      "vi": "nắng",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "Rainy",
+      "type": "",
+      "vi": "mưa",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "Windy",
+      "type": "",
+      "vi": "gió",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "Stormy",
+      "type": "",
+      "vi": "bão",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "Foggy",
+      "type": "",
+      "vi": "sương mù",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "Hot",
+      "type": "",
+      "vi": "nóng",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "Cold",
+      "type": "",
+      "vi": "lạnh",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "Humid",
+      "type": "",
+      "vi": "ẩm",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "Dry",
+      "type": "",
+      "vi": "khô",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "Warm",
+      "type": "",
+      "vi": "ấm",
+      "category": "Weather & Climate (Thời tiết & khí hậu)"
+    },
+    {
+      "en": "National park",
+      "type": "",
+      "vi": "công viên quốc gia",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "Nature reserve",
+      "type": "",
+      "vi": "khu bảo tồn thiên nhiên",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "Recycling center",
+      "type": "",
+      "vi": "trung tâm tái chế",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "Wildlife sanctuary",
+      "type": "",
+      "vi": "khu bảo tồn động vật",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "Botanical garden",
+      "type": "",
+      "vi": "vườn thực vật",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "Eco-farm",
+      "type": "",
+      "vi": "nông trại sinh thái",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "Conservation area",
+      "type": "",
+      "vi": "khu bảo tồn",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "River bank",
+      "type": "",
+      "vi": "bờ sông",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "Coastline",
+      "type": "",
+      "vi": "đường bờ biển",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "Mountain range",
+      "type": "",
+      "vi": "dãy núi",
+      "category": "Places Related to Environment (Địa điểm liên quan môi trường)"
+    },
+    {
+      "en": "Water",
+      "type": "",
+      "vi": "nước",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Freshwater",
+      "type": "",
+      "vi": "nước ngọt",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Soil",
+      "type": "",
+      "vi": "đất",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Minerals",
+      "type": "",
+      "vi": "khoáng sản",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Oil",
+      "type": "",
+      "vi": "dầu",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Natural gas",
+      "type": "",
+      "vi": "khí tự nhiên",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Solar energy",
+      "type": "",
+      "vi": "năng lượng mặt trời",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Wind energy",
+      "type": "",
+      "vi": "năng lượng gió",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Renewable energy",
+      "type": "",
+      "vi": "năng lượng tái tạo",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Fossil fuel",
+      "type": "",
+      "vi": "nhiên liệu hóa thạch",
+      "category": "Resources (Tài nguyên)"
+    },
+    {
+      "en": "Overfishing",
+      "type": "",
+      "vi": "đánh bắt quá mức",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Cutting down trees",
+      "type": "",
+      "vi": "chặt cây",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Burning waste",
+      "type": "",
+      "vi": "đốt rác",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Using plastic",
+      "type": "",
+      "vi": "dùng nhựa",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Car emissions",
+      "type": "",
+      "vi": "khí thải xe",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Factory smoke",
+      "type": "",
+      "vi": "khói nhà máy",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Throwing litter",
+      "type": "",
+      "vi": "xả rác",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Overusing water",
+      "type": "",
+      "vi": "dùng nước quá mức",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Destroying habitats",
+      "type": "",
+      "vi": "phá hủy môi trường sống",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Building too many houses",
+      "type": "",
+      "vi": "xây quá nhiều nhà",
+      "category": "Human Impact (Tác động của con người)"
+    },
+    {
+      "en": "Hiking",
+      "type": "",
+      "vi": "đi bộ đường dài",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Camping",
+      "type": "",
+      "vi": "cắm trại",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Birdwatching",
+      "type": "",
+      "vi": "ngắm chim",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Fishing",
+      "type": "",
+      "vi": "câu cá",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Gardening",
+      "type": "",
+      "vi": "làm vườn",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Stargazing",
+      "type": "",
+      "vi": "ngắm sao",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Canoeing",
+      "type": "",
+      "vi": "chèo thuyền",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Nature photography",
+      "type": "",
+      "vi": "chụp ảnh thiên nhiên",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Trekking",
+      "type": "",
+      "vi": "leo núi, đi phượt",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Picking up trash",
+      "type": "",
+      "vi": "nhặt rác",
+      "category": "Activities (Hoạt động)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "",
+      "vi": "thư giãn",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Grateful",
+      "type": "",
+      "vi": "biết ơn",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Worried",
+      "type": "",
+      "vi": "lo lắng",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Afraid",
+      "type": "",
+      "vi": "sợ",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Hopeful",
+      "type": "",
+      "vi": "đầy hy vọng",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Shocked",
+      "type": "",
+      "vi": "sốc",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Proud",
+      "type": "",
+      "vi": "tự hào",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Inspired",
+      "type": "",
+      "vi": "được truyền cảm hứng",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Calm",
+      "type": "",
+      "vi": "bình tĩnh",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Concerned",
+      "type": "",
+      "vi": "quan ngại",
+      "category": "Feelings (Cảm xúc)"
+    },
+    {
+      "en": "Breathtaking",
+      "type": "",
+      "vi": "ngoạn mục",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    },
+    {
+      "en": "Scenic",
+      "type": "",
+      "vi": "có cảnh đẹp",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    },
+    {
+      "en": "Peaceful",
+      "type": "",
+      "vi": "thanh bình",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    },
+    {
+      "en": "Stunning",
+      "type": "",
+      "vi": "đẹp đến sững sờ",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    },
+    {
+      "en": "Majestic",
+      "type": "",
+      "vi": "hùng vĩ",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    },
+    {
+      "en": "Lush",
+      "type": "",
+      "vi": "tươi tốt",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    },
+    {
+      "en": "Dry",
+      "type": "",
+      "vi": "khô cằn",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    },
+    {
+      "en": "Wild",
+      "type": "",
+      "vi": "hoang sơ",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    },
+    {
+      "en": "Natural",
+      "type": "",
+      "vi": "tự nhiên",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    },
+    {
+      "en": "Green",
+      "type": "",
+      "vi": "phủ nhiều cây xanh",
+      "category": "Adjectives for Natural Scenes (Tính từ miêu tả thiên nhiên)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "We should protect the environment.",
+      "vi": "Chúng ta nên bảo vệ môi trường.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "Pollution is getting worse.",
+      "vi": "Ô nhiễm đang trở nên tồi tệ hơn.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "The air here is very fresh.",
+      "vi": "Không khí ở đây rất trong lành.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "This area is famous for its natural beauty.",
+      "vi": "Khu vực này nổi tiếng vì cảnh đẹp tự nhiên.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "Many animals are in danger.",
+      "vi": "Nhiều loài động vật đang gặp nguy hiểm.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "Climate change is affecting many regions around the world.",
+      "vi": "Biến đổi khí hậu đang ảnh",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "The forest is being cut down for farmland.",
+      "vi": "Rừng đang bị chặt để làm đất nông nghiệp.",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "We can help the environment by recycling and reducing waste.",
+      "vi": "Chúng ta có thể giúp",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "This national park is home to many rare species.",
+      "vi": "Công viên quốc gia này là nơi sinh",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "The river was polluted, but now it is much cleaner.",
+      "vi": "Con sông đã từng bị ô nhiễm nhưng",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    }
+  ]
+}

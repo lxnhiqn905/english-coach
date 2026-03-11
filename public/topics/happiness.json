@@ -1,0 +1,718 @@
+{
+  "id": "happiness",
+  "label": "Happiness",
+  "vocab": [
+    {
+      "en": "Happy",
+      "type": "adj",
+      "vi": "hạnh phúc",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Joyful",
+      "type": "adj",
+      "vi": "vui vẻ",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Excited",
+      "type": "adj",
+      "vi": "hào hứng",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Cheerful",
+      "type": "adj",
+      "vi": "vui tươi",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Comfortable",
+      "type": "adj",
+      "vi": "thoải mái",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Content",
+      "type": "adj",
+      "vi": "mãn nguyện",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Energetic",
+      "type": "adj",
+      "vi": "tràn đầy năng lượng",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Optimistic",
+      "type": "adj",
+      "vi": "lạc quan",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Hopeful",
+      "type": "adj",
+      "vi": "đầy hy vọng",
+      "category": "Từ vựng về cảm xúc tích cực (Positive feelings)"
+    },
+    {
+      "en": "Satisfaction",
+      "type": "n",
+      "vi": "sự hài lòng",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Peace",
+      "type": "n",
+      "vi": "sự bình yên",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Gratitude",
+      "type": "n",
+      "vi": "lòng biết ơn",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Fulfillment",
+      "type": "n",
+      "vi": "sự trọn vẹn",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Excitement",
+      "type": "n",
+      "vi": "sự phấn khích",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Relaxation",
+      "type": "n",
+      "vi": "sự thư giãn",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Success",
+      "type": "n",
+      "vi": "thành công",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Achievement",
+      "type": "n",
+      "vi": "thành tựu",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Celebration",
+      "type": "n",
+      "vi": "sự ăn mừng",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Comfort",
+      "type": "n",
+      "vi": "sự thoải mái",
+      "category": "Từ vựng miêu tả trạng thái hạnh phúc (States of happiness)"
+    },
+    {
+      "en": "Home",
+      "type": "n",
+      "vi": "ngôi nhà",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "Park",
+      "type": "n",
+      "vi": "công viên",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "Beach",
+      "type": "n",
+      "vi": "bãi biển",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "Mountain",
+      "type": "n",
+      "vi": "núi",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "Countryside",
+      "type": "n",
+      "vi": "nông thôn",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "Café",
+      "type": "n",
+      "vi": "quán cà phê",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "Garden",
+      "type": "n",
+      "vi": "khu vườn",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "Playground",
+      "type": "n",
+      "vi": "sân chơi",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "School",
+      "type": "n",
+      "vi": "trường học",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "Theatre",
+      "type": "n",
+      "vi": "nhà hát",
+      "category": "Từ vựng về nơi chốn tạo hạnh phúc (Happy places)"
+    },
+    {
+      "en": "Spend time with family",
+      "type": "v",
+      "vi": "dành thời gian với gia đình",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Meet friends",
+      "type": "v",
+      "vi": "gặp gỡ bạn bè",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Listen to music",
+      "type": "v",
+      "vi": "nghe nhạc",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Watch movies",
+      "type": "v",
+      "vi": "xem phim",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Play sports",
+      "type": "v",
+      "vi": "chơi thể thao",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Travel",
+      "type": "v",
+      "vi": "đi du lịch",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Go shopping",
+      "type": "v",
+      "vi": "đi mua sắm",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Celebrate birthdays",
+      "type": "v",
+      "vi": "mừng sinh nhật",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Eat delicious food",
+      "type": "v",
+      "vi": "ăn đồ ăn ngon",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Relax at home",
+      "type": "v",
+      "vi": "thư giãn ở nhà",
+      "category": "Từ vựng về hoạt động tạo hạnh phúc (Activities)"
+    },
+    {
+      "en": "Family",
+      "type": "n",
+      "vi": "gia đình",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Friends",
+      "type": "n",
+      "vi": "bạn bè",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Partner",
+      "type": "n",
+      "vi": "bạn đời",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Children",
+      "type": "n",
+      "vi": "con cái",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Teacher",
+      "type": "n",
+      "vi": "giáo viên",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Neighbor",
+      "type": "n",
+      "vi": "hàng xóm",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Classmate",
+      "type": "n",
+      "vi": "bạn cùng lớp",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Colleague",
+      "type": "n",
+      "vi": "đồng nghiệp",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Community",
+      "type": "n",
+      "vi": "cộng đồng",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Stranger",
+      "type": "n",
+      "vi": "người lạ",
+      "category": "Từ vựng về con người (People & relationships)"
+    },
+    {
+      "en": "Festival",
+      "type": "n",
+      "vi": "lễ hội",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Holiday",
+      "type": "n",
+      "vi": "ngày nghỉ lễ",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Wedding",
+      "type": "n",
+      "vi": "đám cưới",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Family reunion",
+      "type": "n",
+      "vi": "họp mặt gia đình",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Party",
+      "type": "n",
+      "vi": "bữa tiệc",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Tet",
+      "type": "n",
+      "vi": "Tết Nguyên Đán",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Christmas",
+      "type": "n",
+      "vi": "Giáng Sinh",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "New Year",
+      "type": "n",
+      "vi": "Năm mới",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Celebration",
+      "type": "n",
+      "vi": "sự ăn mừng",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Gift-giving",
+      "type": "n",
+      "vi": "tặng quà",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Win a prize",
+      "type": "v",
+      "vi": "giành giải thưởng",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Get a promotion",
+      "type": "v",
+      "vi": "được thăng chức",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Pass an exam",
+      "type": "v",
+      "vi": "vượt qua kỳ thi",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Achieve a goal",
+      "type": "v",
+      "vi": "đạt được mục tiêu",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Graduate",
+      "type": "v",
+      "vi": "tốt nghiệp",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Finish a project",
+      "type": "v",
+      "vi": "hoàn thành dự án",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Improve skills",
+      "type": "v",
+      "vi": "cải thiện kỹ năng",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Help others",
+      "type": "v",
+      "vi": "giúp đỡ người khác",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Receive praise",
+      "type": "v",
+      "vi": "nhận lời khen",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Earn money",
+      "type": "v",
+      "vi": "kiếm tiền",
+      "category": "Từ vựng về thành công & mục tiêu (Success & goals)"
+    },
+    {
+      "en": "Wonderful",
+      "type": "adj",
+      "vi": "tuyệt vời",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Amazing",
+      "type": "adj",
+      "vi": "đáng kinh ngạc",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Fantastic",
+      "type": "adj",
+      "vi": "tuyệt diệu",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Great",
+      "type": "adj",
+      "vi": "tuyệt hảo",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Lovely",
+      "type": "adj",
+      "vi": "dễ thương",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Peaceful",
+      "type": "adj",
+      "vi": "yên bình",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Beautiful",
+      "type": "adj",
+      "vi": "đẹp",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Positive",
+      "type": "adj",
+      "vi": "tích cực",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Bright",
+      "type": "adj",
+      "vi": "tươi sáng",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Meaningful",
+      "type": "adj",
+      "vi": "đầy ý nghĩa",
+      "category": "Từ vựng miêu tả chi tiết (Descriptive adjectives)"
+    },
+    {
+      "en": "Sad",
+      "type": "adj",
+      "vi": "buồn",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Lonely",
+      "type": "adj",
+      "vi": "cô đơn",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Angry",
+      "type": "adj",
+      "vi": "tức giận",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Bored",
+      "type": "adj",
+      "vi": "chán nản",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Worried",
+      "type": "adj",
+      "vi": "lo lắng",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Nervous",
+      "type": "adj",
+      "vi": "hồi hộp",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Depressed",
+      "type": "adj",
+      "vi": "trầm cảm",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Upset",
+      "type": "adj",
+      "vi": "buồn bực",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Stressed",
+      "type": "adj",
+      "vi": "căng thẳng",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Hopeless",
+      "type": "adj",
+      "vi": "tuyệt vọng",
+      "category": "Từ vựng về cảm xúc trái ngược (Opposite feelings)"
+    },
+    {
+      "en": "Exercise",
+      "type": "v",
+      "vi": "tập thể dục",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Sleep well",
+      "type": "v",
+      "vi": "ngủ ngon",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Eat healthy food",
+      "type": "v",
+      "vi": "ăn thực phẩm lành mạnh",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Meditate",
+      "type": "v",
+      "vi": "thiền",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Smile",
+      "type": "v",
+      "vi": "mỉm cười",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Laugh",
+      "type": "v",
+      "vi": "cười",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Relax",
+      "type": "v",
+      "vi": "thư giãn",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Stay positive",
+      "type": "v",
+      "vi": "giữ tinh thần tích cực",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Be kind",
+      "type": "v",
+      "vi": "tử tế",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Enjoy life",
+      "type": "v",
+      "vi": "tận hưởng cuộc sống",
+      "category": "Từ vựng về sức khỏe & hạnh phúc (Health & happiness)"
+    },
+    {
+      "en": "Gift",
+      "type": "n",
+      "vi": "món quà",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    },
+    {
+      "en": "Flower",
+      "type": "n",
+      "vi": "hoa",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    },
+    {
+      "en": "Cake",
+      "type": "n",
+      "vi": "bánh",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    },
+    {
+      "en": "Balloon",
+      "type": "n",
+      "vi": "bóng bay",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    },
+    {
+      "en": "Music",
+      "type": "n",
+      "vi": "âm nhạc",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    },
+    {
+      "en": "Book",
+      "type": "n",
+      "vi": "sách",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    },
+    {
+      "en": "Photo",
+      "type": "n",
+      "vi": "bức ảnh",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    },
+    {
+      "en": "Heart",
+      "type": "n",
+      "vi": "trái tim",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    },
+    {
+      "en": "Sunshine",
+      "type": "n",
+      "vi": "ánh nắng",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    },
+    {
+      "en": "Smile",
+      "type": "n",
+      "vi": "nụ cười",
+      "category": "Từ vựng về đồ vật & biểu tượng (Objects & symbols)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I feel happy today.",
+      "vi": "Hôm nay tôi cảm thấy hạnh phúc.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Music makes me happy.",
+      "vi": "Âm nhạc khiến tôi hạnh phúc.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Spending time with family brings me joy.",
+      "vi": "Dành thời gian với gia đình mang lại niềm",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Helping others makes me feel good.",
+      "vi": "Giúp đỡ người khác khiến tôi cảm thấy tốt.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "A smile can bring happiness to everyone.",
+      "vi": "Nụ cười có thể mang hạnh phúc đến cho mọi",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I was very happy when I passed the exam.",
+      "vi": "Tôi rất hạnh phúc khi vượt qua kỳ thi.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Traveling to new places gives me unforgettable memories.",
+      "vi": "Đi du lịch đến những nơi",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "I feel most relaxed when I listen to soft music.",
+      "vi": "Tôi cảm thấy thư giãn nhất khi nghe",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Happiness comes from simple things in life.",
+      "vi": "Hạnh phúc đến từ những điều giản dị",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Being with my friends always makes me smile.",
+      "vi": "Ở bên bạn bè luôn khiến tôi mỉm cười.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    }
+  ]
+}

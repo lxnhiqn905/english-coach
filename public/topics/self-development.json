@@ -1,0 +1,718 @@
+{
+  "id": "self-development",
+  "label": "Self-Development",
+  "vocab": [
+    {
+      "en": "Self-development",
+      "type": "n",
+      "vi": "phát triển bản thân",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Growth",
+      "type": "n",
+      "vi": "sự trưởng thành",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Improvement",
+      "type": "n",
+      "vi": "sự cải thiện",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Progress",
+      "type": "n",
+      "vi": "sự tiến bộ",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Motivation",
+      "type": "n",
+      "vi": "động lực",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Success",
+      "type": "n",
+      "vi": "thành công",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Goal",
+      "type": "n",
+      "vi": "mục tiêu",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Challenge",
+      "type": "n",
+      "vi": "thử thách",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Opportunity",
+      "type": "n",
+      "vi": "cơ hội",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Achievement",
+      "type": "n",
+      "vi": "thành tựu",
+      "category": "Từ vựng về khái niệm (Concepts)"
+    },
+    {
+      "en": "Personal",
+      "type": "adj",
+      "vi": "cá nhân",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Continuous",
+      "type": "adj",
+      "vi": "liên tục",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Lifelong",
+      "type": "adj",
+      "vi": "suốt đời",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Important",
+      "type": "adj",
+      "vi": "quan trọng",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Meaningful",
+      "type": "adj",
+      "vi": "ý nghĩa",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Practical",
+      "type": "adj",
+      "vi": "thực tiễn",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Positive",
+      "type": "adj",
+      "vi": "tích cực",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Motivational",
+      "type": "adj",
+      "vi": "truyền động lực",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Useful",
+      "type": "adj",
+      "vi": "hữu ích",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Successful",
+      "type": "adj",
+      "vi": "thành công",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "School",
+      "type": "n",
+      "vi": "trường học",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Library",
+      "type": "n",
+      "vi": "thư viện",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Training center",
+      "type": "n",
+      "vi": "trung tâm đào tạo",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Classroom",
+      "type": "n",
+      "vi": "lớp học",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Office",
+      "type": "n",
+      "vi": "văn phòng",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Online course",
+      "type": "n",
+      "vi": "khóa học trực tuyến",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Bookstore",
+      "type": "n",
+      "vi": "hiệu sách",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Gym",
+      "type": "n",
+      "vi": "phòng tập thể hình",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Seminar",
+      "type": "n",
+      "vi": "hội thảo",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Workshop",
+      "type": "n",
+      "vi": "buổi thực hành",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Set goals",
+      "type": "v",
+      "vi": "đặt mục tiêu",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Study hard",
+      "type": "v",
+      "vi": "học chăm chỉ",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Read books",
+      "type": "v",
+      "vi": "đọc sách",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Take a course",
+      "type": "v",
+      "vi": "tham gia khóa học",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Learn new skills",
+      "type": "v",
+      "vi": "học kỹ năng mới",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Practice",
+      "type": "v",
+      "vi": "luyện tập",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Join a workshop",
+      "type": "v",
+      "vi": "tham gia buổi thực hành",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Attend a seminar",
+      "type": "v",
+      "vi": "tham dự hội thảo",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Work on yourself",
+      "type": "v",
+      "vi": "rèn luyện bản thân",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Overcome difficulties",
+      "type": "v",
+      "vi": "vượt qua khó khăn",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Teacher",
+      "type": "n",
+      "vi": "giáo viên",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Mentor",
+      "type": "n",
+      "vi": "người hướng dẫn",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Coach",
+      "type": "n",
+      "vi": "huấn luyện viên",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Student",
+      "type": "n",
+      "vi": "học sinh",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Leader",
+      "type": "n",
+      "vi": "lãnh đạo",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Motivator",
+      "type": "n",
+      "vi": "người truyền cảm hứng",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Role model",
+      "type": "n",
+      "vi": "hình mẫu",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Classmate",
+      "type": "n",
+      "vi": "bạn cùng lớp",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Colleague",
+      "type": "n",
+      "vi": "đồng nghiệp",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Friend",
+      "type": "n",
+      "vi": "bạn bè",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Communication skills",
+      "type": "n",
+      "vi": "kỹ năng giao tiếp",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Leadership skills",
+      "type": "n",
+      "vi": "kỹ năng lãnh đạo",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Teamwork",
+      "type": "n",
+      "vi": "làm việc nhóm",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Problem-solving",
+      "type": "n",
+      "vi": "giải quyết vấn đề",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Time management",
+      "type": "n",
+      "vi": "quản lý thời gian",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Creativity",
+      "type": "n",
+      "vi": "sáng tạo",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Critical thinking",
+      "type": "n",
+      "vi": "tư duy phản biện",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Self-discipline",
+      "type": "n",
+      "vi": "kỷ luật bản thân",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Confidence",
+      "type": "n",
+      "vi": "sự tự tin",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Patience",
+      "type": "n",
+      "vi": "sự kiên nhẫn",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Book",
+      "type": "n",
+      "vi": "sách",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Notebook",
+      "type": "n",
+      "vi": "vở ghi chép",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Computer",
+      "type": "n",
+      "vi": "máy tính",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Mobile app",
+      "type": "n",
+      "vi": "ứng dụng điện thoại",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Planner",
+      "type": "n",
+      "vi": "sổ kế hoạch",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Calendar",
+      "type": "n",
+      "vi": "lịch",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Journal",
+      "type": "n",
+      "vi": "nhật ký",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Video course",
+      "type": "n",
+      "vi": "khóa học video",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Podcast",
+      "type": "n",
+      "vi": "chương trình âm thanh",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Online platform",
+      "type": "n",
+      "vi": "nền tảng trực tuyến",
+      "category": "Từ vựng về công cụ (Tools)"
+    },
+    {
+      "en": "Lifelong learning",
+      "type": "n",
+      "vi": "học tập suốt đời",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Self-study",
+      "type": "n",
+      "vi": "tự học",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Positive thinking",
+      "type": "n",
+      "vi": "tư duy tích cực",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Discipline",
+      "type": "n",
+      "vi": "kỷ luật",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Hard work",
+      "type": "n",
+      "vi": "chăm chỉ",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Personal responsibility",
+      "type": "n",
+      "vi": "trách nhiệm cá nhân",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Motivation speech",
+      "type": "n",
+      "vi": "bài diễn thuyết truyền cảm hứng",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Success story",
+      "type": "n",
+      "vi": "câu chuyện thành công",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Cultural values",
+      "type": "n",
+      "vi": "giá trị văn hóa",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Inspiration",
+      "type": "n",
+      "vi": "sự truyền cảm hứng",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Confident",
+      "type": "adj",
+      "vi": "tự tin",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Proud",
+      "type": "adj",
+      "vi": "tự hào",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Motivated",
+      "type": "adj",
+      "vi": "có động lực",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Hopeful",
+      "type": "adj",
+      "vi": "đầy hy vọng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Excited",
+      "type": "adj",
+      "vi": "hào hứng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Happy",
+      "type": "adj",
+      "vi": "vui vẻ",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Determined",
+      "type": "adj",
+      "vi": "quyết tâm",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Strong",
+      "type": "adj",
+      "vi": "mạnh mẽ",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Positive",
+      "type": "adj",
+      "vi": "tích cực",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Challenging",
+      "type": "adj",
+      "vi": "đầy thử thách",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Inspiring",
+      "type": "adj",
+      "vi": "truyền cảm hứng",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Rewarding",
+      "type": "adj",
+      "vi": "đáng giá",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Necessary",
+      "type": "adj",
+      "vi": "cần thiết",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Important",
+      "type": "adj",
+      "vi": "quan trọng",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Practical",
+      "type": "adj",
+      "vi": "thực tiễn",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Creative",
+      "type": "adj",
+      "vi": "sáng tạo",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Beneficial",
+      "type": "adj",
+      "vi": "có lợi",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Valuable",
+      "type": "adj",
+      "vi": "quý giá",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Effective",
+      "type": "adj",
+      "vi": "hiệu quả",
+      "category": "Các tính từ gợi tả (Adjectives for self-development)"
+    },
+    {
+      "en": "Online learning",
+      "type": "n",
+      "vi": "học trực tuyến",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    },
+    {
+      "en": "Self-help book",
+      "type": "n",
+      "vi": "sách tự lực",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    },
+    {
+      "en": "Podcast learning",
+      "type": "n",
+      "vi": "học qua podcast",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    },
+    {
+      "en": "E-learning",
+      "type": "n",
+      "vi": "học điện tử",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    },
+    {
+      "en": "Digital skills",
+      "type": "n",
+      "vi": "kỹ năng số",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    },
+    {
+      "en": "Personal branding",
+      "type": "n",
+      "vi": "xây dựng thương hiệu cá nhân",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    },
+    {
+      "en": "Mindfulness",
+      "type": "n",
+      "vi": "chánh niệm",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    },
+    {
+      "en": "Coaching",
+      "type": "n",
+      "vi": "huấn luyện",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    },
+    {
+      "en": "Mentoring",
+      "type": "n",
+      "vi": "cố vấn",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    },
+    {
+      "en": "Self-care",
+      "type": "n",
+      "vi": "chăm sóc bản thân",
+      "category": "Từ vựng về xu hướng & hiện đại (Trends)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I want to improve myself.",
+      "vi": "Tôi muốn cải thiện bản thân.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Reading books helps me grow.",
+      "vi": "Đọc sách giúp tôi trưởng thành.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Self-development takes time and effort.",
+      "vi": "Phát triển bản thân cần thời gian và nỗ lực.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Practice makes perfect.",
+      "vi": "Có công mài sắt, có ngày nên kim.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Never stop learning.",
+      "vi": "Đừng bao giờ ngừng học hỏi.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Setting goals is the first step in self-development.",
+      "vi": "Đặt mục tiêu là bước đầu tiên trong",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "I try to learn new skills every year to improve myself.",
+      "vi": "Tôi cố gắng học kỹ năng mới",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Self-discipline is the key to success.",
+      "vi": "Tự kỷ luật là chìa khóa của thành công.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Many people join online courses to develop themselves.",
+      "vi": "Nhiều người tham gia khóa",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Helping others also helps me become a better person.",
+      "vi": "Giúp đỡ người khác cũng giúp",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    }
+  ]
+}

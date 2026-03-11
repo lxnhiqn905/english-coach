@@ -1,0 +1,598 @@
+{
+  "id": "family",
+  "label": "Family",
+  "vocab": [
+    {
+      "en": "Father/Dad",
+      "type": "n",
+      "vi": "bố",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Mother/Mum",
+      "type": "n",
+      "vi": "mẹ",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Parents",
+      "type": "n",
+      "vi": "cha mẹ",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Brother",
+      "type": "n",
+      "vi": "anh/em trai",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Sister",
+      "type": "n",
+      "vi": "chị/em gái",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Son",
+      "type": "n",
+      "vi": "con trai",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Daughter",
+      "type": "n",
+      "vi": "con gái",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Grandparents",
+      "type": "n",
+      "vi": "ông bà",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Uncle",
+      "type": "n",
+      "vi": "chú/cậu/bác trai",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Aunt",
+      "type": "n",
+      "vi": "cô/dì/bác gái",
+      "category": "Từ vựng về thành viên gia đình (Family Members)"
+    },
+    {
+      "en": "Close-knit",
+      "type": "adj",
+      "vi": "gắn bó",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Loving",
+      "type": "adj",
+      "vi": "yêu thương",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Caring",
+      "type": "adj",
+      "vi": "biết quan tâm",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Supportive",
+      "type": "adj",
+      "vi": "ủng hộ",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Strict",
+      "type": "adj",
+      "vi": "nghiêm khắc",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Traditional",
+      "type": "adj",
+      "vi": "truyền thống",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Big",
+      "type": "adj",
+      "vi": "đông người",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Small",
+      "type": "adj",
+      "vi": "ít người",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "United",
+      "type": "adj",
+      "vi": "đoàn kết",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Responsible",
+      "type": "adj",
+      "vi": "có trách nhiệm",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Kitchen",
+      "type": "n",
+      "vi": "nhà bếp",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Dining room",
+      "type": "n",
+      "vi": "phòng ăn",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Living room",
+      "type": "n",
+      "vi": "phòng khách",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Bedroom",
+      "type": "n",
+      "vi": "phòng ngủ",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Garden",
+      "type": "n",
+      "vi": "vườn",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Balcony",
+      "type": "n",
+      "vi": "ban công",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Bathroom",
+      "type": "n",
+      "vi": "phòng tắm",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Garage",
+      "type": "n",
+      "vi": "nhà để xe",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Yard",
+      "type": "n",
+      "vi": "sân",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Family altar",
+      "type": "n",
+      "vi": "bàn thờ gia đình",
+      "category": "Từ vựng về tiện nghi trong gia đình (Facilities at home)"
+    },
+    {
+      "en": "Countryside",
+      "type": "n",
+      "vi": "vùng nông thôn",
+      "category": "Từ vựng về thiên nhiên & môi trường sống (Living environment)"
+    },
+    {
+      "en": "City",
+      "type": "n",
+      "vi": "thành phố",
+      "category": "Từ vựng về thiên nhiên & môi trường sống (Living environment)"
+    },
+    {
+      "en": "Suburb",
+      "type": "n",
+      "vi": "ngoại ô",
+      "category": "Từ vựng về thiên nhiên & môi trường sống (Living environment)"
+    },
+    {
+      "en": "Neighborhood",
+      "type": "n",
+      "vi": "khu dân cư",
+      "category": "Từ vựng về thiên nhiên & môi trường sống (Living environment)"
+    },
+    {
+      "en": "Village",
+      "type": "n",
+      "vi": "làng",
+      "category": "Từ vựng về thiên nhiên & môi trường sống (Living environment)"
+    },
+    {
+      "en": "Apartment",
+      "type": "n",
+      "vi": "căn hộ",
+      "category": "Từ vựng về thiên nhiên & môi trường sống (Living environment)"
+    },
+    {
+      "en": "House",
+      "type": "n",
+      "vi": "ngôi nhà",
+      "category": "Từ vựng về thiên nhiên & môi trường sống (Living environment)"
+    },
+    {
+      "en": "Farm",
+      "type": "n",
+      "vi": "nông trại",
+      "category": "Từ vựng về thiên nhiên & môi trường sống (Living environment)"
+    },
+    {
+      "en": "Parents",
+      "type": "n",
+      "vi": "cha mẹ",
+      "category": "Từ vựng về con người (People in family life)"
+    },
+    {
+      "en": "Siblings",
+      "type": "n",
+      "vi": "anh chị em ruột",
+      "category": "Từ vựng về con người (People in family life)"
+    },
+    {
+      "en": "Relatives",
+      "type": "n",
+      "vi": "họ hàng",
+      "category": "Từ vựng về con người (People in family life)"
+    },
+    {
+      "en": "Children",
+      "type": "n",
+      "vi": "con cái",
+      "category": "Từ vựng về con người (People in family life)"
+    },
+    {
+      "en": "Cousins",
+      "type": "n",
+      "vi": "anh chị em họ",
+      "category": "Từ vựng về con người (People in family life)"
+    },
+    {
+      "en": "In-laws",
+      "type": "n",
+      "vi": "họ hàng bên vợ/chồng",
+      "category": "Từ vựng về con người (People in family life)"
+    },
+    {
+      "en": "Elder",
+      "type": "n",
+      "vi": "bậc lớn tuổi",
+      "category": "Từ vựng về con người (People in family life)"
+    },
+    {
+      "en": "Breadwinner",
+      "type": "n",
+      "vi": "trụ cột kinh tế",
+      "category": "Từ vựng về vai trò (Roles in the family)"
+    },
+    {
+      "en": "Homemaker",
+      "type": "n",
+      "vi": "người nội trợ",
+      "category": "Từ vựng về vai trò (Roles in the family)"
+    },
+    {
+      "en": "Caregiver",
+      "type": "n",
+      "vi": "người chăm sóc",
+      "category": "Từ vựng về vai trò (Roles in the family)"
+    },
+    {
+      "en": "Decision-maker",
+      "type": "n",
+      "vi": "người quyết định",
+      "category": "Từ vựng về vai trò (Roles in the family)"
+    },
+    {
+      "en": "Role model",
+      "type": "n",
+      "vi": "hình mẫu",
+      "category": "Từ vựng về vai trò (Roles in the family)"
+    },
+    {
+      "en": "Protector",
+      "type": "n",
+      "vi": "người bảo vệ",
+      "category": "Từ vựng về vai trò (Roles in the family)"
+    },
+    {
+      "en": "Supporter",
+      "type": "n",
+      "vi": "người ủng hộ",
+      "category": "Từ vựng về vai trò (Roles in the family)"
+    },
+    {
+      "en": "Wedding",
+      "type": "n",
+      "vi": "đám cưới",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Family reunion",
+      "type": "n",
+      "vi": "họp mặt gia đình",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Ancestor worship",
+      "type": "n",
+      "vi": "thờ cúng tổ tiên",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Anniversary",
+      "type": "n",
+      "vi": "kỷ niệm",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Birthday party",
+      "type": "n",
+      "vi": "tiệc sinh nhật",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "New Year celebration",
+      "type": "n",
+      "vi": "mừng năm mới",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Holiday gathering",
+      "type": "n",
+      "vi": "tụ họp ngày lễ",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & Traditions)"
+    },
+    {
+      "en": "Have dinner together",
+      "type": "",
+      "vi": "ăn tối cùng nhau",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Celebrate holidays",
+      "type": "",
+      "vi": "ăn mừng ngày lễ",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Visit relatives",
+      "type": "",
+      "vi": "thăm họ hàng",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Watch TV together",
+      "type": "",
+      "vi": "cùng xem TV",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Share chores",
+      "type": "",
+      "vi": "chia sẻ việc nhà",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Travel together",
+      "type": "",
+      "vi": "du lịch cùng nhau",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Tell stories",
+      "type": "",
+      "vi": "kể chuyện",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go on a picnic",
+      "type": "",
+      "vi": "đi dã ngoại",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Proud",
+      "type": "adj",
+      "vi": "tự hào",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Grateful",
+      "type": "adj",
+      "vi": "biết ơn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Happy",
+      "type": "adj",
+      "vi": "hạnh phúc",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Safe",
+      "type": "adj",
+      "vi": "an toàn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Nostalgic",
+      "type": "adj",
+      "vi": "hoài niệm",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Loved",
+      "type": "adj",
+      "vi": "được yêu thương",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Comfortable",
+      "type": "adj",
+      "vi": "thoải mái",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Argument",
+      "type": "n",
+      "vi": "tranh cãi",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Generation gap",
+      "type": "n",
+      "vi": "khoảng cách thế hệ",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Misunderstanding",
+      "type": "n",
+      "vi": "hiểu lầm",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Pressure",
+      "type": "n",
+      "vi": "áp lực",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Strict rules",
+      "type": "n",
+      "vi": "quy tắc nghiêm khắc",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Lack of communication",
+      "type": "n",
+      "vi": "thiếu giao tiếp",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Overprotection",
+      "type": "n",
+      "vi": "bảo bọc quá mức",
+      "category": "Từ vựng về xung đột (Conflicts)"
+    },
+    {
+      "en": "Warm",
+      "type": "adj",
+      "vi": "ấm áp",
+      "category": "Các tính từ gợi tả (Adjectives for family life)"
+    },
+    {
+      "en": "Peaceful",
+      "type": "adj",
+      "vi": "yên bình",
+      "category": "Các tính từ gợi tả (Adjectives for family life)"
+    },
+    {
+      "en": "Joyful",
+      "type": "adj",
+      "vi": "vui vẻ",
+      "category": "Các tính từ gợi tả (Adjectives for family life)"
+    },
+    {
+      "en": "Busy",
+      "type": "adj",
+      "vi": "bận rộn",
+      "category": "Các tính từ gợi tả (Adjectives for family life)"
+    },
+    {
+      "en": "Caring",
+      "type": "adj",
+      "vi": "quan tâm",
+      "category": "Các tính từ gợi tả (Adjectives for family life)"
+    },
+    {
+      "en": "Supportive",
+      "type": "adj",
+      "vi": "ủng hộ",
+      "category": "Các tính từ gợi tả (Adjectives for family life)"
+    },
+    {
+      "en": "Loving",
+      "type": "adj",
+      "vi": "thương yêu",
+      "category": "Các tính từ gợi tả (Adjectives for family life)"
+    },
+    {
+      "en": "Protective",
+      "type": "adj",
+      "vi": "bảo vệ",
+      "category": "Các tính từ gợi tả (Adjectives for family life)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I live in a nuclear family.",
+      "vi": "Tôi sống trong một gia đình hạt nhân.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "My family is very supportive.",
+      "vi": "Gia đình tôi rất ủng hộ.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "We often spend time together.",
+      "vi": "Chúng tôi thường dành thời gian bên nhau.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Sometimes we argue, but we love each other. (Đôi khi chúng tôi cãi nhau, nhưng",
+      "vi": "",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Family is the foundation of society.",
+      "vi": "Gia đình là nền tảng của xã hội.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "My family is very close-knit and supportive. (Gia đình tôi rất gắn bó và luôn ủng",
+      "vi": "",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "We usually have dinner together and share stories. (Chúng tôi thường ăn tối cùng",
+      "vi": "",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "My grandparents live in the countryside, and we visit them every summer. (Ông",
+      "vi": "",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "My father is the breadwinner while my mother is a homemaker. (Bố tôi là trụ cột",
+      "vi": "",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Family gatherings are always full of joy. (Những buổi tụ họp gia đình luôn tràn",
+      "vi": "",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    }
+  ]
+}

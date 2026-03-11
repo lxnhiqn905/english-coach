@@ -1,0 +1,718 @@
+{
+  "id": "holiday",
+  "label": "Holiday",
+  "vocab": [
+    {
+      "en": "Public holiday",
+      "type": "n",
+      "vi": "ngày nghỉ lễ",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "National holiday",
+      "type": "n",
+      "vi": "ngày quốc khánh",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "New Year holiday",
+      "type": "n",
+      "vi": "kỳ nghỉ năm mới",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "Tet holiday",
+      "type": "n",
+      "vi": "Tết Nguyên Đán",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "Summer holiday",
+      "type": "n",
+      "vi": "kỳ nghỉ hè",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "Winter holiday",
+      "type": "n",
+      "vi": "kỳ nghỉ đông",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "Christmas holiday",
+      "type": "n",
+      "vi": "kỳ nghỉ Giáng Sinh",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "Easter holiday",
+      "type": "n",
+      "vi": "kỳ nghỉ lễ Phục Sinh",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "Independence Day",
+      "type": "n",
+      "vi": "ngày Quốc khánh",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "Festival holiday",
+      "type": "n",
+      "vi": "kỳ nghỉ lễ hội",
+      "category": "Từ vựng về các ngày nghỉ (Types of holidays)"
+    },
+    {
+      "en": "Relaxing",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Exciting",
+      "type": "adj",
+      "vi": "thú vị",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Joyful",
+      "type": "adj",
+      "vi": "vui vẻ",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Busy",
+      "type": "adj",
+      "vi": "bận rộn",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Traditional",
+      "type": "adj",
+      "vi": "truyền thống",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Modern",
+      "type": "adj",
+      "vi": "hiện đại",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Long",
+      "type": "adj",
+      "vi": "dài",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Short",
+      "type": "adj",
+      "vi": "ngắn",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Special",
+      "type": "adj",
+      "vi": "đặc biệt",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Memorable",
+      "type": "adj",
+      "vi": "đáng nhớ",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Beach",
+      "type": "n",
+      "vi": "bãi biển",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Mountain",
+      "type": "n",
+      "vi": "núi",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Resort",
+      "type": "n",
+      "vi": "khu nghỉ dưỡng",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Hotel",
+      "type": "n",
+      "vi": "khách sạn",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Countryside",
+      "type": "n",
+      "vi": "nông thôn",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Park",
+      "type": "n",
+      "vi": "công viên",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "City",
+      "type": "n",
+      "vi": "thành phố",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Amusement park",
+      "type": "n",
+      "vi": "công viên giải trí",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Temple",
+      "type": "n",
+      "vi": "đền chùa",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Shopping mall",
+      "type": "n",
+      "vi": "trung tâm mua sắm",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Travel",
+      "type": "v",
+      "vi": "đi du lịch",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go sightseeing",
+      "type": "v",
+      "vi": "đi tham quan",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go shopping",
+      "type": "v",
+      "vi": "đi mua sắm",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Visit relatives",
+      "type": "v",
+      "vi": "thăm họ hàng",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Take photos",
+      "type": "v",
+      "vi": "chụp ảnh",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Have a party",
+      "type": "v",
+      "vi": "tổ chức tiệc",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go camping",
+      "type": "v",
+      "vi": "đi cắm trại",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Relax at the beach",
+      "type": "v",
+      "vi": "thư giãn ở bãi biển",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Join a festival",
+      "type": "v",
+      "vi": "tham gia lễ hội",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Eat special food",
+      "type": "v",
+      "vi": "ăn món đặc sản ngày lễ",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Tourist",
+      "type": "n",
+      "vi": "khách du lịch",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Traveler",
+      "type": "n",
+      "vi": "người đi du lịch",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Local people",
+      "type": "n",
+      "vi": "người dân địa phương",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Guide",
+      "type": "n",
+      "vi": "hướng dẫn viên",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Family",
+      "type": "n",
+      "vi": "gia đình",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Friends",
+      "type": "n",
+      "vi": "bạn bè",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Relatives",
+      "type": "n",
+      "vi": "họ hàng",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Couple",
+      "type": "n",
+      "vi": "cặp đôi",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Children",
+      "type": "n",
+      "vi": "trẻ em",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Guest",
+      "type": "n",
+      "vi": "khách mời",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Car",
+      "type": "n",
+      "vi": "ô tô",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Bus",
+      "type": "n",
+      "vi": "xe buýt",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Train",
+      "type": "n",
+      "vi": "tàu hỏa",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Airplane",
+      "type": "n",
+      "vi": "máy bay",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Bicycle",
+      "type": "n",
+      "vi": "xe đạp",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Motorbike",
+      "type": "n",
+      "vi": "xe máy",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Ship",
+      "type": "n",
+      "vi": "tàu thủy",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Ferry",
+      "type": "n",
+      "vi": "phà",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Taxi",
+      "type": "n",
+      "vi": "taxi",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Coach",
+      "type": "n",
+      "vi": "xe khách đường dài",
+      "category": "Từ vựng về phương tiện (Transportation)"
+    },
+    {
+      "en": "Fireworks",
+      "type": "n",
+      "vi": "pháo hoa",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Parade",
+      "type": "n",
+      "vi": "diễu hành",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Ceremony",
+      "type": "n",
+      "vi": "nghi lễ",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Festival",
+      "type": "n",
+      "vi": "lễ hội",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Carnival",
+      "type": "n",
+      "vi": "lễ hội hóa trang",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Family reunion",
+      "type": "n",
+      "vi": "họp mặt gia đình",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Gift exchange",
+      "type": "n",
+      "vi": "trao đổi quà",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Traditional food",
+      "type": "n",
+      "vi": "món ăn truyền thống",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Decoration",
+      "type": "n",
+      "vi": "trang trí",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Holiday music",
+      "type": "n",
+      "vi": "nhạc lễ hội",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Happy",
+      "type": "adj",
+      "vi": "hạnh phúc",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Excited",
+      "type": "adj",
+      "vi": "hào hứng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Proud",
+      "type": "adj",
+      "vi": "tự hào",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Grateful",
+      "type": "adj",
+      "vi": "biết ơn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Nostalgic",
+      "type": "adj",
+      "vi": "hoài niệm",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Comfortable",
+      "type": "adj",
+      "vi": "thoải mái",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Energetic",
+      "type": "adj",
+      "vi": "tràn đầy năng lượng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Satisfied",
+      "type": "adj",
+      "vi": "hài lòng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Cheerful",
+      "type": "adj",
+      "vi": "vui tươi",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Suitcase",
+      "type": "n",
+      "vi": "vali",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Backpack",
+      "type": "n",
+      "vi": "ba lô",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Sunglasses",
+      "type": "n",
+      "vi": "kính râm",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Camera",
+      "type": "n",
+      "vi": "máy ảnh",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Swimsuit",
+      "type": "n",
+      "vi": "đồ bơi",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Map",
+      "type": "n",
+      "vi": "bản đồ",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Ticket",
+      "type": "n",
+      "vi": "vé",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Passport",
+      "type": "n",
+      "vi": "hộ chiếu",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Tent",
+      "type": "n",
+      "vi": "lều trại",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Hat",
+      "type": "n",
+      "vi": "mũ",
+      "category": "Từ vựng về đồ dùng trong kỳ nghỉ (Holiday items)"
+    },
+    {
+      "en": "Fun",
+      "type": "adj",
+      "vi": "vui vẻ",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Amazing",
+      "type": "adj",
+      "vi": "tuyệt vời",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Boring",
+      "type": "adj",
+      "vi": "nhàm chán",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Peaceful",
+      "type": "adj",
+      "vi": "yên bình",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Colorful",
+      "type": "adj",
+      "vi": "nhiều màu sắc",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Traditional",
+      "type": "adj",
+      "vi": "truyền thống",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Festive",
+      "type": "adj",
+      "vi": "lễ hội",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Crowded",
+      "type": "adj",
+      "vi": "đông đúc",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Romantic",
+      "type": "adj",
+      "vi": "lãng mạn",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Unforgettable",
+      "type": "adj",
+      "vi": "khó quên",
+      "category": "Các tính từ gợi tả (Adjectives for holidays)"
+    },
+    {
+      "en": "Spring",
+      "type": "n",
+      "vi": "mùa xuân",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    },
+    {
+      "en": "Summer",
+      "type": "n",
+      "vi": "mùa hè",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    },
+    {
+      "en": "Autumn/Fall",
+      "type": "n",
+      "vi": "mùa thu",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    },
+    {
+      "en": "Winter",
+      "type": "n",
+      "vi": "mùa đông",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    },
+    {
+      "en": "Tropical",
+      "type": "adj",
+      "vi": "nhiệt đới",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    },
+    {
+      "en": "Rainy",
+      "type": "adj",
+      "vi": "mưa nhiều",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    },
+    {
+      "en": "Dry",
+      "type": "adj",
+      "vi": "khô ráo",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    },
+    {
+      "en": "Hot",
+      "type": "adj",
+      "vi": "nóng",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    },
+    {
+      "en": "Cold",
+      "type": "adj",
+      "vi": "lạnh",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    },
+    {
+      "en": "Mild",
+      "type": "adj",
+      "vi": "ôn hòa",
+      "category": "Từ vựng về mùa & khí hậu (Seasons & climate)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "Where are you going for your holiday?",
+      "vi": "Bạn sẽ đi đâu cho kỳ nghỉ?",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I’m planning to travel abroad this summer.",
+      "vi": "Tôi dự định đi nước ngoài vào mùa hè này.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "We had a great holiday at the beach.",
+      "vi": "Chúng tôi đã có một kỳ nghỉ tuyệt vời ở bãi biển.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Holidays are the best time to relax.",
+      "vi": "Ngày nghỉ là lúc tuyệt vời nhất để thư giãn.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I usually spend my holiday with my family.",
+      "vi": "Tôi thường dành kỳ nghỉ với gia đình.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "My family usually travels to the countryside during Tet holiday.",
+      "vi": "Gia đình tôi thường về",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "We enjoyed watching fireworks on New Year’s Eve.",
+      "vi": "Chúng tôi thích xem pháo hoa",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Last summer, I went to the beach and swam every day.",
+      "vi": "Mùa hè năm ngoái, tôi đi biển",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Christmas is special because we exchange gifts and sing carols.",
+      "vi": "Giáng Sinh đặc biệt vì",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "A holiday is a perfect chance to take a break from work.",
+      "vi": "Ngày nghỉ là cơ hội tuyệt vời",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    }
+  ]
+}

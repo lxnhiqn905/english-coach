@@ -1,0 +1,766 @@
+{
+  "id": "food-drink",
+  "label": "Food & Drink",
+  "vocab": [
+    {
+      "en": "Rice",
+      "type": "n",
+      "vi": "cơm",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Bread",
+      "type": "n",
+      "vi": "bánh mì",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Noodles",
+      "type": "n",
+      "vi": "mì, bún",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Meat",
+      "type": "n",
+      "vi": "thịt",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Fish",
+      "type": "n",
+      "vi": "cá",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Egg",
+      "type": "n",
+      "vi": "trứng",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Salad",
+      "type": "n",
+      "vi": "rau trộn",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Soup",
+      "type": "n",
+      "vi": "súp",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Pizza",
+      "type": "n",
+      "vi": "bánh pizza",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Sandwich",
+      "type": "n",
+      "vi": "bánh kẹp",
+      "category": "Từ vựng về thức ăn (Food)"
+    },
+    {
+      "en": "Water",
+      "type": "n",
+      "vi": "nước",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Juice",
+      "type": "n",
+      "vi": "nước hoa quả",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Milk",
+      "type": "n",
+      "vi": "sữa",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Coffee",
+      "type": "n",
+      "vi": "cà phê",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Tea",
+      "type": "n",
+      "vi": "trà",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Soft drink",
+      "type": "n",
+      "vi": "nước ngọt",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Lemonade",
+      "type": "n",
+      "vi": "nước chanh",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Smoothie",
+      "type": "n",
+      "vi": "sinh tố",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Beer",
+      "type": "n",
+      "vi": "bia",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Wine",
+      "type": "n",
+      "vi": "rượu vang",
+      "category": "Từ vựng về đồ uống (Drinks)"
+    },
+    {
+      "en": "Restaurant",
+      "type": "n",
+      "vi": "nhà hàng",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Café",
+      "type": "n",
+      "vi": "quán cà phê",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Canteen",
+      "type": "n",
+      "vi": "nhà ăn",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Kitchen",
+      "type": "n",
+      "vi": "bếp",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Market",
+      "type": "n",
+      "vi": "chợ",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Supermarket",
+      "type": "n",
+      "vi": "siêu thị",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Bakery",
+      "type": "n",
+      "vi": "tiệm bánh",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Bar",
+      "type": "n",
+      "vi": "quán bar",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Street food stall",
+      "type": "n",
+      "vi": "quán ăn vỉa hè",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Dining room",
+      "type": "n",
+      "vi": "phòng ăn",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Eat breakfast",
+      "type": "v",
+      "vi": "ăn sáng",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Have lunch",
+      "type": "v",
+      "vi": "ăn trưa",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Cook dinner",
+      "type": "v",
+      "vi": "nấu bữa tối",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Drink coffee",
+      "type": "v",
+      "vi": "uống cà phê",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Order food",
+      "type": "v",
+      "vi": "gọi món ăn",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go shopping",
+      "type": "v",
+      "vi": "đi mua sắm",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Prepare a meal",
+      "type": "v",
+      "vi": "chuẩn bị bữa ăn",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Try new dishes",
+      "type": "v",
+      "vi": "thử món mới",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go out to eat",
+      "type": "v",
+      "vi": "đi ăn ngoài",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Share food",
+      "type": "v",
+      "vi": "chia sẻ đồ ăn",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Chef",
+      "type": "n",
+      "vi": "đầu bếp",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Cook",
+      "type": "n",
+      "vi": "người nấu ăn",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Waiter/Waitress",
+      "type": "n",
+      "vi": "bồi bàn nam/nữ",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Customer",
+      "type": "n",
+      "vi": "khách hàng",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Guest",
+      "type": "n",
+      "vi": "khách",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Bartender",
+      "type": "n",
+      "vi": "nhân viên pha chế",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Baker",
+      "type": "n",
+      "vi": "thợ làm bánh",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Farmer",
+      "type": "n",
+      "vi": "nông dân",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Fisherman",
+      "type": "n",
+      "vi": "ngư dân",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Seller",
+      "type": "n",
+      "vi": "người bán hàng",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Vegetables",
+      "type": "n",
+      "vi": "rau củ",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Fruit",
+      "type": "n",
+      "vi": "hoa quả",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Chicken",
+      "type": "n",
+      "vi": "gà",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Beef",
+      "type": "n",
+      "vi": "thịt bò",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Pork",
+      "type": "n",
+      "vi": "thịt lợn",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Onion",
+      "type": "n",
+      "vi": "hành tây",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Garlic",
+      "type": "n",
+      "vi": "tỏi",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Sugar",
+      "type": "n",
+      "vi": "đường",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Salt",
+      "type": "n",
+      "vi": "muối",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Oil",
+      "type": "n",
+      "vi": "dầu ăn",
+      "category": "Từ vựng về nguyên liệu (Ingredients)"
+    },
+    {
+      "en": "Pho",
+      "type": "n",
+      "vi": "phở",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Spring roll",
+      "type": "n",
+      "vi": "nem cuốn",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Banh mi",
+      "type": "n",
+      "vi": "bánh mì Việt Nam",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Sushi",
+      "type": "n",
+      "vi": "sushi",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Hamburger",
+      "type": "n",
+      "vi": "bánh kẹp thịt",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Pasta",
+      "type": "n",
+      "vi": "mỳ Ý",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Curry",
+      "type": "n",
+      "vi": "cà ri",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Kimchi",
+      "type": "n",
+      "vi": "kim chi",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Dim sum",
+      "type": "n",
+      "vi": "điểm tâm Trung Hoa",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Tacos",
+      "type": "n",
+      "vi": "bánh kẹp Mexico",
+      "category": "Từ vựng về món ăn truyền thống & văn hóa (Culture & specialties)"
+    },
+    {
+      "en": "Delicious",
+      "type": "adj",
+      "vi": "ngon",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Tasty",
+      "type": "adj",
+      "vi": "hợp khẩu vị",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Spicy",
+      "type": "adj",
+      "vi": "cay",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Sweet",
+      "type": "adj",
+      "vi": "ngọt",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Salty",
+      "type": "adj",
+      "vi": "mặn",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Sour",
+      "type": "adj",
+      "vi": "chua",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Bitter",
+      "type": "adj",
+      "vi": "đắng",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Fresh",
+      "type": "adj",
+      "vi": "tươi",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Hot",
+      "type": "adj",
+      "vi": "nóng",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Cold",
+      "type": "adj",
+      "vi": "lạnh",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Hungry",
+      "type": "adj",
+      "vi": "đói",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Thirsty",
+      "type": "adj",
+      "vi": "khát",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Full",
+      "type": "adj",
+      "vi": "no",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Satisfied",
+      "type": "adj",
+      "vi": "hài lòng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Excited",
+      "type": "adj",
+      "vi": "hào hứng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Happy",
+      "type": "adj",
+      "vi": "vui",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Curious",
+      "type": "adj",
+      "vi": "tò mò",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Interested",
+      "type": "adj",
+      "vi": "thích thú",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Grateful",
+      "type": "adj",
+      "vi": "biết ơn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Spoon",
+      "type": "n",
+      "vi": "thìa",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Fork",
+      "type": "n",
+      "vi": "dĩa",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Knife",
+      "type": "n",
+      "vi": "dao",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Chopsticks",
+      "type": "n",
+      "vi": "đũa",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Plate",
+      "type": "n",
+      "vi": "đĩa",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Bowl",
+      "type": "n",
+      "vi": "bát",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Glass",
+      "type": "n",
+      "vi": "cốc thủy tinh",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Cup",
+      "type": "n",
+      "vi": "tách, cốc nhỏ",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Bottle",
+      "type": "n",
+      "vi": "chai",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Pan",
+      "type": "n",
+      "vi": "chảo",
+      "category": "Từ vựng về dụng cụ ăn uống (Utensils & tools)"
+    },
+    {
+      "en": "Healthy diet",
+      "type": "n",
+      "vi": "chế độ ăn lành mạnh",
+      "category": "Từ vựng về chế độ ăn & lối sống (Lifestyle)"
+    },
+    {
+      "en": "Fast food",
+      "type": "n",
+      "vi": "đồ ăn nhanh",
+      "category": "Từ vựng về chế độ ăn & lối sống (Lifestyle)"
+    },
+    {
+      "en": "Junk food",
+      "type": "n",
+      "vi": "đồ ăn vặt có hại",
+      "category": "Từ vựng về chế độ ăn & lối sống (Lifestyle)"
+    },
+    {
+      "en": "Organic food",
+      "type": "n",
+      "vi": "thực phẩm hữu cơ",
+      "category": "Từ vựng về chế độ ăn & lối sống (Lifestyle)"
+    },
+    {
+      "en": "Balanced diet",
+      "type": "n",
+      "vi": "chế độ ăn cân bằng",
+      "category": "Từ vựng về chế độ ăn & lối sống (Lifestyle)"
+    },
+    {
+      "en": "Low-fat",
+      "type": "adj",
+      "vi": "ít chất béo",
+      "category": "Từ vựng về chế độ ăn & lối sống (Lifestyle)"
+    },
+    {
+      "en": "Sugar-free",
+      "type": "adj",
+      "vi": "không đường",
+      "category": "Từ vựng về chế độ ăn & lối sống (Lifestyle)"
+    },
+    {
+      "en": "Homemade food",
+      "type": "n",
+      "vi": "đồ ăn nấu tại nhà",
+      "category": "Từ vựng về chế độ ăn & lối sống (Lifestyle)"
+    },
+    {
+      "en": "Yummy",
+      "type": "adj",
+      "vi": "ngon miệng",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    },
+    {
+      "en": "Appetizing",
+      "type": "adj",
+      "vi": "kích thích vị giác",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    },
+    {
+      "en": "Healthy",
+      "type": "adj",
+      "vi": "tốt cho sức khỏe",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    },
+    {
+      "en": "Unhealthy",
+      "type": "adj",
+      "vi": "không tốt cho sức khỏe",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    },
+    {
+      "en": "Nutritious",
+      "type": "adj",
+      "vi": "bổ dưỡng",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    },
+    {
+      "en": "Greasy",
+      "type": "adj",
+      "vi": "nhiều dầu mỡ",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    },
+    {
+      "en": "Crispy",
+      "type": "adj",
+      "vi": "giòn",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    },
+    {
+      "en": "Juicy",
+      "type": "adj",
+      "vi": "mọng nước",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    },
+    {
+      "en": "Soft",
+      "type": "adj",
+      "vi": "mềm",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    },
+    {
+      "en": "Flavorful",
+      "type": "adj",
+      "vi": "đậm đà",
+      "category": "Các tính từ gợi tả (Adjectives for food & drink)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I’m hungry. Let’s eat something.",
+      "vi": "Tôi đói rồi. Ăn gì thôi.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "This dish is very delicious.",
+      "vi": "Món này rất ngon.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Can I have a glass of water, please?",
+      "vi": "Cho tôi một cốc nước được không?",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I’d like to order a pizza.",
+      "vi": "Tôi muốn gọi một chiếc pizza.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Let’s go out for dinner tonight.",
+      "vi": "Tối nay mình đi ăn ngoài nhé.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "My favorite food is pho because it’s tasty and healthy.",
+      "vi": "Món ăn yêu thích của tôi là phở",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "I usually drink coffee in the morning to stay awake.",
+      "vi": "Tôi thường uống cà phê vào buổi",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Fast food is convenient but not very healthy.",
+      "vi": "Đồ ăn nhanh thì tiện lợi nhưng không tốt",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "I enjoy cooking dinner with my family at the weekend.",
+      "vi": "Tôi thích nấu bữa tối cùng gia",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Eating fruits and vegetables every day is important for our health.",
+      "vi": "Ăn hoa quả và rau",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    }
+  ]
+}

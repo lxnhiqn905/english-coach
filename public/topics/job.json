@@ -1,0 +1,718 @@
+{
+  "id": "job",
+  "label": "Job",
+  "vocab": [
+    {
+      "en": "Teacher",
+      "type": "n",
+      "vi": "giáo viên",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Doctor",
+      "type": "n",
+      "vi": "bác sĩ",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Nurse",
+      "type": "n",
+      "vi": "y tá",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Engineer",
+      "type": "n",
+      "vi": "kỹ sư",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Farmer",
+      "type": "n",
+      "vi": "nông dân",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Driver",
+      "type": "n",
+      "vi": "tài xế",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Chef",
+      "type": "n",
+      "vi": "đầu bếp",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Police officer",
+      "type": "n",
+      "vi": "cảnh sát",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Soldier",
+      "type": "n",
+      "vi": "bộ đội/lính",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Artist",
+      "type": "n",
+      "vi": "nghệ sĩ",
+      "category": "Từ vựng về nghề nghiệp (Types of jobs)"
+    },
+    {
+      "en": "Full-time",
+      "type": "adj",
+      "vi": "toàn thời gian",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Part-time",
+      "type": "adj",
+      "vi": "bán thời gian",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Temporary",
+      "type": "adj",
+      "vi": "tạm thời",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Permanent",
+      "type": "adj",
+      "vi": "lâu dài",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Well-paid",
+      "type": "adj",
+      "vi": "lương cao",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Low-paid",
+      "type": "adj",
+      "vi": "lương thấp",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Boring",
+      "type": "adj",
+      "vi": "nhàm chán",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Interesting",
+      "type": "adj",
+      "vi": "thú vị",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Stressful",
+      "type": "adj",
+      "vi": "căng thẳng",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Rewarding",
+      "type": "adj",
+      "vi": "xứng đáng",
+      "category": "Từ vựng miêu tả đặc điểm công việc (Job descriptions)"
+    },
+    {
+      "en": "Office",
+      "type": "n",
+      "vi": "văn phòng",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "Hospital",
+      "type": "n",
+      "vi": "bệnh viện",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "School",
+      "type": "n",
+      "vi": "trường học",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "Factory",
+      "type": "n",
+      "vi": "nhà máy",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "Farm",
+      "type": "n",
+      "vi": "nông trại",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "Restaurant",
+      "type": "n",
+      "vi": "nhà hàng",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "Police station",
+      "type": "n",
+      "vi": "đồn cảnh sát",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "Fire station",
+      "type": "n",
+      "vi": "trạm cứu hỏa",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "Construction site",
+      "type": "n",
+      "vi": "công trường",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "Shop",
+      "type": "n",
+      "vi": "cửa hàng",
+      "category": "Từ vựng về nơi làm việc (Workplaces)"
+    },
+    {
+      "en": "Work",
+      "type": "v",
+      "vi": "làm việc",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Earn money",
+      "type": "v",
+      "vi": "kiếm tiền",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Serve customers",
+      "type": "v",
+      "vi": "phục vụ khách hàng",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Drive a car",
+      "type": "v",
+      "vi": "lái xe",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Teach students",
+      "type": "v",
+      "vi": "dạy học sinh",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Design buildings",
+      "type": "v",
+      "vi": "thiết kế công trình",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Write reports",
+      "type": "v",
+      "vi": "viết báo cáo",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Answer phone calls",
+      "type": "v",
+      "vi": "nghe điện thoại",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Have a meeting",
+      "type": "v",
+      "vi": "họp",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Repair machines",
+      "type": "v",
+      "vi": "sửa máy móc",
+      "category": "Từ vựng về hoạt động công việc (Job activities)"
+    },
+    {
+      "en": "Employer",
+      "type": "n",
+      "vi": "chủ lao động",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Employee",
+      "type": "n",
+      "vi": "nhân viên",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Colleague",
+      "type": "n",
+      "vi": "đồng nghiệp",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Boss",
+      "type": "n",
+      "vi": "sếp",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Manager",
+      "type": "n",
+      "vi": "quản lý",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Assistant",
+      "type": "n",
+      "vi": "trợ lý",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Worker",
+      "type": "n",
+      "vi": "công nhân",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Client",
+      "type": "n",
+      "vi": "khách hàng",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Customer",
+      "type": "n",
+      "vi": "khách mua hàng",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Partner",
+      "type": "n",
+      "vi": "đối tác",
+      "category": "Từ vựng về con người trong công việc (People at work)"
+    },
+    {
+      "en": "Communication",
+      "type": "n",
+      "vi": "giao tiếp",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Teamwork",
+      "type": "n",
+      "vi": "làm việc nhóm",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Leadership",
+      "type": "n",
+      "vi": "lãnh đạo",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Problem-solving",
+      "type": "n",
+      "vi": "giải quyết vấn đề",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Creativity",
+      "type": "n",
+      "vi": "sáng tạo",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Time management",
+      "type": "n",
+      "vi": "quản lý thời gian",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Computer skills",
+      "type": "n",
+      "vi": "kỹ năng máy tính",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Organization",
+      "type": "n",
+      "vi": "sắp xếp, tổ chức",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Patience",
+      "type": "n",
+      "vi": "kiên nhẫn",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Responsibility",
+      "type": "n",
+      "vi": "trách nhiệm",
+      "category": "Từ vựng về kỹ năng (Skills)"
+    },
+    {
+      "en": "Computer",
+      "type": "n",
+      "vi": "máy tính",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Telephone",
+      "type": "n",
+      "vi": "điện thoại",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Uniform",
+      "type": "n",
+      "vi": "đồng phục",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Machine",
+      "type": "n",
+      "vi": "máy móc",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Tools",
+      "type": "n",
+      "vi": "dụng cụ",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Vehicle",
+      "type": "n",
+      "vi": "phương tiện",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Calculator",
+      "type": "n",
+      "vi": "máy tính cầm tay",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Notebook",
+      "type": "n",
+      "vi": "sổ ghi chép",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Pen",
+      "type": "n",
+      "vi": "bút",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Printer",
+      "type": "n",
+      "vi": "máy in",
+      "category": "Từ vựng về công cụ & thiết bị (Tools & equipment)"
+    },
+    {
+      "en": "Career fair",
+      "type": "n",
+      "vi": "hội chợ việc làm",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Internship",
+      "type": "n",
+      "vi": "thực tập",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Apprenticeship",
+      "type": "n",
+      "vi": "học nghề",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Promotion",
+      "type": "n",
+      "vi": "thăng chức",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Retirement",
+      "type": "n",
+      "vi": "nghỉ hưu",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Training course",
+      "type": "n",
+      "vi": "khóa đào tạo",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Business trip",
+      "type": "n",
+      "vi": "chuyến công tác",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Overtime",
+      "type": "n",
+      "vi": "làm thêm giờ",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Job interview",
+      "type": "n",
+      "vi": "phỏng vấn xin việc",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Work-life balance",
+      "type": "n",
+      "vi": "cân bằng công việc – cuộc sống",
+      "category": "Từ vựng về văn hóa & truyền thống nghề nghiệp (Culture & traditions)"
+    },
+    {
+      "en": "Happy",
+      "type": "adj",
+      "vi": "vui vẻ",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Bored",
+      "type": "adj",
+      "vi": "chán nản",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Excited",
+      "type": "adj",
+      "vi": "hào hứng",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Stressed",
+      "type": "adj",
+      "vi": "căng thẳng",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Motivated",
+      "type": "adj",
+      "vi": "có động lực",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Tired",
+      "type": "adj",
+      "vi": "mệt mỏi",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Proud",
+      "type": "adj",
+      "vi": "tự hào",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Satisfied",
+      "type": "adj",
+      "vi": "hài lòng",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Nervous",
+      "type": "adj",
+      "vi": "lo lắng",
+      "category": "Từ vựng về cảm xúc trong công việc (Feelings at work)"
+    },
+    {
+      "en": "Challenging",
+      "type": "adj",
+      "vi": "đầy thử thách",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Dangerous",
+      "type": "adj",
+      "vi": "nguy hiểm",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Safe",
+      "type": "adj",
+      "vi": "an toàn",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Creative",
+      "type": "adj",
+      "vi": "sáng tạo",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Routine",
+      "type": "adj",
+      "vi": "lặp đi lặp lại",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Flexible",
+      "type": "adj",
+      "vi": "linh hoạt",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Secure",
+      "type": "adj",
+      "vi": "ổn định",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Demanding",
+      "type": "adj",
+      "vi": "đòi hỏi cao",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Inspiring",
+      "type": "adj",
+      "vi": "truyền cảm hứng",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Popular",
+      "type": "adj",
+      "vi": "phổ biến",
+      "category": "Các tính từ gợi tả (Adjectives for jobs)"
+    },
+    {
+      "en": "Freelance",
+      "type": "n",
+      "vi": "tự do",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    },
+    {
+      "en": "Remote work",
+      "type": "n",
+      "vi": "làm việc từ xa",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    },
+    {
+      "en": "Online jobs",
+      "type": "n",
+      "vi": "việc làm trực tuyến",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    },
+    {
+      "en": "Digital skills",
+      "type": "n",
+      "vi": "kỹ năng số",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    },
+    {
+      "en": "Startup",
+      "type": "n",
+      "vi": "khởi nghiệp",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    },
+    {
+      "en": "Entrepreneurship",
+      "type": "n",
+      "vi": "tinh thần doanh nhân",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    },
+    {
+      "en": "Outsourcing",
+      "type": "n",
+      "vi": "thuê ngoài",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    },
+    {
+      "en": "Part-time jobs",
+      "type": "n",
+      "vi": "công việc bán thời gian",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    },
+    {
+      "en": "Career change",
+      "type": "n",
+      "vi": "thay đổi nghề nghiệp",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    },
+    {
+      "en": "Job market",
+      "type": "n",
+      "vi": "thị trường việc làm",
+      "category": "Từ vựng về xu hướng nghề nghiệp (Trends)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "What do you do?",
+      "vi": "Bạn làm nghề gì?",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I work as a teacher.",
+      "vi": "Tôi làm giáo viên.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "She has a full-time job.",
+      "vi": "Cô ấy có công việc toàn thời gian.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "He is looking for a new job.",
+      "vi": "Anh ấy đang tìm việc mới.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "My dream job is to be a doctor.",
+      "vi": "Công việc mơ ước của tôi là làm bác sĩ.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I usually work eight hours a day.",
+      "vi": "Tôi thường làm việc 8 tiếng một ngày.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "My boss is very supportive and friendly.",
+      "vi": "Sếp của tôi rất thân thiện và hay giúp đỡ.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Teamwork is very important in my company.",
+      "vi": "Làm việc nhóm rất quan trọng ở công ty",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "I am preparing for a job interview next week.",
+      "vi": "Tôi đang chuẩn bị cho buổi phỏng vấn",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Many young people want to start their own business.",
+      "vi": "Nhiều bạn trẻ muốn tự kinh",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    }
+  ]
+}

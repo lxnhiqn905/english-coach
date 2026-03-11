@@ -1,0 +1,718 @@
+{
+  "id": "music",
+  "label": "Music",
+  "vocab": [
+    {
+      "en": "Pop music",
+      "type": "n",
+      "vi": "nhạc pop",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "Rock music",
+      "type": "n",
+      "vi": "nhạc rock",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "Classical music",
+      "type": "n",
+      "vi": "nhạc cổ điển",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "Jazz",
+      "type": "n",
+      "vi": "nhạc jazz",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "Rap/Hip-hop",
+      "type": "n",
+      "vi": "nhạc rap/hip-hop",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "Folk music",
+      "type": "n",
+      "vi": "nhạc dân gian",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "Country music",
+      "type": "n",
+      "vi": "nhạc đồng quê",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "Blues",
+      "type": "n",
+      "vi": "nhạc blues",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "EDM",
+      "type": "n",
+      "vi": "nhạc điện tử",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "Ballad",
+      "type": "n",
+      "vi": "nhạc trữ tình",
+      "category": "Từ vựng về loại nhạc (Types of music)"
+    },
+    {
+      "en": "Loud",
+      "type": "adj",
+      "vi": "to, ồn",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Soft",
+      "type": "adj",
+      "vi": "nhẹ nhàng",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Relaxing",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Energetic",
+      "type": "adj",
+      "vi": "sôi động",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Catchy",
+      "type": "adj",
+      "vi": "dễ nhớ, bắt tai",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Melodic",
+      "type": "adj",
+      "vi": "giàu giai điệu",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Emotional",
+      "type": "adj",
+      "vi": "giàu cảm xúc",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Modern",
+      "type": "adj",
+      "vi": "hiện đại",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Traditional",
+      "type": "adj",
+      "vi": "truyền thống",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Romantic",
+      "type": "adj",
+      "vi": "lãng mạn",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Concert hall",
+      "type": "n",
+      "vi": "phòng hòa nhạc",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Stadium",
+      "type": "n",
+      "vi": "sân vận động",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Music festival",
+      "type": "n",
+      "vi": "lễ hội âm nhạc",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Nightclub",
+      "type": "n",
+      "vi": "câu lạc bộ đêm",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Recording studio",
+      "type": "n",
+      "vi": "phòng thu",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Opera house",
+      "type": "n",
+      "vi": "nhà hát opera",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Theatre",
+      "type": "n",
+      "vi": "nhà hát",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Classroom",
+      "type": "n",
+      "vi": "lớp học nhạc",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Street",
+      "type": "n",
+      "vi": "đường phố (biểu diễn đường phố)",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Café",
+      "type": "n",
+      "vi": "quán cà phê nhạc sống",
+      "category": "Từ vựng về nơi chốn (Places)"
+    },
+    {
+      "en": "Play the guitar",
+      "type": "v",
+      "vi": "chơi guitar",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Play the piano",
+      "type": "v",
+      "vi": "chơi đàn piano",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Sing a song",
+      "type": "v",
+      "vi": "hát một bài hát",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Listen to music",
+      "type": "v",
+      "vi": "nghe nhạc",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Compose music",
+      "type": "v",
+      "vi": "sáng tác nhạc",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Dance to music",
+      "type": "v",
+      "vi": "nhảy theo nhạc",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Perform on stage",
+      "type": "v",
+      "vi": "biểu diễn trên sân khấu",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Record a song",
+      "type": "v",
+      "vi": "thu âm bài hát",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go to a concert",
+      "type": "v",
+      "vi": "đi xem hòa nhạc",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Download music",
+      "type": "v",
+      "vi": "tải nhạc",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Singer",
+      "type": "n",
+      "vi": "ca sĩ",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Musician",
+      "type": "n",
+      "vi": "nhạc sĩ",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Composer",
+      "type": "n",
+      "vi": "nhà soạn nhạc",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Band",
+      "type": "n",
+      "vi": "ban nhạc",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Orchestra",
+      "type": "n",
+      "vi": "dàn nhạc",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Conductor",
+      "type": "n",
+      "vi": "nhạc trưởng",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Audience",
+      "type": "n",
+      "vi": "khán giả",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Fan",
+      "type": "n",
+      "vi": "người hâm mộ",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "DJ",
+      "type": "n",
+      "vi": "người phối nhạc",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Dancer",
+      "type": "n",
+      "vi": "vũ công",
+      "category": "Từ vựng về con người (People)"
+    },
+    {
+      "en": "Guitar",
+      "type": "n",
+      "vi": "đàn guitar",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "Piano",
+      "type": "n",
+      "vi": "đàn piano",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "Violin",
+      "type": "n",
+      "vi": "đàn violin",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "Drums",
+      "type": "n",
+      "vi": "trống",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "Flute",
+      "type": "n",
+      "vi": "sáo",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "Trumpet",
+      "type": "n",
+      "vi": "kèn trumpet",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "Saxophone",
+      "type": "n",
+      "vi": "kèn saxophone",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "Microphone",
+      "type": "n",
+      "vi": "micro",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "Speaker",
+      "type": "n",
+      "vi": "loa",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "Headphones",
+      "type": "n",
+      "vi": "tai nghe",
+      "category": "Từ vựng về nhạc cụ (Instruments)"
+    },
+    {
+      "en": "National anthem",
+      "type": "n",
+      "vi": "quốc ca",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Traditional song",
+      "type": "n",
+      "vi": "bài hát truyền thống",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Festival song",
+      "type": "n",
+      "vi": "nhạc lễ hội",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Wedding song",
+      "type": "n",
+      "vi": "nhạc đám cưới",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Funeral music",
+      "type": "n",
+      "vi": "nhạc tang lễ",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Background music",
+      "type": "n",
+      "vi": "nhạc nền",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Theme song",
+      "type": "n",
+      "vi": "nhạc chủ đề",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Lullaby",
+      "type": "n",
+      "vi": "nhạc ru",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "March",
+      "type": "n",
+      "vi": "nhạc hành khúc",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Carols",
+      "type": "n",
+      "vi": "nhạc Giáng Sinh",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Happy",
+      "type": "adj",
+      "vi": "vui vẻ",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Sad",
+      "type": "adj",
+      "vi": "buồn",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Excited",
+      "type": "adj",
+      "vi": "hào hứng",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Inspired",
+      "type": "adj",
+      "vi": "được truyền cảm hứng",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Emotional",
+      "type": "adj",
+      "vi": "xúc động",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Energetic",
+      "type": "adj",
+      "vi": "tràn đầy năng lượng",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Calm",
+      "type": "adj",
+      "vi": "bình tĩnh",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Motivated",
+      "type": "adj",
+      "vi": "có động lực",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Nostalgic",
+      "type": "adj",
+      "vi": "hoài niệm",
+      "category": "Từ vựng miêu tả cảm xúc (Feelings & emotions)"
+    },
+    {
+      "en": "Beautiful",
+      "type": "adj",
+      "vi": "đẹp",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "Amazing",
+      "type": "adj",
+      "vi": "tuyệt vời",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "Boring",
+      "type": "adj",
+      "vi": "chán",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "Catchy",
+      "type": "adj",
+      "vi": "dễ nhớ",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "Peaceful",
+      "type": "adj",
+      "vi": "yên bình",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "Noisy",
+      "type": "adj",
+      "vi": "ồn ào",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "Powerful",
+      "type": "adj",
+      "vi": "mạnh mẽ",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "Gentle",
+      "type": "adj",
+      "vi": "dịu dàng",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "Classic",
+      "type": "adj",
+      "vi": "kinh điển",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "Trendy",
+      "type": "adj",
+      "vi": "hợp xu hướng",
+      "category": "Từ vựng về tính từ gợi tả (Adjectives for music)"
+    },
+    {
+      "en": "MP3 player",
+      "type": "n",
+      "vi": "máy nghe nhạc MP3",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Streaming",
+      "type": "n",
+      "vi": "phát trực tuyến",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Music app",
+      "type": "n",
+      "vi": "ứng dụng âm nhạc",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Playlist",
+      "type": "n",
+      "vi": "danh sách phát nhạc",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Album",
+      "type": "n",
+      "vi": "album nhạc",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Single",
+      "type": "n",
+      "vi": "đĩa đơn",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Karaoke",
+      "type": "n",
+      "vi": "hát karaoke",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Headset",
+      "type": "n",
+      "vi": "tai nghe có mic",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Bluetooth speaker",
+      "type": "n",
+      "vi": "loa bluetooth",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Online concert",
+      "type": "n",
+      "vi": "hòa nhạc trực tuyến",
+      "category": "Từ vựng về công nghệ & âm nhạc (Technology & music)"
+    },
+    {
+      "en": "Listen every day",
+      "type": "v",
+      "vi": "nghe hằng ngày",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    },
+    {
+      "en": "Listen before sleeping",
+      "type": "v",
+      "vi": "nghe trước khi ngủ",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    },
+    {
+      "en": "Listen while studying",
+      "type": "v",
+      "vi": "nghe khi học",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    },
+    {
+      "en": "Listen while working",
+      "type": "v",
+      "vi": "nghe khi làm việc",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    },
+    {
+      "en": "Sing along",
+      "type": "v",
+      "vi": "hát theo",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    },
+    {
+      "en": "Hum a tune",
+      "type": "v",
+      "vi": "ngân nga",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    },
+    {
+      "en": "Play background music",
+      "type": "v",
+      "vi": "bật nhạc nền",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    },
+    {
+      "en": "Turn up the volume",
+      "type": "v",
+      "vi": "tăng âm lượng",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    },
+    {
+      "en": "Turn down the volume",
+      "type": "v",
+      "vi": "giảm âm lượng",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    },
+    {
+      "en": "Share a song",
+      "type": "v",
+      "vi": "chia sẻ bài hát",
+      "category": "Từ vựng mô tả hành động nghe nhạc (Listening habits)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "Music is my hobby.",
+      "vi": "Âm nhạc là sở thích của tôi.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I can’t live without music.",
+      "vi": "Tôi không thể sống thiếu âm nhạc.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "This is my favorite song.",
+      "vi": "Đây là bài hát yêu thích của tôi.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I love going to live concerts.",
+      "vi": "Tôi thích đi xem nhạc sống.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Music helps me relax after a busy day.",
+      "vi": "Âm nhạc giúp tôi thư giãn sau một ngày bận",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "I usually listen to pop music when I study.",
+      "vi": "Tôi thường nghe nhạc pop khi học.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "My best friend and I enjoy singing karaoke together.",
+      "vi": "Tôi và bạn thân thích hát karaoke",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Classical music makes me feel calm and focused.",
+      "vi": "Nhạc cổ điển khiến tôi thấy bình tĩnh",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "I like creating playlists for different moods.",
+      "vi": "Tôi thích tạo danh sách phát nhạc cho từng",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Attending music festivals is an unforgettable experience.",
+      "vi": "Tham gia lễ hội âm nhạc là",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    }
+  ]
+}

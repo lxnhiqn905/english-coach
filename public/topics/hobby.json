@@ -1,0 +1,708 @@
+{
+  "id": "hobby",
+  "label": "Hobby",
+  "vocab": [
+    {
+      "en": "Reading",
+      "type": "n",
+      "vi": "đọc sách",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Writing",
+      "type": "n",
+      "vi": "viết lách",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Drawing",
+      "type": "n",
+      "vi": "vẽ tranh",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Painting",
+      "type": "n",
+      "vi": "tô/hoạ tranh",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Listening to music",
+      "type": "n",
+      "vi": "nghe nhạc",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Dancing",
+      "type": "n",
+      "vi": "nhảy múa",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Singing",
+      "type": "n",
+      "vi": "hát",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Watching movies/TV",
+      "type": "n",
+      "vi": "xem phim/truyền hình",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Playing video games",
+      "type": "n",
+      "vi": "chơi trò chơi điện tử",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Cooking",
+      "type": "n",
+      "vi": "nấu ăn",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Baking",
+      "type": "n",
+      "vi": "làm bánh",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Gardening",
+      "type": "n",
+      "vi": "làm vườn",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Photography",
+      "type": "n",
+      "vi": "chụp ảnh",
+      "category": "Từ vựng về sở thích phổ biến (Common hobbies)"
+    },
+    {
+      "en": "Playing football/soccer",
+      "type": "n",
+      "vi": "chơi bóng đá",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Playing basketball",
+      "type": "n",
+      "vi": "chơi bóng rổ",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Playing tennis",
+      "type": "n",
+      "vi": "chơi quần vợt",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Swimming",
+      "type": "n",
+      "vi": "bơi lội",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Running",
+      "type": "n",
+      "vi": "chạy bộ",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Cycling",
+      "type": "n",
+      "vi": "đạp xe",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Hiking",
+      "type": "n",
+      "vi": "đi bộ đường dài",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Yoga",
+      "type": "n",
+      "vi": "tập yoga",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Gymnastics",
+      "type": "n",
+      "vi": "tập thể hình",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Skating",
+      "type": "n",
+      "vi": "trượt băng/trượt patin",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Martial arts",
+      "type": "n",
+      "vi": "võ thuật",
+      "category": "Từ vựng về sở thích thể thao (Sports-related hobbies)"
+    },
+    {
+      "en": "Playing musical instruments",
+      "type": "n",
+      "vi": "chơi nhạc cụ",
+      "category": "Từ vựng về sở thích sáng tạo (Creative hobbies)"
+    },
+    {
+      "en": "Crafting",
+      "type": "n",
+      "vi": "làm đồ thủ công",
+      "category": "Từ vựng về sở thích sáng tạo (Creative hobbies)"
+    },
+    {
+      "en": "Knitting",
+      "type": "n",
+      "vi": "đan len",
+      "category": "Từ vựng về sở thích sáng tạo (Creative hobbies)"
+    },
+    {
+      "en": "Sewing",
+      "type": "n",
+      "vi": "may vá",
+      "category": "Từ vựng về sở thích sáng tạo (Creative hobbies)"
+    },
+    {
+      "en": "Making jewelry",
+      "type": "n",
+      "vi": "làm trang sức",
+      "category": "Từ vựng về sở thích sáng tạo (Creative hobbies)"
+    },
+    {
+      "en": "Calligraphy",
+      "type": "n",
+      "vi": "viết thư pháp",
+      "category": "Từ vựng về sở thích sáng tạo (Creative hobbies)"
+    },
+    {
+      "en": "Camping",
+      "type": "n",
+      "vi": "cắm trại",
+      "category": "Từ vựng về sở thích ngoài trời (Outdoor hobbies)"
+    },
+    {
+      "en": "Fishing",
+      "type": "n",
+      "vi": "câu cá",
+      "category": "Từ vựng về sở thích ngoài trời (Outdoor hobbies)"
+    },
+    {
+      "en": "Bird watching",
+      "type": "n",
+      "vi": "quan sát chim",
+      "category": "Từ vựng về sở thích ngoài trời (Outdoor hobbies)"
+    },
+    {
+      "en": "Surfing",
+      "type": "n",
+      "vi": "lướt sóng",
+      "category": "Từ vựng về sở thích ngoài trời (Outdoor hobbies)"
+    },
+    {
+      "en": "Kayaking",
+      "type": "n",
+      "vi": "chèo thuyền kayak",
+      "category": "Từ vựng về sở thích ngoài trời (Outdoor hobbies)"
+    },
+    {
+      "en": "Rock climbing",
+      "type": "n",
+      "vi": "leo núi đá",
+      "category": "Từ vựng về sở thích ngoài trời (Outdoor hobbies)"
+    },
+    {
+      "en": "Stargazing",
+      "type": "n",
+      "vi": "ngắm sao",
+      "category": "Từ vựng về sở thích ngoài trời (Outdoor hobbies)"
+    },
+    {
+      "en": "Traveling",
+      "type": "n",
+      "vi": "du lịch",
+      "category": "Từ vựng về sở thích ngoài trời (Outdoor hobbies)"
+    },
+    {
+      "en": "Learning languages",
+      "type": "n",
+      "vi": "học ngoại ngữ",
+      "category": "Từ vựng về sở thích học tập (Learning hobbies)"
+    },
+    {
+      "en": "Doing puzzles",
+      "type": "n",
+      "vi": "giải đố",
+      "category": "Từ vựng về sở thích học tập (Learning hobbies)"
+    },
+    {
+      "en": "Playing chess",
+      "type": "n",
+      "vi": "chơi cờ vua",
+      "category": "Từ vựng về sở thích học tập (Learning hobbies)"
+    },
+    {
+      "en": "Studying history",
+      "type": "n",
+      "vi": "nghiên cứu lịch sử",
+      "category": "Từ vựng về sở thích học tập (Learning hobbies)"
+    },
+    {
+      "en": "Researching",
+      "type": "n",
+      "vi": "nghiên cứu",
+      "category": "Từ vựng về sở thích học tập (Learning hobbies)"
+    },
+    {
+      "en": "Taking online courses",
+      "type": "n",
+      "vi": "tham gia các khóa học trực tuyến",
+      "category": "Từ vựng về sở thích học tập (Learning hobbies)"
+    },
+    {
+      "en": "Collecting stamps",
+      "type": "n",
+      "vi": "sưu tầm tem",
+      "category": "Từ vựng về sở thích sưu tầm (Collecting hobbies)"
+    },
+    {
+      "en": "Collecting coins",
+      "type": "n",
+      "vi": "sưu tầm tiền xu",
+      "category": "Từ vựng về sở thích sưu tầm (Collecting hobbies)"
+    },
+    {
+      "en": "Collecting postcards",
+      "type": "n",
+      "vi": "sưu tầm bưu thiếp",
+      "category": "Từ vựng về sở thích sưu tầm (Collecting hobbies)"
+    },
+    {
+      "en": "Collecting books",
+      "type": "n",
+      "vi": "sưu tầm sách",
+      "category": "Từ vựng về sở thích sưu tầm (Collecting hobbies)"
+    },
+    {
+      "en": "Collecting antiques",
+      "type": "n",
+      "vi": "sưu tầm đồ cổ",
+      "category": "Từ vựng về sở thích sưu tầm (Collecting hobbies)"
+    },
+    {
+      "en": "Relaxing",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Tính từ mô tả sở thích (Adjectives to describe hobbies)"
+    },
+    {
+      "en": "Exciting",
+      "type": "adj",
+      "vi": "thú vị",
+      "category": "Tính từ mô tả sở thích (Adjectives to describe hobbies)"
+    },
+    {
+      "en": "Fun",
+      "type": "adj",
+      "vi": "vui vẻ",
+      "category": "Tính từ mô tả sở thích (Adjectives to describe hobbies)"
+    },
+    {
+      "en": "Challenging",
+      "type": "adj",
+      "vi": "mang tính thử thách",
+      "category": "Tính từ mô tả sở thích (Adjectives to describe hobbies)"
+    },
+    {
+      "en": "Creative",
+      "type": "adj",
+      "vi": "sáng tạo",
+      "category": "Tính từ mô tả sở thích (Adjectives to describe hobbies)"
+    },
+    {
+      "en": "Adventurous",
+      "type": "adj",
+      "vi": "mạo hiểm",
+      "category": "Tính từ mô tả sở thích (Adjectives to describe hobbies)"
+    },
+    {
+      "en": "Rewarding",
+      "type": "adj",
+      "vi": "bổ ích",
+      "category": "Tính từ mô tả sở thích (Adjectives to describe hobbies)"
+    },
+    {
+      "en": "Educational",
+      "type": "adj",
+      "vi": "mang tính giáo dục",
+      "category": "Tính từ mô tả sở thích (Adjectives to describe hobbies)"
+    },
+    {
+      "en": "Doing yoga",
+      "type": "n",
+      "vi": "tập yoga",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Doing aerobics",
+      "type": "n",
+      "vi": "tập thể dục nhịp điệu",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Playing board games",
+      "type": "n",
+      "vi": "chơi các trò chơi trên bàn cờ (như cờ vua, cờ tướng)",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Watching sports",
+      "type": "n",
+      "vi": "xem thể thao",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Learning to cook new recipes",
+      "type": "n",
+      "vi": "học nấu các món ăn mới",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Exploring new places",
+      "type": "n",
+      "vi": "khám phá những địa điểm mới",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Writing a diary",
+      "type": "n",
+      "vi": "viết nhật ký",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Meditating",
+      "type": "n",
+      "vi": "thiền định",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Vlogging",
+      "type": "n",
+      "vi": "làm vlog",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Blogging",
+      "type": "n",
+      "vi": "viết blog",
+      "category": "Sở thích phổ biến khác (Other common hobbies)"
+    },
+    {
+      "en": "Making pottery",
+      "type": "n",
+      "vi": "làm gốm",
+      "category": "Từ vựng về sở thích nghệ thuật (Art-related hobbies)"
+    },
+    {
+      "en": "Origami",
+      "type": "n",
+      "vi": "nghệ thuật gấp giấy Nhật Bản",
+      "category": "Từ vựng về sở thích nghệ thuật (Art-related hobbies)"
+    },
+    {
+      "en": "Scrapbooking",
+      "type": "n",
+      "vi": "làm sổ lưu niệm",
+      "category": "Từ vựng về sở thích nghệ thuật (Art-related hobbies)"
+    },
+    {
+      "en": "Sculpting",
+      "type": "n",
+      "vi": "điêu khắc",
+      "category": "Từ vựng về sở thích nghệ thuật (Art-related hobbies)"
+    },
+    {
+      "en": "Acting",
+      "type": "n",
+      "vi": "diễn xuất",
+      "category": "Từ vựng về sở thích nghệ thuật (Art-related hobbies)"
+    },
+    {
+      "en": "Designing clothes",
+      "type": "n",
+      "vi": "thiết kế trang phục",
+      "category": "Từ vựng về sở thích nghệ thuật (Art-related hobbies)"
+    },
+    {
+      "en": "Learning graphic design",
+      "type": "n",
+      "vi": "học thiết kế đồ họa",
+      "category": "Từ vựng về sở thích nghệ thuật (Art-related hobbies)"
+    },
+    {
+      "en": "Horse riding",
+      "type": "n",
+      "vi": "cưỡi ngựa",
+      "category": "Sở thích ngoài trời (More outdoor hobbies)"
+    },
+    {
+      "en": "Sailing",
+      "type": "n",
+      "vi": "chèo thuyền buồm",
+      "category": "Sở thích ngoài trời (More outdoor hobbies)"
+    },
+    {
+      "en": "Snowboarding",
+      "type": "n",
+      "vi": "trượt ván trên tuyết",
+      "category": "Sở thích ngoài trời (More outdoor hobbies)"
+    },
+    {
+      "en": "Skiing",
+      "type": "n",
+      "vi": "trượt tuyết",
+      "category": "Sở thích ngoài trời (More outdoor hobbies)"
+    },
+    {
+      "en": "Mountain biking",
+      "type": "n",
+      "vi": "đạp xe địa hình",
+      "category": "Sở thích ngoài trời (More outdoor hobbies)"
+    },
+    {
+      "en": "Geocaching",
+      "type": "n",
+      "vi": "săn tìm kho báu GPS",
+      "category": "Sở thích ngoài trời (More outdoor hobbies)"
+    },
+    {
+      "en": "Exploring caves",
+      "type": "n",
+      "vi": "khám phá hang động",
+      "category": "Sở thích ngoài trời (More outdoor hobbies)"
+    },
+    {
+      "en": "Picnicking",
+      "type": "n",
+      "vi": "đi dã ngoại",
+      "category": "Sở thích ngoài trời (More outdoor hobbies)"
+    },
+    {
+      "en": "Playing card games",
+      "type": "n",
+      "vi": "chơi bài",
+      "category": "Sở thích làm việc trong nhà (Indoor hobbies)"
+    },
+    {
+      "en": "Solving Rubik’s Cube",
+      "type": "n",
+      "vi": "giải khối Rubik",
+      "category": "Sở thích làm việc trong nhà (Indoor hobbies)"
+    },
+    {
+      "en": "Watching documentaries",
+      "type": "n",
+      "vi": "xem phim tài liệu",
+      "category": "Sở thích làm việc trong nhà (Indoor hobbies)"
+    },
+    {
+      "en": "Doing DIY projects",
+      "type": "n",
+      "vi": "làm đồ thủ công tự chế",
+      "category": "Sở thích làm việc trong nhà (Indoor hobbies)"
+    },
+    {
+      "en": "Practicing magic tricks",
+      "type": "n",
+      "vi": "tập luyện các trò ảo thuật",
+      "category": "Sở thích làm việc trong nhà (Indoor hobbies)"
+    },
+    {
+      "en": "Learning coding",
+      "type": "n",
+      "vi": "học lập trình",
+      "category": "Sở thích làm việc trong nhà (Indoor hobbies)"
+    },
+    {
+      "en": "Practicing calligraphy",
+      "type": "n",
+      "vi": "luyện viết thư pháp",
+      "category": "Sở thích làm việc trong nhà (Indoor hobbies)"
+    },
+    {
+      "en": "Relaxing",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "Engaging",
+      "type": "adj",
+      "vi": "cuốn hút",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "Therapeutic",
+      "type": "adj",
+      "vi": "trị liệu, giúp thư thái",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "Entertaining",
+      "type": "adj",
+      "vi": "mang tính giải trí",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "Addictive",
+      "type": "adj",
+      "vi": "gây nghiện (theo nghĩa tích cực)",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "Inspiring",
+      "type": "adj",
+      "vi": "truyền cảm hứng",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "Challenging",
+      "type": "adj",
+      "vi": "đầy thử thách",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "Rewarding",
+      "type": "adj",
+      "vi": "bổ ích",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "Educational",
+      "type": "adj",
+      "vi": "mang tính giáo dục",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "Creative",
+      "type": "adj",
+      "vi": "đầy sáng tạo",
+      "category": "Tính từ mở rộng mô tả sở thích (Expanded adjectives)"
+    },
+    {
+      "en": "What are your hobbies?",
+      "type": "",
+      "vi": "Sở thích của bạn là gì?",
+      "category": "Các câu hỏi thường dùng về sở thích (Common questions about hobbies)"
+    },
+    {
+      "en": "How often do you do it?",
+      "type": "",
+      "vi": "Bạn làm việc đó bao lâu một lần?",
+      "category": "Các câu hỏi thường dùng về sở thích (Common questions about hobbies)"
+    },
+    {
+      "en": "When did you start this hobby?",
+      "type": "",
+      "vi": "Bạn bắt đầu sở thích này khi nào?",
+      "category": "Các câu hỏi thường dùng về sở thích (Common questions about hobbies)"
+    },
+    {
+      "en": "Why do you enjoy this hobby?",
+      "type": "",
+      "vi": "Tại sao bạn thích sở thích này?",
+      "category": "Các câu hỏi thường dùng về sở thích (Common questions about hobbies)"
+    },
+    {
+      "en": "Is it an expensive hobby?",
+      "type": "",
+      "vi": "Đây có phải là một sở thích đắt tiền không?",
+      "category": "Các câu hỏi thường dùng về sở thích (Common questions about hobbies)"
+    },
+    {
+      "en": "What have you learned from your hobby?",
+      "type": "",
+      "vi": "Bạn đã học được gì từ sở thích của mình?",
+      "category": "Các câu hỏi thường dùng về sở thích (Common questions about hobbies)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I enjoy… (Tôi thích...)",
+      "vi": "",
+      "category": "Cụm từ thông dụng về sở thích (Common phrases)"
+    },
+    {
+      "en": "My favorite hobby is… (Sở thích yêu thích của tôi là...)",
+      "vi": "",
+      "category": "Cụm từ thông dụng về sở thích (Common phrases)"
+    },
+    {
+      "en": "I spend my free time… (Tôi dành thời gian rảnh để...)",
+      "vi": "",
+      "category": "Cụm từ thông dụng về sở thích (Common phrases)"
+    },
+    {
+      "en": "I’m interested in… (Tôi quan tâm đến...)",
+      "vi": "",
+      "category": "Cụm từ thông dụng về sở thích (Common phrases)"
+    },
+    {
+      "en": "I love trying new hobbies like… (Tôi thích thử các sở thích mới như...)",
+      "vi": "",
+      "category": "Cụm từ thông dụng về sở thích (Common phrases)"
+    },
+    {
+      "en": "This hobby helps me relax.",
+      "vi": "Sở thích này giúp tôi thư giãn.",
+      "category": "Cụm từ thông dụng về sở thích (Common phrases)"
+    },
+    {
+      "en": "I started this hobby when I was… (Tôi bắt đầu sở thích này khi tôi...)",
+      "vi": "",
+      "category": "Cụm từ thông dụng về sở thích (Common phrases)"
+    },
+    {
+      "en": "I’ve been interested in… since I was a child.",
+      "vi": "Tôi đã quan tâm đến… từ khi còn nhỏ.",
+      "category": "Cụm từ và mẫu câu về sở thích (Phrases and sentences about hobbies)"
+    },
+    {
+      "en": "I usually spend my weekends… (Tôi thường dành cuối tuần để…)",
+      "vi": "",
+      "category": "Cụm từ và mẫu câu về sở thích (Phrases and sentences about hobbies)"
+    },
+    {
+      "en": "One of my favorite hobbies is… because it helps me… (Một trong những sở thích yêu thích của",
+      "vi": "",
+      "category": "Cụm từ và mẫu câu về sở thích (Phrases and sentences about hobbies)"
+    },
+    {
+      "en": "I find this hobby very enjoyable and relaxing.",
+      "vi": "Tôi thấy sở thích này rất thú vị và thư giãn.",
+      "category": "Cụm từ và mẫu câu về sở thích (Phrases and sentences about hobbies)"
+    },
+    {
+      "en": "It’s a great way to spend my free time.",
+      "vi": "Đây là một cách tuyệt vời để dành thời gian rảnh rỗi.",
+      "category": "Cụm từ và mẫu câu về sở thích (Phrases and sentences about hobbies)"
+    },
+    {
+      "en": "I like trying new things, so I recently started… (Tôi thích thử những điều mới, vì vậy gần đây tôi",
+      "vi": "",
+      "category": "Cụm từ và mẫu câu về sở thích (Phrases and sentences about hobbies)"
+    },
+    {
+      "en": "I’ve learned a lot from this hobby, such as… (Tôi đã học được rất nhiều từ sở thích này, chẳng",
+      "vi": "",
+      "category": "Cụm từ và mẫu câu về sở thích (Phrases and sentences about hobbies)"
+    }
+  ]
+}

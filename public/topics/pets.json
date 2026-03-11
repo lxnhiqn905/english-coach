@@ -1,0 +1,778 @@
+{
+  "id": "pets",
+  "label": "Pets",
+  "vocab": [
+    {
+      "en": "Dog",
+      "type": "",
+      "vi": "chó",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Cat",
+      "type": "",
+      "vi": "mèo",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Hamster",
+      "type": "",
+      "vi": "chuột hamster",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Rabbit",
+      "type": "",
+      "vi": "thỏ",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Parrot",
+      "type": "",
+      "vi": "vẹt",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Goldfish",
+      "type": "",
+      "vi": "cá vàng",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Turtle",
+      "type": "",
+      "vi": "rùa nước",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Tortoise",
+      "type": "",
+      "vi": "rùa cạn",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Guinea pig",
+      "type": "",
+      "vi": "chuột lang",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Budgie",
+      "type": "",
+      "vi": "vẹt nhỏ",
+      "category": "Types of Pets (Các loại thú cưng)"
+    },
+    {
+      "en": "Cute",
+      "type": "",
+      "vi": "dễ thương",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Friendly",
+      "type": "",
+      "vi": "thân thiện",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Playful",
+      "type": "",
+      "vi": "thích chơi đùa",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Lazy",
+      "type": "",
+      "vi": "lười biếng",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Active",
+      "type": "",
+      "vi": "năng động",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Loyal",
+      "type": "",
+      "vi": "trung thành",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Noisy",
+      "type": "",
+      "vi": "ồn ào",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Quiet",
+      "type": "",
+      "vi": "ít ồn",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Aggressive",
+      "type": "",
+      "vi": "hung dữ",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Gentle",
+      "type": "",
+      "vi": "hiền lành",
+      "category": "Descriptions (Tính từ miêu tả thú cưng)"
+    },
+    {
+      "en": "Collar",
+      "type": "",
+      "vi": "vòng cổ",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Leash",
+      "type": "",
+      "vi": "dây dắt",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Cage",
+      "type": "",
+      "vi": "lồng",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Fish tank",
+      "type": "",
+      "vi": "bể cá",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Pet bed",
+      "type": "",
+      "vi": "giường thú cưng",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Food bowl",
+      "type": "",
+      "vi": "bát ăn",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Water bowl",
+      "type": "",
+      "vi": "bát uống nước",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Litter box",
+      "type": "",
+      "vi": "khay cát (mèo)",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Toy",
+      "type": "",
+      "vi": "đồ chơi",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Brush",
+      "type": "",
+      "vi": "bàn chải",
+      "category": "Pet Accessories (Đồ dùng cho thú cưng)"
+    },
+    {
+      "en": "Pet food",
+      "type": "",
+      "vi": "thức ăn thú nuôi",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Dry food",
+      "type": "",
+      "vi": "thức ăn khô",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Wet food",
+      "type": "",
+      "vi": "thức ăn ướt",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Fish flakes",
+      "type": "",
+      "vi": "thức ăn cá",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Treats",
+      "type": "",
+      "vi": "đồ ăn thưởng",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Vegetables",
+      "type": "",
+      "vi": "rau củ",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Meat",
+      "type": "",
+      "vi": "thịt",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Seeds",
+      "type": "",
+      "vi": "hạt giống",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Hay",
+      "type": "",
+      "vi": "cỏ khô (cho thỏ, chuột lang)",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Insects",
+      "type": "",
+      "vi": "côn trùng (cho một số thú ăn)",
+      "category": "Pet Food (Thức ăn cho thú cưng)"
+    },
+    {
+      "en": "Feed",
+      "type": "",
+      "vi": "cho ăn",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Walk the dog",
+      "type": "",
+      "vi": "dắt chó đi dạo",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Clean the cage",
+      "type": "",
+      "vi": "dọn lồng",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Wash",
+      "type": "",
+      "vi": "tắm",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Brush fur",
+      "type": "",
+      "vi": "chải lông",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Play with",
+      "type": "",
+      "vi": "chơi với",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Train",
+      "type": "",
+      "vi": "huấn luyện",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Pet",
+      "type": "",
+      "vi": "vuốt ve",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Pick up",
+      "type": "",
+      "vi": "bế/nhấc lên",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Give water",
+      "type": "",
+      "vi": "cho uống nước",
+      "category": "Actions (Hành động với thú cưng)"
+    },
+    {
+      "en": "Bark",
+      "type": "",
+      "vi": "sủa",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Meow",
+      "type": "",
+      "vi": "kêu meo",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Bite",
+      "type": "",
+      "vi": "cắn",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Scratch",
+      "type": "",
+      "vi": "cào",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Jump",
+      "type": "",
+      "vi": "nhảy",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Run around",
+      "type": "",
+      "vi": "chạy quanh",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Sleep",
+      "type": "",
+      "vi": "ngủ",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Hide",
+      "type": "",
+      "vi": "trốn",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Play",
+      "type": "",
+      "vi": "chơi",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Climb",
+      "type": "",
+      "vi": "leo trèo",
+      "category": "Behaviors (Hành vi của thú cưng)"
+    },
+    {
+      "en": "Vet",
+      "type": "",
+      "vi": "bác sĩ thú y",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Check-up",
+      "type": "",
+      "vi": "kiểm tra sức khỏe",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Vaccine",
+      "type": "",
+      "vi": "tiêm phòng",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Medicine",
+      "type": "",
+      "vi": "thuốc",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Fleas",
+      "type": "",
+      "vi": "bọ chét",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Worms",
+      "type": "",
+      "vi": "giun sán",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Allergies",
+      "type": "",
+      "vi": "dị ứng",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Injury",
+      "type": "",
+      "vi": "thương tích",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Healthy",
+      "type": "",
+      "vi": "khỏe mạnh",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Sick",
+      "type": "",
+      "vi": "bệnh",
+      "category": "Pet Health (Sức khỏe thú cưng)"
+    },
+    {
+      "en": "Pet shop",
+      "type": "",
+      "vi": "cửa hàng thú cưng",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Veterinary clinic",
+      "type": "",
+      "vi": "phòng khám thú y",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Pet hotel",
+      "type": "",
+      "vi": "khách sạn thú cưng",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Grooming salon",
+      "type": "",
+      "vi": "tiệm spa thú cưng",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Dog park",
+      "type": "",
+      "vi": "công viên chó",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Animal shelter",
+      "type": "",
+      "vi": "trạm cứu hộ động vật",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Pet café",
+      "type": "",
+      "vi": "quán cà phê thú cưng",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Aquarium",
+      "type": "",
+      "vi": "thủy cung",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Backyard",
+      "type": "",
+      "vi": "sân sau",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Home",
+      "type": "",
+      "vi": "nhà",
+      "category": "Pet Places (Địa điểm liên quan thú cưng)"
+    },
+    {
+      "en": "Morning feeding",
+      "type": "",
+      "vi": "cho ăn buổi sáng",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Evening walk",
+      "type": "",
+      "vi": "dắt đi dạo buổi tối",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Weekly bath",
+      "type": "",
+      "vi": "tắm hằng tuần",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Training time",
+      "type": "",
+      "vi": "giờ huấn luyện",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Cleaning schedule",
+      "type": "",
+      "vi": "lịch dọn dẹp",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Playtime",
+      "type": "",
+      "vi": "giờ chơi",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Grooming day",
+      "type": "",
+      "vi": "ngày spa, làm đẹp",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Nail trimming",
+      "type": "",
+      "vi": "cắt móng",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Feeding treats",
+      "type": "",
+      "vi": "cho ăn thưởng",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Health check",
+      "type": "",
+      "vi": "kiểm tra sức khỏe",
+      "category": "Pet Care Routines (Thói quen chăm sóc thú cưng)"
+    },
+    {
+      "en": "Lost pet",
+      "type": "",
+      "vi": "thú cưng bị lạc",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Bad smell",
+      "type": "",
+      "vi": "mùi khó chịu",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Mess",
+      "type": "",
+      "vi": "bừa bộn",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Allergic fur",
+      "type": "",
+      "vi": "lông gây dị ứng",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Biting",
+      "type": "",
+      "vi": "cắn",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Scratching furniture",
+      "type": "",
+      "vi": "cào đồ nội thất",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Barking loudly",
+      "type": "",
+      "vi": "sủa lớn tiếng",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Running away",
+      "type": "",
+      "vi": "bỏ chạy",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Fighting",
+      "type": "",
+      "vi": "gây gổ",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Poor appetite",
+      "type": "",
+      "vi": "bỏ ăn",
+      "category": "Problems (Vấn đề thường gặp)"
+    },
+    {
+      "en": "Happy",
+      "type": "",
+      "vi": "vui",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Excited",
+      "type": "",
+      "vi": "phấn khích",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "",
+      "vi": "thư giãn",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Loved",
+      "type": "",
+      "vi": "được yêu thương",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Worried",
+      "type": "",
+      "vi": "lo lắng",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Proud",
+      "type": "",
+      "vi": "tự hào",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Caring",
+      "type": "",
+      "vi": "quan tâm",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Attached",
+      "type": "",
+      "vi": "gắn bó",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Gentle",
+      "type": "",
+      "vi": "dịu dàng",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Comforted",
+      "type": "",
+      "vi": "được an ủi",
+      "category": "Feelings (Cảm xúc liên quan thú cưng)"
+    },
+    {
+      "en": "Loyal",
+      "type": "",
+      "vi": "trung thành",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    },
+    {
+      "en": "Protective",
+      "type": "",
+      "vi": "bảo vệ",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    },
+    {
+      "en": "Curious",
+      "type": "",
+      "vi": "tò mò",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    },
+    {
+      "en": "Energetic",
+      "type": "",
+      "vi": "tràn đầy năng lượng",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    },
+    {
+      "en": "Shy",
+      "type": "",
+      "vi": "nhút nhát",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    },
+    {
+      "en": "Independent",
+      "type": "",
+      "vi": "độc lập",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    },
+    {
+      "en": "Obedient",
+      "type": "",
+      "vi": "nghe lời",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    },
+    {
+      "en": "Mischievous",
+      "type": "",
+      "vi": "nghịch ngợm",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    },
+    {
+      "en": "Calm",
+      "type": "",
+      "vi": "bình tĩnh",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    },
+    {
+      "en": "Smart",
+      "type": "",
+      "vi": "thông minh",
+      "category": "Adjectives for Pets (Tính từ mô tả thú cưng)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I have a pet dog/cat.",
+      "vi": "Tôi có một con chó/mèo.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "My pet is very friendly.",
+      "vi": "Thú cưng của tôi rất thân thiện.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "I feed my pet twice a day.",
+      "vi": "Tôi cho thú cưng ăn hai lần mỗi ngày.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "My dog loves going for walks.",
+      "vi": "Chó của tôi thích đi dạo.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "My cat sleeps a lot.",
+      "vi": "Mèo của tôi ngủ rất nhiều.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "My pet is part of my family, and I take care of it every day.",
+      "vi": "Thú cưng của tôi như một",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "I take my dog to the park every afternoon so it can play and exercise.",
+      "vi": "Tôi đưa chó đi",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "My cat enjoys sitting by the window and watching birds.",
+      "vi": "Mèo của tôi thích ngồi cạnh",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "Feeding my fish is easy, but I need to clean their tank regularly.",
+      "vi": "Cho cá ăn thì dễ,",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "I love spending time with my pets because they make me feel relaxed and happy.",
+      "vi": "Tôi",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    }
+  ]
+}

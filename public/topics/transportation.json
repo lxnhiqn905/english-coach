@@ -1,0 +1,371 @@
+{
+  "id": "transportation",
+  "label": "Transportation",
+  "vocab": [
+    {
+      "en": "Bus",
+      "type": "n",
+      "vi": "xe buýt",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Train",
+      "type": "n",
+      "vi": "tàu hỏa",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Subway/Metro",
+      "type": "n",
+      "vi": "tàu điện ngầm",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Tram",
+      "type": "n",
+      "vi": "tàu điện trên phố",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Taxi",
+      "type": "n",
+      "vi": "xe taxi",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Car",
+      "type": "n",
+      "vi": "xe ô tô",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Motorbike/Scooter",
+      "type": "n",
+      "vi": "xe máy",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Bicycle",
+      "type": "n",
+      "vi": "xe đạp",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Airplane",
+      "type": "n",
+      "vi": "máy bay",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Ferry",
+      "type": "n",
+      "vi": "phà",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Ship/Boat",
+      "type": "n",
+      "vi": "tàu, thuyền",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Truck/Lorry",
+      "type": "n",
+      "vi": "xe tải",
+      "category": "Types of Transportation (Các loại phương tiện)"
+    },
+    {
+      "en": "Fast",
+      "type": "adj",
+      "vi": "nhanh",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Slow",
+      "type": "adj",
+      "vi": "chậm",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Convenient",
+      "type": "adj",
+      "vi": "tiện lợi",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Comfortable",
+      "type": "adj",
+      "vi": "thoải mái",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Safe",
+      "type": "adj",
+      "vi": "an toàn",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Dangerous",
+      "type": "adj",
+      "vi": "nguy hiểm",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Expensive",
+      "type": "adj",
+      "vi": "đắt",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Cheap",
+      "type": "adj",
+      "vi": "rẻ",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Eco-friendly",
+      "type": "adj",
+      "vi": "thân thiện với môi trường",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Reliable",
+      "type": "adj",
+      "vi": "đáng tin cậy",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Crowded",
+      "type": "adj",
+      "vi": "đông đúc",
+      "category": "Descriptions (Tính từ miêu tả)"
+    },
+    {
+      "en": "Bus stop",
+      "type": "n",
+      "vi": "trạm xe buýt",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Bus station",
+      "type": "n",
+      "vi": "bến xe buýt",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Train station",
+      "type": "n",
+      "vi": "ga tàu",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Airport",
+      "type": "n",
+      "vi": "sân bay",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Harbor/Port",
+      "type": "n",
+      "vi": "cảng",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Highway",
+      "type": "n",
+      "vi": "đường cao tốc",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Road",
+      "type": "n",
+      "vi": "con đường",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Bridge",
+      "type": "n",
+      "vi": "cây cầu",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Tunnel",
+      "type": "n",
+      "vi": "hầm đường bộ",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Parking lot",
+      "type": "n",
+      "vi": "bãi đỗ xe",
+      "category": "Places & Facilities (Nơi chốn và cơ sở hạ tầng)"
+    },
+    {
+      "en": "Electric cars",
+      "type": "",
+      "vi": "xe điện",
+      "category": "Future Transportation (Giao thông trong tương lai)"
+    },
+    {
+      "en": "Self-driving cars",
+      "type": "",
+      "vi": "xe tự lái",
+      "category": "Future Transportation (Giao thông trong tương lai)"
+    },
+    {
+      "en": "High-speed trains",
+      "type": "",
+      "vi": "tàu cao tốc",
+      "category": "Future Transportation (Giao thông trong tương lai)"
+    },
+    {
+      "en": "Flying taxis",
+      "type": "",
+      "vi": "taxi bay",
+      "category": "Future Transportation (Giao thông trong tương lai)"
+    },
+    {
+      "en": "Smart public transport",
+      "type": "",
+      "vi": "hệ thống công cộng thông minh",
+      "category": "Future Transportation (Giao thông trong tương lai)"
+    },
+    {
+      "en": "I feel tired after a long journey.",
+      "type": "",
+      "vi": "Tôi thấy mệt sau một chuyến đi dài.",
+      "category": "Feelings & Opinions (Cảm xúc & Ý kiến)"
+    },
+    {
+      "en": "I enjoy cycling because it’s healthy.",
+      "type": "",
+      "vi": "Tôi thích đạp xe vì nó tốt cho sức khỏe.",
+      "category": "Feelings & Opinions (Cảm xúc & Ý kiến)"
+    },
+    {
+      "en": "I don’t like traffic jams.",
+      "type": "",
+      "vi": "Tôi không thích kẹt xe.",
+      "category": "Feelings & Opinions (Cảm xúc & Ý kiến)"
+    },
+    {
+      "en": "I prefer traveling by train.",
+      "type": "",
+      "vi": "Tôi thích đi bằng tàu hỏa hơn.",
+      "category": "Feelings & Opinions (Cảm xúc & Ý kiến)"
+    },
+    {
+      "en": "I’m excited about future transport.",
+      "type": "",
+      "vi": "Tôi hào hứng về giao thông trong tương lai.",
+      "category": "Feelings & Opinions (Cảm xúc & Ý kiến)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "Commute (v)",
+      "vi": "đi lại (hằng ngày)",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Travel (v)",
+      "vi": "đi du lịch, di chuyển",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Ride a bike/motorbike (v)",
+      "vi": "đi xe đạp/xe máy",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Drive a car (v)",
+      "vi": "lái xe ô tô",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Take a bus/train (v)",
+      "vi": "đi xe buýt/tàu",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Get stuck in traffic (v)",
+      "vi": "bị kẹt xe",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Reduce travel time (v)",
+      "vi": "giảm thời gian di chuyển",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Miss the bus (v)",
+      "vi": "lỡ chuyến xe buýt",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Share a ride (v)",
+      "vi": "đi chung xe",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Buy a ticket (v)",
+      "vi": "mua vé",
+      "category": "Verbs & Phrases (Động từ và cụm từ)"
+    },
+    {
+      "en": "Go to school by bus (đi học bằng xe buýt)",
+      "vi": "",
+      "category": "Activities & Collocations (Các hoạt động & cụm từ thông"
+    },
+    {
+      "en": "Travel abroad by plane (đi nước ngoài bằng máy bay)",
+      "vi": "",
+      "category": "Activities & Collocations (Các hoạt động & cụm từ thông"
+    },
+    {
+      "en": "Walk to work (đi bộ đi làm)",
+      "vi": "",
+      "category": "Activities & Collocations (Các hoạt động & cụm từ thông"
+    },
+    {
+      "en": "Cycle for health (đạp xe vì sức khỏe)",
+      "vi": "",
+      "category": "Activities & Collocations (Các hoạt động & cụm từ thông"
+    },
+    {
+      "en": "Wait at the bus stop (đợi ở trạm xe buýt)",
+      "vi": "",
+      "category": "Activities & Collocations (Các hoạt động & cụm từ thông"
+    },
+    {
+      "en": "Catch the train (bắt kịp chuyến tàu)",
+      "vi": "",
+      "category": "Activities & Collocations (Các hoạt động & cụm từ thông"
+    },
+    {
+      "en": "How do you usually go to school/work?",
+      "vi": "Bạn thường đi học/làm bằng gì?",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "I go to school by motorbike.",
+      "vi": "Tôi đi học bằng xe máy.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "Public transport is very convenient in my city. (Phương tiện công cộng ở thành phố tôi rất",
+      "vi": "",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "The traffic is terrible during rush hours.",
+      "vi": "Giao thông rất tệ vào giờ cao điểm.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "I spend one hour commuting every day.",
+      "vi": "Tôi mất một giờ để đi lại mỗi ngày.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    }
+  ]
+}

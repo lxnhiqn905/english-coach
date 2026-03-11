@@ -1,0 +1,778 @@
+{
+  "id": "health",
+  "label": "Health & Medicine",
+  "vocab": [
+    {
+      "en": "Fever",
+      "type": "",
+      "vi": "sốt",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Cough",
+      "type": "",
+      "vi": "ho",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Sore throat",
+      "type": "",
+      "vi": "đau họng",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Headache",
+      "type": "",
+      "vi": "đau đầu",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Stomachache",
+      "type": "",
+      "vi": "đau bụng",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Toothache",
+      "type": "",
+      "vi": "đau răng",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Runny nose",
+      "type": "",
+      "vi": "chảy nước mũi",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Tiredness",
+      "type": "",
+      "vi": "mệt mỏi",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Nausea",
+      "type": "",
+      "vi": "buồn nôn",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Dizziness",
+      "type": "",
+      "vi": "chóng mặt",
+      "category": "Symptoms (Triệu chứng)"
+    },
+    {
+      "en": "Flu",
+      "type": "",
+      "vi": "cúm",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Cold",
+      "type": "",
+      "vi": "cảm lạnh",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Allergy",
+      "type": "",
+      "vi": "dị ứng",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Infection",
+      "type": "",
+      "vi": "nhiễm trùng",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Food poisoning",
+      "type": "",
+      "vi": "ngộ độc thực phẩm",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Diarrhea",
+      "type": "",
+      "vi": "tiêu chảy",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Asthma",
+      "type": "",
+      "vi": "hen suyễn",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Covid-19",
+      "type": "",
+      "vi": "Covid-19",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Chickenpox",
+      "type": "",
+      "vi": "thủy đậu",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Migraine",
+      "type": "",
+      "vi": "đau nửa đầu",
+      "category": "Common Illnesses (Bệnh phổ biến)"
+    },
+    {
+      "en": "Hospital",
+      "type": "",
+      "vi": "bệnh viện",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Clinic",
+      "type": "",
+      "vi": "phòng khám",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Pharmacy",
+      "type": "",
+      "vi": "nhà thuốc",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Emergency room",
+      "type": "",
+      "vi": "phòng cấp cứu",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Waiting room",
+      "type": "",
+      "vi": "phòng chờ",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Operating room",
+      "type": "",
+      "vi": "phòng phẫu thuật",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Health center",
+      "type": "",
+      "vi": "trung tâm y tế",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Laboratory",
+      "type": "",
+      "vi": "phòng xét nghiệm",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Dentist’s office",
+      "type": "",
+      "vi": "phòng khám nha sĩ",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Therapy room",
+      "type": "",
+      "vi": "phòng trị liệu",
+      "category": "Medical Places (Địa điểm y tế)"
+    },
+    {
+      "en": "Doctor",
+      "type": "",
+      "vi": "bác sĩ",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Nurse",
+      "type": "",
+      "vi": "y tá",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Dentist",
+      "type": "",
+      "vi": "nha sĩ",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Pharmacist",
+      "type": "",
+      "vi": "dược sĩ",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Surgeon",
+      "type": "",
+      "vi": "bác sĩ phẫu thuật",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Therapist",
+      "type": "",
+      "vi": "chuyên viên trị liệu",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Paramedic",
+      "type": "",
+      "vi": "nhân viên cấp cứu",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Specialist",
+      "type": "",
+      "vi": "bác sĩ chuyên khoa",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Nutritionist",
+      "type": "",
+      "vi": "chuyên gia dinh dưỡng",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Psychologist",
+      "type": "",
+      "vi": "nhà tâm lý học",
+      "category": "Medical Professionals (Nhân viên y tế)"
+    },
+    {
+      "en": "Take medicine",
+      "type": "",
+      "vi": "uống thuốc",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "Rest",
+      "type": "",
+      "vi": "nghỉ ngơi",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "Drink water",
+      "type": "",
+      "vi": "uống nước",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "See a doctor",
+      "type": "",
+      "vi": "đi khám",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "Take a test",
+      "type": "",
+      "vi": "làm xét nghiệm",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "Check temperature",
+      "type": "",
+      "vi": "đo nhiệt độ",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "Get vaccinated",
+      "type": "",
+      "vi": "tiêm vắc xin",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "Recover",
+      "type": "",
+      "vi": "hồi phục",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "Treat",
+      "type": "",
+      "vi": "điều trị",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "Exercise",
+      "type": "",
+      "vi": "tập thể dục",
+      "category": "Actions & Verbs (Hành động liên quan y tế)"
+    },
+    {
+      "en": "Eat healthy food",
+      "type": "",
+      "vi": "ăn uống lành mạnh",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Sleep early",
+      "type": "",
+      "vi": "ngủ sớm",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Avoid fast food",
+      "type": "",
+      "vi": "tránh đồ ăn nhanh",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Wash your hands",
+      "type": "",
+      "vi": "rửa tay",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Don’t smoke",
+      "type": "",
+      "vi": "đừng hút thuốc",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Exercise regularly",
+      "type": "",
+      "vi": "tập thể dục thường xuyên",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Reduce stress",
+      "type": "",
+      "vi": "giảm căng thẳng",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Stay hydrated",
+      "type": "",
+      "vi": "giữ đủ nước",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Go for a check-up",
+      "type": "",
+      "vi": "đi khám định kỳ",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Maintain a healthy lifestyle",
+      "type": "",
+      "vi": "duy trì lối sống lành mạnh",
+      "category": "Health Advice (Lời khuyên sức khỏe)"
+    },
+    {
+      "en": "Thermometer",
+      "type": "",
+      "vi": "nhiệt kế",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "First-aid kit",
+      "type": "",
+      "vi": "hộp sơ cứu",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "Bandage",
+      "type": "",
+      "vi": "băng gạc",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "Wheelchair",
+      "type": "",
+      "vi": "xe lăn",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "Stethoscope",
+      "type": "",
+      "vi": "ống nghe",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "Mask",
+      "type": "",
+      "vi": "khẩu trang",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "Gloves",
+      "type": "",
+      "vi": "găng tay",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "Injection",
+      "type": "",
+      "vi": "mũi tiêm",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "Pills",
+      "type": "",
+      "vi": "thuốc viên",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "Syringe",
+      "type": "",
+      "vi": "ống tiêm",
+      "category": "Health Equipment (Thiết bị y tế)"
+    },
+    {
+      "en": "Head",
+      "type": "",
+      "vi": "đầu",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Heart",
+      "type": "",
+      "vi": "tim",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Lungs",
+      "type": "",
+      "vi": "phổi",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Stomach",
+      "type": "",
+      "vi": "dạ dày",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Back",
+      "type": "",
+      "vi": "lưng",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Arm",
+      "type": "",
+      "vi": "cánh tay",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Leg",
+      "type": "",
+      "vi": "chân",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Throat",
+      "type": "",
+      "vi": "cổ họng",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Skin",
+      "type": "",
+      "vi": "da",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Bones",
+      "type": "",
+      "vi": "xương",
+      "category": "Body Parts (Các bộ phận cơ thể)"
+    },
+    {
+      "en": "Sleeping 7–8 hours",
+      "type": "",
+      "vi": "ngủ đủ 7–8 giờ",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Drinking enough water",
+      "type": "",
+      "vi": "uống đủ nước",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Eating vegetables",
+      "type": "",
+      "vi": "ăn rau",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Stretching",
+      "type": "",
+      "vi": "kéo giãn cơ",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Walking",
+      "type": "",
+      "vi": "đi bộ",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Meditating",
+      "type": "",
+      "vi": "thiền",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Limiting sugar",
+      "type": "",
+      "vi": "hạn chế đường",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Avoiding alcohol",
+      "type": "",
+      "vi": "tránh rượu bia",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Keeping your room clean",
+      "type": "",
+      "vi": "giữ phòng sạch sẽ",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Maintaining good hygiene",
+      "type": "",
+      "vi": "giữ vệ sinh tốt",
+      "category": "Healthy Habits (Thói quen tốt cho sức khỏe)"
+    },
+    {
+      "en": "Taking medicine",
+      "type": "",
+      "vi": "uống thuốc",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Drinking tea",
+      "type": "",
+      "vi": "uống trà",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Resting in bed",
+      "type": "",
+      "vi": "nằm nghỉ",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Going to the doctor",
+      "type": "",
+      "vi": "đi khám",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Doing light exercise",
+      "type": "",
+      "vi": "tập nhẹ",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Eating soup",
+      "type": "",
+      "vi": "ăn súp",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Taking vitamins",
+      "type": "",
+      "vi": "uống vitamin",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Calling an ambulance",
+      "type": "",
+      "vi": "gọi xe cấp cứu",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Using a cold pack",
+      "type": "",
+      "vi": "chườm lạnh",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Checking blood pressure",
+      "type": "",
+      "vi": "đo huyết áp",
+      "category": "Activities (Hoạt động thường làm khi ốm hoặc chăm sức khỏe)"
+    },
+    {
+      "en": "Sick",
+      "type": "",
+      "vi": "bệnh",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Weak",
+      "type": "",
+      "vi": "yếu",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Painful",
+      "type": "",
+      "vi": "đau",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Worried",
+      "type": "",
+      "vi": "lo lắng",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Better",
+      "type": "",
+      "vi": "khỏe hơn",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Uncomfortable",
+      "type": "",
+      "vi": "khó chịu",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Exhausted",
+      "type": "",
+      "vi": "kiệt sức",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "",
+      "vi": "thư giãn",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Hopeful",
+      "type": "",
+      "vi": "hy vọng",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Calm",
+      "type": "",
+      "vi": "bình tĩnh",
+      "category": "Feelings (Cảm xúc liên quan sức khỏe)"
+    },
+    {
+      "en": "Healthy",
+      "type": "",
+      "vi": "khỏe mạnh",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    },
+    {
+      "en": "Unhealthy",
+      "type": "",
+      "vi": "không khỏe",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    },
+    {
+      "en": "Strong",
+      "type": "",
+      "vi": "mạnh",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    },
+    {
+      "en": "Weak",
+      "type": "",
+      "vi": "yếu",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    },
+    {
+      "en": "Serious",
+      "type": "",
+      "vi": "nghiêm trọng",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    },
+    {
+      "en": "Mild",
+      "type": "",
+      "vi": "nhẹ",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    },
+    {
+      "en": "Chronic",
+      "type": "",
+      "vi": "mãn tính",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    },
+    {
+      "en": "Acute",
+      "type": "",
+      "vi": "cấp tính",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    },
+    {
+      "en": "Contagious",
+      "type": "",
+      "vi": "dễ lây",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    },
+    {
+      "en": "Safe",
+      "type": "",
+      "vi": "an toàn",
+      "category": "Adjectives (Tính từ miêu tả sức khỏe)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I don’t feel well.",
+      "vi": "Tôi cảm thấy không khỏe.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "I have a sore throat.",
+      "vi": "Tôi bị đau họng.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "I need to see a doctor.",
+      "vi": "Tôi cần đi khám bác sĩ.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "I think I’m getting better.",
+      "vi": "Tôi nghĩ tôi đang khỏe lại.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "This medicine works well.",
+      "vi": "Thuốc này hiệu quả.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "I’ve been coughing for three days.",
+      "vi": "Tôi đã ho trong ba ngày.",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "The doctor told me to drink more water and rest.",
+      "vi": "Bác sĩ bảo tôi uống nhiều nước và",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "I had a high fever last night, but now it's lower.",
+      "vi": "Tối qua tôi bị sốt cao nhưng giờ đã",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "I’m allergic to seafood, so I can’t eat it.",
+      "vi": "Tôi bị dị ứng hải sản nên không thể ăn.",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "The nurse helped me take a blood test.",
+      "vi": "Y tá đã giúp tôi làm xét nghiệm máu.",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    }
+  ]
+}

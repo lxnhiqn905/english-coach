@@ -1,0 +1,718 @@
+{
+  "id": "emotions",
+  "label": "Emotions & Personality",
+  "vocab": [
+    {
+      "en": "Happy",
+      "type": "",
+      "vi": "vui vẻ",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Sad",
+      "type": "",
+      "vi": "buồn",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Angry",
+      "type": "",
+      "vi": "tức giận",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Scared",
+      "type": "",
+      "vi": "sợ",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Excited",
+      "type": "",
+      "vi": "phấn khích",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Bored",
+      "type": "",
+      "vi": "chán",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Surprised",
+      "type": "",
+      "vi": "ngạc nhiên",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Confused",
+      "type": "",
+      "vi": "bối rối",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Tired",
+      "type": "",
+      "vi": "mệt",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Nervous",
+      "type": "",
+      "vi": "lo lắng",
+      "category": "Basic Emotions (Cảm xúc cơ bản)"
+    },
+    {
+      "en": "Proud",
+      "type": "",
+      "vi": "tự hào",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Disappointed",
+      "type": "",
+      "vi": "thất vọng",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Relieved",
+      "type": "",
+      "vi": "nhẹ nhõm",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Jealous",
+      "type": "",
+      "vi": "ghen tị",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Lonely",
+      "type": "",
+      "vi": "cô đơn",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Grateful",
+      "type": "",
+      "vi": "biết ơn",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Hopeful",
+      "type": "",
+      "vi": "hy vọng",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Guilty",
+      "type": "",
+      "vi": "tội lỗi",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Shocked",
+      "type": "",
+      "vi": "sốc",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Curious",
+      "type": "",
+      "vi": "tò mò",
+      "category": "Complex Emotions (Cảm xúc phức tạp)"
+    },
+    {
+      "en": "Kind",
+      "type": "",
+      "vi": "tử tế",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Friendly",
+      "type": "",
+      "vi": "thân thiện",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Polite",
+      "type": "",
+      "vi": "lịch sự",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Honest",
+      "type": "",
+      "vi": "trung thực",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Confident",
+      "type": "",
+      "vi": "tự tin",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Hard-working",
+      "type": "",
+      "vi": "chăm chỉ",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Creative",
+      "type": "",
+      "vi": "sáng tạo",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Helpful",
+      "type": "",
+      "vi": "hay giúp đỡ",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Brave",
+      "type": "",
+      "vi": "dũng cảm",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Responsible",
+      "type": "",
+      "vi": "có trách nhiệm",
+      "category": "Personality Traits – Positive (Tính cách tích cực)"
+    },
+    {
+      "en": "Rude",
+      "type": "",
+      "vi": "thô lỗ",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Lazy",
+      "type": "",
+      "vi": "lười biếng",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Shy",
+      "type": "",
+      "vi": "nhút nhát",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Impatient",
+      "type": "",
+      "vi": "thiếu kiên nhẫn",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Moody",
+      "type": "",
+      "vi": "dễ thay đổi cảm xúc",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Selfish",
+      "type": "",
+      "vi": "ích kỷ",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Dishonest",
+      "type": "",
+      "vi": "không trung thực",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Quiet",
+      "type": "",
+      "vi": "trầm tính",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Aggressive",
+      "type": "",
+      "vi": "hung hăng",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Nervous",
+      "type": "",
+      "vi": "lo âu",
+      "category": "Personality Traits – Negative (Tính cách tiêu cực)"
+    },
+    {
+      "en": "Smile",
+      "type": "",
+      "vi": "mỉm cười",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "Cry",
+      "type": "",
+      "vi": "khóc",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "Laugh",
+      "type": "",
+      "vi": "cười lớn",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "Shout",
+      "type": "",
+      "vi": "hét",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "Hug",
+      "type": "",
+      "vi": "ôm",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "Frown",
+      "type": "",
+      "vi": "cau mày",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "Sigh",
+      "type": "",
+      "vi": "thở dài",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "Clap",
+      "type": "",
+      "vi": "vỗ tay",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "Shake hands",
+      "type": "",
+      "vi": "bắt tay",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "Jump for joy",
+      "type": "",
+      "vi": "nhảy lên vì vui",
+      "category": "Actions Expressing Emotions (Hành động thể hiện cảm xúc)"
+    },
+    {
+      "en": "In a good mood",
+      "type": "",
+      "vi": "tâm trạng tốt",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "In a bad mood",
+      "type": "",
+      "vi": "tâm trạng tệ",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "Cheerful",
+      "type": "",
+      "vi": "vui tươi",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "Calm",
+      "type": "",
+      "vi": "bình tĩnh",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "Stressed",
+      "type": "",
+      "vi": "căng thẳng",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "",
+      "vi": "thư giãn",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "Anxious",
+      "type": "",
+      "vi": "lo âu",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "Hopeful",
+      "type": "",
+      "vi": "đầy hy vọng",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "Depressed",
+      "type": "",
+      "vi": "chán nản",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "Energetic",
+      "type": "",
+      "vi": "tràn đầy năng lượng",
+      "category": "Describing Mood (Miêu tả tâm trạng)"
+    },
+    {
+      "en": "Outgoing",
+      "type": "",
+      "vi": "hướng ngoại",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Introverted",
+      "type": "",
+      "vi": "hướng nội",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Talkative",
+      "type": "",
+      "vi": "hay nói",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Quiet",
+      "type": "",
+      "vi": "ít nói",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Optimistic",
+      "type": "",
+      "vi": "lạc quan",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Pessimistic",
+      "type": "",
+      "vi": "bi quan",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Organized",
+      "type": "",
+      "vi": "ngăn nắp",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Messy",
+      "type": "",
+      "vi": "bừa bộn",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Sensitive",
+      "type": "",
+      "vi": "nhạy cảm",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Strong-willed",
+      "type": "",
+      "vi": "quyết tâm",
+      "category": "Describing Personality (Miêu tả tính cách)"
+    },
+    {
+      "en": "Bad news",
+      "type": "",
+      "vi": "tin xấu",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Good news",
+      "type": "",
+      "vi": "tin vui",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Compliment",
+      "type": "",
+      "vi": "lời khen",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Criticism",
+      "type": "",
+      "vi": "lời chỉ trích",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Stress at work",
+      "type": "",
+      "vi": "áp lực công việc",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Family problems",
+      "type": "",
+      "vi": "vấn đề gia đình",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Achieving goals",
+      "type": "",
+      "vi": "đạt mục tiêu",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Losing something",
+      "type": "",
+      "vi": "đánh mất gì đó",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Meeting new people",
+      "type": "",
+      "vi": "gặp người mới",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Facing challenges",
+      "type": "",
+      "vi": "đối mặt thử thách",
+      "category": "Emotional Triggers (Điều khiến cảm xúc thay đổi)"
+    },
+    {
+      "en": "Listen to music",
+      "type": "",
+      "vi": "nghe nhạc",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Go for a walk",
+      "type": "",
+      "vi": "đi dạo",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Talk to a friend",
+      "type": "",
+      "vi": "nói chuyện với bạn",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Meditate",
+      "type": "",
+      "vi": "thiền",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Exercise",
+      "type": "",
+      "vi": "tập thể dục",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Read a book",
+      "type": "",
+      "vi": "đọc sách",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Watch a movie",
+      "type": "",
+      "vi": "xem phim",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Sleep",
+      "type": "",
+      "vi": "ngủ",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Journal",
+      "type": "",
+      "vi": "viết nhật ký",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Take a break",
+      "type": "",
+      "vi": "nghỉ ngơi",
+      "category": "Activities (Hoạt động để thay đổi cảm xúc)"
+    },
+    {
+      "en": "Embarrassed",
+      "type": "",
+      "vi": "xấu hổ",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Interested",
+      "type": "",
+      "vi": "hứng thú",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Grumpy",
+      "type": "",
+      "vi": "cáu kỉnh",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Calm",
+      "type": "",
+      "vi": "bình tĩnh",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Shocked",
+      "type": "",
+      "vi": "choáng",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Satisfied",
+      "type": "",
+      "vi": "hài lòng",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Frustrated",
+      "type": "",
+      "vi": "bực bội",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Delighted",
+      "type": "",
+      "vi": "rất vui",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Terrified",
+      "type": "",
+      "vi": "sợ hãi tột độ",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Hopeful",
+      "type": "",
+      "vi": "tràn đầy hy vọng",
+      "category": "Feelings (Cảm xúc bổ sung)"
+    },
+    {
+      "en": "Loyal",
+      "type": "",
+      "vi": "trung thành",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    },
+    {
+      "en": "Funny",
+      "type": "",
+      "vi": "hài hước",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    },
+    {
+      "en": "Serious",
+      "type": "",
+      "vi": "nghiêm túc",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    },
+    {
+      "en": "Ambitious",
+      "type": "",
+      "vi": "tham vọng",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    },
+    {
+      "en": "Generous",
+      "type": "",
+      "vi": "hào phóng",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    },
+    {
+      "en": "Brave",
+      "type": "",
+      "vi": "dũng cảm",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    },
+    {
+      "en": "Gentle",
+      "type": "",
+      "vi": "dịu dàng",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    },
+    {
+      "en": "Smart",
+      "type": "",
+      "vi": "thông minh",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    },
+    {
+      "en": "Reliable",
+      "type": "",
+      "vi": "đáng tin",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    },
+    {
+      "en": "Flexible",
+      "type": "",
+      "vi": "linh hoạt",
+      "category": "Adjectives for Describing People (Tính từ miêu tả con người)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "I feel happy today.",
+      "vi": "Hôm nay tôi thấy vui.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "She is very kind and friendly.",
+      "vi": "Cô ấy rất tử tế và thân thiện.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "He is nervous about the exam.",
+      "vi": "Anh ấy lo lắng về kỳ thi.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "I get angry easily.",
+      "vi": "Tôi dễ nổi giận.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "She is a creative person.",
+      "vi": "Cô ấy là người sáng tạo.",
+      "category": "Common Phrases (Cụm từ thông dụng)"
+    },
+    {
+      "en": "Sometimes I feel stressed when I have too much work to do.",
+      "vi": "Đôi khi tôi thấy căng",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "My best friend is always positive and helps me when I'm sad.",
+      "vi": "Bạn thân của tôi luôn lạc",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "I feel proud when I achieve my goals.",
+      "vi": "Tôi cảm thấy tự hào khi đạt được mục tiêu.",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "He is shy at first, but he becomes very friendly once you know him.",
+      "vi": "Anh ấy ban đầu",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    },
+    {
+      "en": "Doing exercise usually makes me feel energetic and relaxed.",
+      "vi": "Tập thể dục thường khiến",
+      "category": "Detailed Phrases (Cụm mô tả chi tiết)"
+    }
+  ]
+}

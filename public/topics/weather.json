@@ -1,0 +1,706 @@
+{
+  "id": "weather",
+  "label": "Weather",
+  "vocab": [
+    {
+      "en": "Sunny",
+      "type": "adj",
+      "vi": "nắng",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Rainy",
+      "type": "adj",
+      "vi": "mưa",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Windy",
+      "type": "adj",
+      "vi": "gió",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Cloudy",
+      "type": "adj",
+      "vi": "nhiều mây",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Foggy",
+      "type": "adj",
+      "vi": "sương mù",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Snowy",
+      "type": "adj",
+      "vi": "có tuyết",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Stormy",
+      "type": "adj",
+      "vi": "bão",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Icy",
+      "type": "adj",
+      "vi": "băng giá",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Thunderstorm",
+      "type": "n",
+      "vi": "dông bão",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Drizzle",
+      "type": "n",
+      "vi": "mưa phùn",
+      "category": "Từ vựng về hiện tượng thời tiết (Types of weather)"
+    },
+    {
+      "en": "Hot",
+      "type": "adj",
+      "vi": "nóng",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Cold",
+      "type": "adj",
+      "vi": "lạnh",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Warm",
+      "type": "adj",
+      "vi": "ấm áp",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Cool",
+      "type": "adj",
+      "vi": "mát mẻ",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Mild",
+      "type": "adj",
+      "vi": "ôn hòa",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Freezing",
+      "type": "adj",
+      "vi": "rét buốt",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Boiling",
+      "type": "adj",
+      "vi": "nóng như thiêu đốt",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Humid",
+      "type": "adj",
+      "vi": "ẩm ướt",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Dry",
+      "type": "adj",
+      "vi": "khô ráo",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Pleasant",
+      "type": "adj",
+      "vi": "dễ chịu",
+      "category": "Từ vựng miêu tả đặc điểm (Descriptions)"
+    },
+    {
+      "en": "Beach",
+      "type": "n",
+      "vi": "bãi biển",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "Mountain",
+      "type": "n",
+      "vi": "núi",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "Desert",
+      "type": "n",
+      "vi": "sa mạc",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "Forest",
+      "type": "n",
+      "vi": "rừng",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "Countryside",
+      "type": "n",
+      "vi": "nông thôn",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "City",
+      "type": "n",
+      "vi": "thành phố",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "Island",
+      "type": "n",
+      "vi": "hòn đảo",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "Valley",
+      "type": "n",
+      "vi": "thung lũng",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "Riverbank",
+      "type": "n",
+      "vi": "bờ sông",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "Field",
+      "type": "n",
+      "vi": "cánh đồng",
+      "category": "Từ vựng về nơi chốn (Places affected by weather)"
+    },
+    {
+      "en": "Go for a walk",
+      "type": "v",
+      "vi": "đi dạo",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Have a picnic",
+      "type": "v",
+      "vi": "đi dã ngoại",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go swimming",
+      "type": "v",
+      "vi": "đi bơi",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Fly a kite",
+      "type": "v",
+      "vi": "thả diều",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Go skiing",
+      "type": "v",
+      "vi": "trượt tuyết",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Build a snowman",
+      "type": "v",
+      "vi": "làm người tuyết",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Stay indoors",
+      "type": "v",
+      "vi": "ở trong nhà",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Wear a raincoat",
+      "type": "v",
+      "vi": "mặc áo mưa",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Use an umbrella",
+      "type": "v",
+      "vi": "dùng ô",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Drive carefully",
+      "type": "v",
+      "vi": "lái xe cẩn thận",
+      "category": "Từ vựng về hoạt động (Activities)"
+    },
+    {
+      "en": "Feel hot",
+      "type": "v",
+      "vi": "cảm thấy nóng",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Feel cold",
+      "type": "v",
+      "vi": "cảm thấy lạnh",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Get wet",
+      "type": "v",
+      "vi": "bị ướt",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Sweat",
+      "type": "v",
+      "vi": "đổ mồ hôi",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Freeze",
+      "type": "v",
+      "vi": "cóng",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Slip on the ice",
+      "type": "v",
+      "vi": "trượt ngã trên băng",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Enjoy the sunshine",
+      "type": "v",
+      "vi": "tận hưởng ánh nắng",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Complain about the heat",
+      "type": "v",
+      "vi": "phàn nàn về cái nóng",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Escape the rain",
+      "type": "v",
+      "vi": "tránh mưa",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Shiver",
+      "type": "v",
+      "vi": "run vì lạnh",
+      "category": "Từ vựng về phản ứng của con người (People’s reactions)"
+    },
+    {
+      "en": "Flood",
+      "type": "n",
+      "vi": "lũ lụt",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Drought",
+      "type": "n",
+      "vi": "hạn hán",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Storm",
+      "type": "n",
+      "vi": "cơn bão",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Earthquake",
+      "type": "n",
+      "vi": "động đất",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Lightning",
+      "type": "n",
+      "vi": "tia sét",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Rainbow",
+      "type": "n",
+      "vi": "cầu vồng",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Blizzard",
+      "type": "n",
+      "vi": "bão tuyết",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Hail",
+      "type": "n",
+      "vi": "mưa đá",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Fog",
+      "type": "n",
+      "vi": "sương mù",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Heatwave",
+      "type": "n",
+      "vi": "đợt nắng nóng",
+      "category": "Từ vựng về thiên nhiên & tác động (Nature & weather effects)"
+    },
+    {
+      "en": "Weather forecast",
+      "type": "n",
+      "vi": "dự báo thời tiết",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Storm shelter",
+      "type": "n",
+      "vi": "nơi trú bão",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Umbrella",
+      "type": "n",
+      "vi": "cái ô",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Raincoat",
+      "type": "n",
+      "vi": "áo mưa",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Snow boots",
+      "type": "n",
+      "vi": "giày đi tuyết",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Heater",
+      "type": "n",
+      "vi": "máy sưởi",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Air conditioner",
+      "type": "n",
+      "vi": "điều hòa",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Fan",
+      "type": "n",
+      "vi": "quạt",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Sunglasses",
+      "type": "n",
+      "vi": "kính râm",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Sunscreen",
+      "type": "n",
+      "vi": "kem chống nắng",
+      "category": "Từ vựng về cơ sở hạ tầng (Infrastructure & weather)"
+    },
+    {
+      "en": "Tet holiday weather",
+      "type": "n",
+      "vi": "thời tiết Tết",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Summer vacation",
+      "type": "n",
+      "vi": "kỳ nghỉ hè",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Rainy season",
+      "type": "n",
+      "vi": "mùa mưa",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Dry season",
+      "type": "n",
+      "vi": "mùa khô",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Harvest season",
+      "type": "n",
+      "vi": "mùa gặt",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Snow festival",
+      "type": "n",
+      "vi": "lễ hội tuyết",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Mid-autumn under the moonlight",
+      "type": "n",
+      "vi": "Trung thu dưới ánh trăng",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Spring festival",
+      "type": "n",
+      "vi": "lễ hội mùa xuân",
+      "category": "Từ vựng về văn hóa & truyền thống (Culture & traditions)"
+    },
+    {
+      "en": "Happy",
+      "type": "adj",
+      "vi": "hạnh phúc",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Sad",
+      "type": "adj",
+      "vi": "buồn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Excited",
+      "type": "adj",
+      "vi": "hào hứng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Relaxed",
+      "type": "adj",
+      "vi": "thư giãn",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Tired",
+      "type": "adj",
+      "vi": "mệt mỏi",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Nervous",
+      "type": "adj",
+      "vi": "lo lắng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Cozy",
+      "type": "adj",
+      "vi": "ấm cúng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Energetic",
+      "type": "adj",
+      "vi": "tràn đầy năng lượng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Lazy",
+      "type": "adj",
+      "vi": "lười biếng",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Comfortable",
+      "type": "adj",
+      "vi": "dễ chịu",
+      "category": "Từ vựng về cảm xúc (Feelings)"
+    },
+    {
+      "en": "Bright",
+      "type": "adj",
+      "vi": "sáng sủa",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Clear",
+      "type": "adj",
+      "vi": "trong lành",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Stormy",
+      "type": "adj",
+      "vi": "bão tố",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Cloudy",
+      "type": "adj",
+      "vi": "u ám",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Windy",
+      "type": "adj",
+      "vi": "nhiều gió",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Foggy",
+      "type": "adj",
+      "vi": "nhiều sương",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Rainy",
+      "type": "adj",
+      "vi": "nhiều mưa",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Freezing",
+      "type": "adj",
+      "vi": "lạnh buốt",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Hot",
+      "type": "adj",
+      "vi": "oi bức",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Mild",
+      "type": "adj",
+      "vi": "dễ chịu",
+      "category": "Các tính từ gợi tả (Adjectives for weather)"
+    },
+    {
+      "en": "Tropical",
+      "type": "adj",
+      "vi": "nhiệt đới",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    },
+    {
+      "en": "Temperate",
+      "type": "adj",
+      "vi": "ôn đới",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    },
+    {
+      "en": "Polar",
+      "type": "adj",
+      "vi": "vùng cực",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    },
+    {
+      "en": "Continental",
+      "type": "adj",
+      "vi": "lục địa",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    },
+    {
+      "en": "Mediterranean",
+      "type": "adj",
+      "vi": "Địa Trung Hải",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    },
+    {
+      "en": "Humid",
+      "type": "adj",
+      "vi": "ẩm ướt",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    },
+    {
+      "en": "Arid",
+      "type": "adj",
+      "vi": "khô hạn",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    },
+    {
+      "en": "Seasonal",
+      "type": "adj",
+      "vi": "theo mùa",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    },
+    {
+      "en": "Unpredictable",
+      "type": "adj",
+      "vi": "khó đoán",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    },
+    {
+      "en": "Stable",
+      "type": "adj",
+      "vi": "ổn định",
+      "category": "Từ vựng mô tả khí hậu (Climate)"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "What’s the weather like today?",
+      "vi": "Hôm nay thời tiết thế nào?",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "It’s boiling hot outside.",
+      "vi": "Ngoài trời nóng như thiêu đốt.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "Don’t forget your umbrella, it’s raining.",
+      "vi": "Đừng quên ô, trời đang mưa.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "It looks like it’s going to snow.",
+      "vi": "Có vẻ sắp có tuyết.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "The weather is perfect for a picnic.",
+      "vi": "Thời tiết thật tuyệt để đi dã ngoại.",
+      "category": "Cụm từ thông dụng (Common phrases)"
+    },
+    {
+      "en": "The weather changes quickly in my country.",
+      "vi": "Thời tiết thay đổi nhanh ở đất nước tôi.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Summers are usually hot and humid.",
+      "vi": "Mùa hè thường nóng và ẩm ướt.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Winters can be very cold with heavy snow.",
+      "vi": "Mùa đông có thể rất lạnh với nhiều tuyết.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "I enjoy walking in the park on sunny days.",
+      "vi": "Tôi thích đi dạo công viên vào những ngày",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    },
+    {
+      "en": "Rainy days make me feel a bit lazy.",
+      "vi": "Ngày mưa khiến tôi hơi lười biếng.",
+      "category": "Cụm từ chi tiết (Detailed phrases)"
+    }
+  ]
+}
