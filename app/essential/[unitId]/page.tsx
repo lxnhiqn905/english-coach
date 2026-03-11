@@ -7,6 +7,7 @@ import {
   parseExerciseHtml,
   unitSummaries,
   wordAudioUrl,
+  wordImageUrl,
   readingAudioUrl,
   playAudio,
   type EssentialUnit,
@@ -282,29 +283,41 @@ function WordCard({
   unitId: number;
 }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-[#1a2035] p-4 space-y-2">
-      <div className="flex items-start justify-between gap-2">
-        <div>
-          <span className="text-base font-bold text-purple-300">{word.en}</span>
-          <span className="ml-2 text-xs text-slate-500">{word.pron}</span>
-        </div>
-        {word.sound && (
-          <button
-            onClick={() => playAudio(wordAudioUrl(unitId, word.sound))}
-            className="shrink-0 rounded-lg border border-white/10 bg-white/5 p-1.5 text-slate-400 hover:border-purple-500/30 hover:text-purple-300 transition-all"
-            title="Listen"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072M12 6a7.975 7.975 0 015.657 2.343M6.343 17.657A8 8 0 016 12m0 0a8 8 0 012.343-5.657M12 6V3m0 18v-3" />
-            </svg>
-          </button>
+    <div className="rounded-2xl border border-white/10 bg-[#1a2035] overflow-hidden">
+      <div className="flex gap-3 p-4">
+        {word.image && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={wordImageUrl(unitId, word.image)}
+            alt={word.en}
+            className="h-16 w-16 shrink-0 rounded-xl object-cover"
+          />
         )}
+        <div className="min-w-0 flex-1 space-y-1">
+          <div className="flex items-start justify-between gap-2">
+            <div>
+              <span className="text-base font-bold text-purple-300">{word.en}</span>
+              <span className="ml-2 text-xs text-slate-500">{word.pron}</span>
+            </div>
+            {word.sound && (
+              <button
+                onClick={() => playAudio(wordAudioUrl(unitId, word.sound))}
+                className="shrink-0 rounded-lg border border-white/10 bg-white/5 p-1.5 text-slate-400 hover:border-purple-500/30 hover:text-purple-300 transition-all"
+                title="Listen"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072M12 6a7.975 7.975 0 015.657 2.343M6.343 17.657A8 8 0 016 12m0 0a8 8 0 012.343-5.657M12 6V3m0 18v-3" />
+                </svg>
+              </button>
+            )}
+          </div>
+          <p className="text-sm text-slate-300">{word.desc}</p>
+          <p
+            className="text-xs text-slate-500 italic"
+            dangerouslySetInnerHTML={{ __html: `→ ${word.exam}` }}
+          />
+        </div>
       </div>
-      <p className="text-sm text-slate-300">{word.desc}</p>
-      <p
-        className="text-xs text-slate-500 italic"
-        dangerouslySetInnerHTML={{ __html: `→ ${word.exam}` }}
-      />
     </div>
   );
 }

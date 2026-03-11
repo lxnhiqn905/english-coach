@@ -82,6 +82,10 @@ export function wordAudioUrl(unitId: number, sound: string): string {
   return `${BASE_AUDIO}/unit-${unitId}/wordlist/${sound}`;
 }
 
+export function wordImageUrl(unitId: number, image: string): string {
+  return `${BASE_AUDIO}/unit-${unitId}/wordlist/${image}`;
+}
+
 export function readingAudioUrl(unitId: number, sound: string): string {
   return `${BASE_AUDIO}/unit-${unitId}/reading/${sound}`;
 }
