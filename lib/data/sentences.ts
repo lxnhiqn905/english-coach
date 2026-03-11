@@ -1,11 +1,11 @@
-export interface CommunicateTopic {
+export interface SentenceTopic {
   id: string;
   title: string;
   subtitle: string;
   hasAudio: boolean;
 }
 
-export const communicateTopics: CommunicateTopic[] = [
+export const sentenceTopics: SentenceTopic[] = [
   { id: "lan-dau-gap-mat",   title: "Lần đầu gặp mặt",             subtitle: "First Meeting",             hasAudio: true },
   { id: "hoi-tham-ban-be",   title: "Hỏi thăm bạn bè",             subtitle: "Asking About Friends",      hasAudio: true },
   { id: "vui-mung-hanh-phuc",title: "Vui mừng hạnh phúc",          subtitle: "Joy & Happiness",           hasAudio: true },

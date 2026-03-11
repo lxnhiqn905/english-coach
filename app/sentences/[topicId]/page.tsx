@@ -3,11 +3,11 @@
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { useState, useRef } from "react";
-import { communicateTopics } from "@/lib/data/communicate";
+import { sentenceTopics } from "@/lib/data/sentences";
 
-export default function CommunicateTopicPage() {
+export default function SentenceTopicPage() {
   const { topicId } = useParams<{ topicId: string }>();
-  const topic = communicateTopics.find((t) => t.id === topicId);
+  const topic = sentenceTopics.find((t) => t.id === topicId);
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -19,8 +19,8 @@ export default function CommunicateTopicPage() {
     );
   }
 
-  const pdfUrl = `/communicate/${topic.id}/content.pdf`;
-  const mp3Url = `/communicate/${topic.id}/audio.mp3`;
+  const pdfUrl = `/sentences/${topic.id}/content.pdf`;
+  const mp3Url = `/sentences/${topic.id}/audio.mp3`;
 
   function toggleAudio() {
     if (!topic?.hasAudio) return;
@@ -50,7 +50,7 @@ export default function CommunicateTopicPage() {
       <div className="border-b border-white/10 bg-[#111827]/80 backdrop-blur-sm px-4 py-3">
         <div className="max-w-4xl mx-auto flex items-center gap-3">
           <Link
-            href="/communicate"
+            href="/sentences"
             className="flex items-center justify-center w-8 h-8 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-white/5 transition-colors"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

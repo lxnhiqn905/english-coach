@@ -1,22 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { communicateTopics } from "@/lib/data/communicate";
+import { sentenceTopics } from "@/lib/data/sentences";
 
-export default function CommunicatePage() {
+export default function SentencesPage() {
   return (
     <div className="min-h-screen pt-16 pb-8 px-4">
       <div className="max-w-lg mx-auto py-6 space-y-4">
         <div>
           <h1 className="text-xl font-bold text-slate-100">Mẫu câu giao tiếp</h1>
-          <p className="text-xs text-slate-500 mt-1">{communicateTopics.length} chủ đề · PDF + MP3</p>
+          <p className="text-xs text-slate-500 mt-1">{sentenceTopics.length} chủ đề · PDF + MP3</p>
         </div>
 
         <div className="space-y-2">
-          {communicateTopics.map((topic, i) => (
+          {sentenceTopics.map((topic, i) => (
             <Link
               key={topic.id}
-              href={`/communicate/${topic.id}`}
+              href={`/sentences/${topic.id}`}
               className="flex items-center gap-4 rounded-2xl border border-white/10 bg-[#1a2035] px-4 py-4 hover:border-purple-500/30 hover:bg-[#1e2645] transition-all"
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-purple-500/15 border border-purple-500/20">
