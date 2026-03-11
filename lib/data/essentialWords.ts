@@ -99,38 +99,100 @@ export function playAudio(url: string): void {
   audio.onended = () => { currentAudio = null; };
 }
 
-export interface ParsedQuestion {
-  questionHtml: string;
-  options: string[];
-  answerIndex: number;
-  isTextarea?: boolean;
-  textareaValue?: string;
-}
+export type ParsedBlock =
+  | { kind: "header"; text: string }
+  | { kind: "single"; questionHtml: string; options: string[]; answerIndex: number }
+  | { kind: "multi"; options: string[]; answerIndices: number[]; count: number }
+  | { kind: "fillblank"; sentenceHtml: string; prefix: string; answer: string }
+  | { kind: "betterfit"; words: string[]; sentences: string[]; answers: string[] }
+  | { kind: "wordbank"; wordBank: string[]; items: Array<{ sentenceHtml: string; answer: string }> }
+  | { kind: "textarea"; questionHtml: string; answer: string };
 
-export function parseExerciseHtml(html: string): ParsedQuestion[] {
+export function parseExerciseHtml(html: string): ParsedBlock[] {
   if (typeof window === "undefined") return [];
   const parser = new DOMParser();
   const doc = parser.parseFromString(`<div>${html}</div>`, "text/html");
-  const questions: ParsedQuestion[] = [];
+  const root = doc.body.firstChild as Element;
+  const blocks: ParsedBlock[] = [];
+  let pendingWordBank: string[] = [];
 
-  doc.querySelectorAll(".answer-the-questions-section").forEach((li) => {
-    const answerIndex = parseInt(li.getAttribute("answer-index") ?? "0", 10);
-    const ul = li.querySelector(".ul-choose-answer");
-    const options = Array.from(ul?.querySelectorAll("li") ?? []).map(
-      (opt) => opt.innerHTML
-    );
-    const clone = li.cloneNode(true) as Element;
-    clone.querySelector(".ul-choose-answer")?.remove();
-    const questionHtml = clone.innerHTML.replace(/<[^>]+>/g, "").trim();
-    questions.push({ questionHtml, options, answerIndex });
+  root.childNodes.forEach((node) => {
+    const el = node as Element;
+    const tag = el.tagName;
+
+    if (tag === "H4") {
+      blocks.push({ kind: "header", text: el.textContent?.trim() ?? "" });
+      pendingWordBank = [];
+    } else if (tag === "DIV") {
+      const freeOpts = el.querySelectorAll("#ul-free-option li");
+      if (freeOpts.length) {
+        pendingWordBank = Array.from(freeOpts).map((li) => li.textContent?.trim() ?? "");
+      }
+    } else if (tag === "OL") {
+      const items = Array.from(el.querySelectorAll("li"));
+      if (!items.length) return;
+
+      const cls = items[0].className;
+
+      if (cls === "answer-the-questions-section") {
+        items.forEach((li) => {
+          const answerAttr = li.getAttribute("answer-index") ?? "0";
+          const ul = li.querySelector(".ul-choose-answer");
+          const ulMulti = li.querySelector(".ul-multi-choose-answer");
+          if (ul) {
+            const options = Array.from(ul.querySelectorAll("li")).map((o) => o.innerHTML);
+            const clone = li.cloneNode(true) as Element;
+            clone.querySelector(".ul-choose-answer")?.remove();
+            const questionHtml = clone.innerHTML.replace(/<[^>]+>/g, "").trim();
+            blocks.push({ kind: "single", questionHtml, options, answerIndex: parseInt(answerAttr) });
+          } else if (ulMulti) {
+            const options = Array.from(ulMulti.querySelectorAll("li")).map((o) => o.innerHTML);
+            const answerIndices = answerAttr.split(",").map((n) => parseInt(n.trim()));
+            const count = parseInt(ulMulti.getAttribute("q") ?? "2");
+            blocks.push({ kind: "multi", options, answerIndices, count });
+          }
+        });
+      } else if (cls === "answer-the-questions-section-char") {
+        items.forEach((li) => {
+          const prefix = li.getAttribute("pre") ?? "";
+          const answer = li.getAttribute("value") ?? "";
+          const sentenceHtml = li.innerHTML.split(/<br\s*\/?>/i)[0];
+          blocks.push({ kind: "fillblank", sentenceHtml, prefix, answer });
+        });
+      } else if (cls === "answer-the-questions-section-better-fit") {
+        items.forEach((li) => {
+          const answerStr = li.getAttribute("answer-index") ?? "";
+          const answers = answerStr.split("/").map((s) => s.trim());
+          const span = li.querySelector("span");
+          const words = (span?.textContent ?? "").split("/").map((s) => s.trim());
+          const clone = li.cloneNode(true) as Element;
+          clone.querySelector("span")?.remove();
+          const sentences = clone.innerHTML
+            .split(/<br\s*\/?>/i)
+            .map((s) => s.trim().replace(/<[^>]+>/g, ""))
+            .filter(Boolean);
+          blocks.push({ kind: "betterfit", words, sentences, answers });
+        });
+      } else if (cls === "answer-the-questions-section-word-blank") {
+        const wbItems = items.map((li) => ({
+          sentenceHtml: li.innerHTML.replace(/<[^>]+>/g, ""),
+          answer: li.getAttribute("value") ?? "",
+        }));
+        blocks.push({ kind: "wordbank", wordBank: pendingWordBank, items: wbItems });
+        pendingWordBank = [];
+      } else if (cls === "answer-the-questions-textarea") {
+        items.forEach((li) => {
+          const answer = li.getAttribute("value") ?? "";
+          const questionHtml = li.innerHTML
+            .replace(/<br\s*\/?>/gi, " ")
+            .replace(/_+/g, "")
+            .replace(/<[^>]+>/g, "")
+            .trim();
+          blocks.push({ kind: "textarea", questionHtml, answer });
+        });
+      }
+    }
   });
 
-  doc.querySelectorAll(".answer-the-questions-textarea").forEach((li) => {
-    const value = li.getAttribute("value") ?? "";
-    const clone = li.cloneNode(true) as Element;
-    const questionHtml = clone.innerHTML.replace(/<br\s*\/?>/gi, " ").replace(/_+/g, "").replace(/<[^>]+>/g, "").trim();
-    questions.push({ questionHtml, options: [], answerIndex: -1, isTextarea: true, textareaValue: value });
-  });
-
-  return questions;
+  return blocks;
 }

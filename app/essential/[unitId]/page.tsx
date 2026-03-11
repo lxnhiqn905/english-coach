@@ -10,83 +10,43 @@ import {
   readingAudioUrl,
   playAudio,
   type EssentialUnit,
-  type ParsedQuestion,
+  type ParsedBlock,
 } from "@/lib/data/essentialWords";
 
 type Tab = "words" | "exercises" | "story";
 
-// ─── Interactive exercise component ─────────────────────────────────────────
+// ─── Shared option button style ───────────────────────────────────────────────
 
-function QuestionBlock({
-  q,
-  index,
-  checked,
-}: {
-  q: ParsedQuestion;
-  index: number;
-  checked: boolean;
-}) {
-  const [selected, setSelected] = useState<number | null>(null);
-  const [answer, setAnswer] = useState("");
+function optCls(state: "default" | "selected" | "correct" | "wrong" | "dim") {
+  const base = "w-full text-left rounded-xl border px-3 py-2.5 text-sm transition-all ";
+  if (state === "selected") return base + "border-purple-500/40 bg-purple-500/10 text-purple-200";
+  if (state === "correct")  return base + "border-green-500/40 bg-green-500/10 text-green-300";
+  if (state === "wrong")    return base + "border-red-500/40 bg-red-500/10 text-red-300";
+  if (state === "dim")      return base + "border-white/5 text-slate-600";
+  return base + "border-white/10 bg-white/5 text-slate-300 hover:border-white/20";
+}
 
-  useEffect(() => { setSelected(null); setAnswer(""); }, [q]);
+// ─── Block renderers ──────────────────────────────────────────────────────────
 
-  if (q.isTextarea) {
-    return (
-      <div className="space-y-2">
-        <p className="text-sm text-slate-300">
-          <span className="font-semibold text-purple-400 mr-2">{index + 1}.</span>
-          {q.questionHtml}
-        </p>
-        <input
-          type="text"
-          value={answer}
-          onChange={(e) => setAnswer(e.target.value)}
-          placeholder="Your answer…"
-          className="w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-200 placeholder-slate-600 outline-none focus:border-purple-500/40"
-        />
-        {checked && (
-          <p className="text-xs text-green-400 bg-green-500/10 rounded-lg px-3 py-2">
-            ✓ {q.textareaValue}
-          </p>
-        )}
-      </div>
-    );
-  }
-
+function SingleBlock({ b, index, checked }: { b: Extract<ParsedBlock, { kind: "single" }>; index: number; checked: boolean }) {
+  const [sel, setSel] = useState<number | null>(null);
+  useEffect(() => setSel(null), [b]);
   return (
     <div className="space-y-2">
-      <p
-        className="text-sm text-slate-300"
-        dangerouslySetInnerHTML={{
-          __html: `<span class="font-semibold text-purple-400 mr-1">${index + 1}.</span> ${q.questionHtml}`,
-        }}
-      />
+      {b.questionHtml && (
+        <p className="text-sm text-slate-300">
+          <span className="font-semibold text-purple-400 mr-1">{index}.</span>
+          <span dangerouslySetInnerHTML={{ __html: b.questionHtml }} />
+        </p>
+      )}
       <div className="space-y-1.5 pl-2">
-        {q.options.map((opt, i) => {
-          let cls =
-            "flex items-start gap-2 rounded-xl border px-3 py-2.5 text-sm cursor-pointer transition-all ";
-          if (checked) {
-            if (i === q.answerIndex) {
-              cls += "border-green-500/40 bg-green-500/10 text-green-300";
-            } else if (i === selected && i !== q.answerIndex) {
-              cls += "border-red-500/40 bg-red-500/10 text-red-300";
-            } else {
-              cls += "border-white/5 bg-white/3 text-slate-500";
-            }
-          } else {
-            cls +=
-              selected === i
-                ? "border-purple-500/40 bg-purple-500/10 text-purple-200"
-                : "border-white/10 bg-white/5 text-slate-300 hover:border-white/20";
-          }
+        {b.options.map((opt, i) => {
+          const state = checked
+            ? i === b.answerIndex ? "correct" : i === sel ? "wrong" : "dim"
+            : sel === i ? "selected" : "default";
           return (
-            <button
-              key={i}
-              className={cls}
-              onClick={() => !checked && setSelected(i)}
-              dangerouslySetInnerHTML={{ __html: opt }}
-            />
+            <button key={i} className={optCls(state)} onClick={() => !checked && setSel(i)}
+              dangerouslySetInnerHTML={{ __html: opt }} />
           );
         })}
       </div>
@@ -94,29 +54,210 @@ function QuestionBlock({
   );
 }
 
-function ExerciseSection({
-  title,
-  html,
-}: {
-  title: string;
-  html: string;
-}) {
-  const [questions, setQuestions] = useState<ParsedQuestion[]>([]);
+function MultiBlock({ b, index, checked }: { b: Extract<ParsedBlock, { kind: "multi" }>; index: number; checked: boolean }) {
+  const [sel, setSel] = useState<number[]>([]);
+  useEffect(() => setSel([]), [b]);
+  function toggle(i: number) {
+    if (checked) return;
+    setSel((prev) =>
+      prev.includes(i) ? prev.filter((x) => x !== i) : prev.length < b.count ? [...prev, i] : prev
+    );
+  }
+  return (
+    <div className="space-y-1.5">
+      <p className="text-xs text-slate-500 pl-1">
+        <span className="font-semibold text-purple-400 mr-1">{index}.</span>
+        Select {b.count} related words
+      </p>
+      <div className="space-y-1.5 pl-2">
+        {b.options.map((opt, i) => {
+          const isCorrect = b.answerIndices.includes(i);
+          const isSelected = sel.includes(i);
+          const state = checked
+            ? isCorrect ? "correct" : isSelected ? "wrong" : "dim"
+            : isSelected ? "selected" : "default";
+          return (
+            <button key={i} className={optCls(state)} onClick={() => toggle(i)}
+              dangerouslySetInnerHTML={{ __html: opt }} />
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function FillBlankBlock({ b, index, checked }: { b: Extract<ParsedBlock, { kind: "fillblank" }>; index: number; checked: boolean }) {
+  const [val, setVal] = useState("");
+  useEffect(() => setVal(""), [b]);
+  const isCorrect = checked && val.trim().toLowerCase() === b.answer.toLowerCase();
+  const isWrong = checked && !isCorrect;
+  return (
+    <div className="space-y-2">
+      <p className="text-sm text-slate-300">
+        <span className="font-semibold text-purple-400 mr-1">{index}.</span>
+        <span dangerouslySetInnerHTML={{ __html: b.sentenceHtml }} />
+      </p>
+      <div className="flex items-center gap-2 pl-2">
+        <span className="text-sm text-slate-500 font-mono">{b.prefix}</span>
+        <input
+          type="text"
+          value={val}
+          onChange={(e) => setVal(e.target.value)}
+          placeholder="_ _ _"
+          className={`flex-1 rounded-xl border px-3 py-2 text-sm outline-none transition-all ${
+            isCorrect ? "border-green-500/40 bg-green-500/10 text-green-300"
+            : isWrong ? "border-red-500/40 bg-red-500/10 text-red-300"
+            : "border-white/10 bg-white/5 text-slate-200 placeholder-slate-600 focus:border-purple-500/40"
+          }`}
+        />
+      </div>
+      {checked && <p className="text-xs text-green-400 pl-2">✓ {b.answer}</p>}
+    </div>
+  );
+}
+
+function BetterFitBlock({ b, index, checked }: { b: Extract<ParsedBlock, { kind: "betterfit" }>; index: number; checked: boolean }) {
+  const [picks, setPicks] = useState<string[]>(b.sentences.map(() => ""));
+  useEffect(() => setPicks(b.sentences.map(() => "")), [b]);
+  return (
+    <div className="space-y-2">
+      <p className="text-xs text-slate-500 pl-1">
+        <span className="font-semibold text-purple-400 mr-1">{index}.</span>
+        Words: <span className="text-purple-300">{b.words.join(" / ")}</span>
+      </p>
+      {b.sentences.map((sentence, si) => {
+        const correct = b.answers[si] ?? "";
+        const pick = picks[si] ?? "";
+        const isCorrect = checked && pick === correct;
+        const isWrong = checked && pick !== correct && pick !== "";
+        return (
+          <div key={si} className="pl-2 space-y-1">
+            <p className="text-sm text-slate-300">{sentence}</p>
+            <select
+              value={pick}
+              onChange={(e) => {
+                if (checked) return;
+                const next = [...picks]; next[si] = e.target.value; setPicks(next);
+              }}
+              className={`w-full rounded-xl border px-3 py-2 text-sm outline-none transition-all bg-[#0f1629] ${
+                isCorrect ? "border-green-500/40 text-green-300"
+                : isWrong ? "border-red-500/40 text-red-300"
+                : "border-white/10 text-slate-300"
+              }`}
+            >
+              <option value="">— choose —</option>
+              {b.words.map((w) => <option key={w} value={w}>{w}</option>)}
+            </select>
+            {checked && <p className="text-xs text-green-400">✓ {correct}</p>}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function WordBankBlock({ b, checked }: { b: Extract<ParsedBlock, { kind: "wordbank" }>; checked: boolean }) {
+  const [picks, setPicks] = useState<string[]>(b.items.map(() => ""));
+  useEffect(() => setPicks(b.items.map(() => "")), [b]);
+  return (
+    <div className="space-y-3">
+      <div className="flex flex-wrap gap-1.5 p-3 rounded-xl border border-amber-500/20 bg-amber-500/5">
+        {b.wordBank.map((w) => (
+          <span key={w} className="rounded-full border border-amber-500/30 bg-amber-500/10 px-2.5 py-1 text-xs text-amber-300">{w}</span>
+        ))}
+      </div>
+      {b.items.map((item, i) => {
+        const pick = picks[i] ?? "";
+        const isCorrect = checked && pick === item.answer;
+        const isWrong = checked && pick !== item.answer && pick !== "";
+        return (
+          <div key={i} className="space-y-1.5">
+            <p className="text-sm text-slate-300">
+              <span className="font-semibold text-purple-400 mr-1">{i + 1}.</span>
+              {item.sentenceHtml}
+            </p>
+            <select
+              value={pick}
+              onChange={(e) => {
+                if (checked) return;
+                const next = [...picks]; next[i] = e.target.value; setPicks(next);
+              }}
+              className={`w-full rounded-xl border px-3 py-2 text-sm outline-none transition-all bg-[#0f1629] ${
+                isCorrect ? "border-green-500/40 text-green-300"
+                : isWrong ? "border-red-500/40 text-red-300"
+                : "border-white/10 text-slate-300"
+              }`}
+            >
+              <option value="">— choose —</option>
+              {b.wordBank.map((w) => <option key={w} value={w}>{w}</option>)}
+            </select>
+            {checked && <p className="text-xs text-green-400">✓ {item.answer}</p>}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function TextareaBlock({ b, index, checked }: { b: Extract<ParsedBlock, { kind: "textarea" }>; index: number; checked: boolean }) {
+  const [val, setVal] = useState("");
+  useEffect(() => setVal(""), [b]);
+  return (
+    <div className="space-y-2">
+      <p className="text-sm text-slate-300">
+        <span className="font-semibold text-purple-400 mr-1">{index}.</span>
+        {b.questionHtml}
+      </p>
+      <input
+        type="text"
+        value={val}
+        onChange={(e) => setVal(e.target.value)}
+        placeholder="Your answer…"
+        className="w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-200 placeholder-slate-600 outline-none focus:border-purple-500/40"
+      />
+      {checked && <p className="text-xs text-green-400">✓ {b.answer}</p>}
+    </div>
+  );
+}
+
+// ─── Exercise section ─────────────────────────────────────────────────────────
+
+function ExerciseSection({ title, html }: { title: string; html: string }) {
+  const [blocks, setBlocks] = useState<ParsedBlock[]>([]);
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    setQuestions(parseExerciseHtml(html));
+    setBlocks(parseExerciseHtml(html));
     setChecked(false);
   }, [html]);
 
-  if (questions.length === 0) return null;
+  const questionBlocks = blocks.filter((b) => b.kind !== "header");
+  if (questionBlocks.length === 0) return null;
+
+  // Track per-question index (only increment for non-header blocks)
+  let qIndex = 0;
 
   return (
-    <div className="rounded-2xl border border-white/10 bg-[#1a2035] p-5 space-y-5">
+    <div className="rounded-2xl border border-white/10 bg-[#1a2035] p-5 space-y-4">
       <h3 className="text-sm font-bold text-slate-100">{title}</h3>
-      {questions.map((q, i) => (
-        <QuestionBlock key={i} q={q} index={i} checked={checked} />
-      ))}
+      {blocks.map((b, i) => {
+        if (b.kind === "header") {
+          return (
+            <p key={i} className="text-xs font-semibold text-purple-400 uppercase tracking-wide border-t border-white/10 pt-3 mt-1">
+              {b.text}
+            </p>
+          );
+        }
+        qIndex++;
+        const idx = qIndex;
+        if (b.kind === "single")    return <SingleBlock    key={i} b={b} index={idx} checked={checked} />;
+        if (b.kind === "multi")     return <MultiBlock     key={i} b={b} index={idx} checked={checked} />;
+        if (b.kind === "fillblank") return <FillBlankBlock key={i} b={b} index={idx} checked={checked} />;
+        if (b.kind === "betterfit") return <BetterFitBlock key={i} b={b} index={idx} checked={checked} />;
+        if (b.kind === "wordbank")  return <WordBankBlock  key={i} b={b} checked={checked} />;
+        if (b.kind === "textarea")  return <TextareaBlock  key={i} b={b} index={idx} checked={checked} />;
+        return null;
+      })}
       <button
         onClick={() => setChecked((c) => !c)}
         className={`w-full rounded-xl border py-2.5 text-sm font-medium transition-all ${
