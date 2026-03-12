@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useSpeechSynthesis } from "@/hooks/useSpeechSynthesis";
 import { useVoiceSettings } from "@/lib/useVoiceSettings";
 import { supabase } from "@/lib/supabase";
@@ -53,9 +53,15 @@ export default function PracticePage() {
   const [readModal, setReadModal] = useState<{ text: string; label: string } | null>(null);
   const { speak, stop, isSpeaking, voices } = useSpeechSynthesis();
   const { rate, getVoice } = useVoiceSettings();
+  const [playingId, setPlayingId] = useState<string | null>(null);
 
-  function handleListen(text: string) {
-    if (isSpeaking) { stop(); return; }
+  useEffect(() => {
+    if (!isSpeaking) setPlayingId(null);
+  }, [isSpeaking]);
+
+  function handleListen(text: string, id: string) {
+    if (playingId === id) { stop(); setPlayingId(null); return; }
+    setPlayingId(id);
     const voice = getVoice(voices);
     speak(text, { voice, rate });
   }
@@ -129,8 +135,12 @@ export default function PracticePage() {
                 <p className="text-xs text-blue-300 mb-0.5">{item.vietnamese}</p>
                 <p className="text-xs text-slate-500 mb-2">{item.usage}</p>
                 <div className="flex gap-2">
-                  <button onClick={() => handleListen(item.phrase)} className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-300 hover:bg-white/10 transition-colors">
-                    {listenIcon} Listen
+                  <button
+                    onClick={() => handleListen(item.phrase, `phrase-${i}`)}
+                    disabled={playingId !== null && playingId !== `phrase-${i}`}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-300 hover:bg-white/10 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                  >
+                    {listenIcon} {playingId === `phrase-${i}` ? "Stop" : "Listen"}
                   </button>
                   <button onClick={() => setReadModal({ text: item.phrase, label: "Phrase" })} className="inline-flex items-center gap-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 px-3 py-1.5 text-xs text-purple-300 hover:bg-purple-500/20 transition-colors">
                     {readIcon} Read
@@ -167,8 +177,12 @@ export default function PracticePage() {
                       <div>
                         <p className="text-xs font-semibold text-blue-400 mb-1.5">Client:</p>
                         <p className="text-sm text-slate-200 leading-relaxed">{s.clientMessage}</p>
-                        <button onClick={() => handleListen(s.clientMessage)} className="mt-2.5 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-300 hover:bg-white/10 transition-colors">
-                          {listenIcon} {isSpeaking ? "Stop" : "Listen"}
+                        <button
+                          onClick={() => handleListen(s.clientMessage, `client-${s.id}`)}
+                          disabled={playingId !== null && playingId !== `client-${s.id}`}
+                          className="mt-2.5 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-300 hover:bg-white/10 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                        >
+                          {listenIcon} {playingId === `client-${s.id}` ? "Stop" : "Listen"}
                         </button>
                       </div>
 
@@ -181,8 +195,12 @@ export default function PracticePage() {
                         {showSuggested && (
                           <div className="px-3 pb-3 border-t border-amber-500/10">
                             <p className="mt-2.5 text-sm text-slate-200 leading-relaxed">{s.suggestedAnswer}</p>
-                            <button onClick={() => handleListen(s.suggestedAnswer)} className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-300 hover:bg-white/10 transition-colors">
-                              {listenIcon} {isSpeaking ? "Stop" : "Listen to this"}
+                            <button
+                              onClick={() => handleListen(s.suggestedAnswer, `suggested-${s.id}`)}
+                              disabled={playingId !== null && playingId !== `suggested-${s.id}`}
+                              className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-300 hover:bg-white/10 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                            >
+                              {listenIcon} {playingId === `suggested-${s.id}` ? "Stop" : "Listen to this"}
                             </button>
                           </div>
                         )}
@@ -217,8 +235,12 @@ export default function PracticePage() {
                     <p className="text-xs text-slate-400 italic">"{item.example}"</p>
                   </div>
                   <div className="flex flex-col gap-1.5 flex-shrink-0">
-                    <button onClick={() => handleListen(item.word)} className="inline-flex items-center justify-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1.5 text-[11px] text-slate-300 hover:bg-white/10 transition-colors">
-                      {listenIcon} Listen
+                    <button
+                      onClick={() => handleListen(item.word, `vocab-${item.id}`)}
+                      disabled={playingId !== null && playingId !== `vocab-${item.id}`}
+                      className="inline-flex items-center justify-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1.5 text-[11px] text-slate-300 hover:bg-white/10 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
+                      {listenIcon} {playingId === `vocab-${item.id}` ? "Stop" : "Listen"}
                     </button>
                     <button onClick={() => setReadModal({ text: item.word, label: item.word })} className="inline-flex items-center justify-center gap-1 rounded-full border border-purple-500/30 bg-purple-500/10 px-2.5 py-1.5 text-[11px] text-purple-300 hover:bg-purple-500/20 transition-colors">
                       {readIcon} Read
@@ -270,10 +292,11 @@ export default function PracticePage() {
                         <p className="text-sm text-slate-200 leading-relaxed">{msg.text}</p>
                       </div>
                       <button
-                        onClick={() => handleListen(msg.text)}
-                        className="mt-1 inline-flex items-center gap-1 text-[10px] text-slate-500 hover:text-slate-300 transition-colors px-1"
+                        onClick={() => handleListen(msg.text, `disc-${d.id}-${mi}`)}
+                        disabled={playingId !== null && playingId !== `disc-${d.id}-${mi}`}
+                        className="mt-1 inline-flex items-center gap-1 text-[10px] text-slate-500 hover:text-slate-300 transition-colors px-1 disabled:opacity-40 disabled:cursor-not-allowed"
                       >
-                        {listenIcon} Listen
+                        {listenIcon} {playingId === `disc-${d.id}-${mi}` ? "Stop" : "Listen"}
                       </button>
                     </div>
                   ))}
