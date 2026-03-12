@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { grammarUnits } from "@/lib/data/grammar";
+import { grammarContent } from "@/lib/data/grammarContent";
 
 export default function GrammarPage() {
   return (
@@ -10,12 +10,12 @@ export default function GrammarPage() {
         <div>
           <h1 className="text-xl font-bold text-slate-100">Grammar</h1>
           <p className="text-xs text-slate-500 mt-1">
-            {grammarUnits.length} units · Destination B1
+            {grammarContent.length} units · Destination B1
           </p>
         </div>
 
         <div className="space-y-2">
-          {grammarUnits.map((unit) => (
+          {grammarContent.map((unit) => (
             <Link
               key={unit.id}
               href={`/grammar/${unit.id}`}
@@ -27,7 +27,7 @@ export default function GrammarPage() {
               <div className="min-w-0 flex-1">
                 <p className="text-sm font-semibold text-slate-200">{unit.title}</p>
                 <p className="text-xs text-slate-500 mt-0.5">
-                  {unit.subtopics.map((s) => s.name).join(" · ")}
+                  {unit.structures.map((s) => s.name).join(" · ")}
                 </p>
               </div>
               <svg
