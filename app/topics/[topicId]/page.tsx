@@ -16,6 +16,14 @@ function groupBy<T>(items: T[], key: keyof T): Map<string, T[]> {
   return map;
 }
 
+function speak(text: string) {
+  if (typeof window === "undefined") return;
+  window.speechSynthesis.cancel();
+  const utt = new SpeechSynthesisUtterance(text);
+  utt.lang = "en-US";
+  window.speechSynthesis.speak(utt);
+}
+
 function VocabSection({ vocab }: { vocab: VocabItem[] }) {
   const groups = groupBy(vocab, "category");
   return (
@@ -31,8 +39,17 @@ function VocabSection({ vocab }: { vocab: VocabItem[] }) {
             {items.map((item, i) => (
               <div
                 key={i}
-                className="flex items-baseline gap-3 rounded-xl border border-white/10 bg-[#1a2035] px-4 py-3"
+                className="flex items-center gap-3 rounded-xl border border-white/10 bg-[#1a2035] px-4 py-3"
               >
+                <button
+                  onClick={() => speak(item.en)}
+                  className="shrink-0 rounded-lg border border-white/10 bg-white/5 p-1.5 text-slate-400 hover:border-purple-500/30 hover:text-purple-300 transition-all"
+                  title="Listen"
+                >
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                  </svg>
+                </button>
                 <span className="text-sm font-semibold text-purple-300 shrink-0">{item.en}</span>
                 {item.type && (
                   <span className="text-xs text-slate-600 shrink-0">({item.type})</span>

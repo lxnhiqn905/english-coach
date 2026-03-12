@@ -114,7 +114,7 @@ export default function PracticePage() {
         {/* ── USEFUL PHRASES ── */}
         {activeTab === "phrases" && (
           <div className="space-y-3">
-            <div className="flex items-center justify-between">
+            <div className="sticky top-14 z-10 -mx-4 px-4 py-2 bg-[#0f1629]/95 backdrop-blur flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <span className="rounded-full bg-green-500/10 border border-green-500/30 px-2.5 py-0.5 text-xs text-green-300 font-medium">{lessonData.lesson.level}</span>
                 <h2 className="text-sm font-semibold text-slate-200">{lessonData.lesson.title}</h2>
@@ -144,7 +144,7 @@ export default function PracticePage() {
         {/* ── PRACTICE ── */}
         {activeTab === "practice" && (
           <div className="space-y-3">
-            <div className="flex items-center justify-between">
+            <div className="sticky top-14 z-10 -mx-4 px-4 py-2 bg-[#0f1629]/95 backdrop-blur flex items-center justify-between">
               <p className="text-xs text-slate-500">5 random scenarios</p>
               <button onClick={refreshPractice} className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-400 hover:bg-white/10 transition-colors">
                 {refreshIcon} Refresh
@@ -198,7 +198,7 @@ export default function PracticePage() {
         {/* ── VOCABULARY ── */}
         {activeTab === "vocabulary" && (
           <div className="space-y-3">
-            <div className="flex items-center justify-between">
+            <div className="sticky top-14 z-10 -mx-4 px-4 py-2 bg-[#0f1629]/95 backdrop-blur flex items-center justify-between">
               <p className="text-xs text-slate-500">5 random words</p>
               <button onClick={refreshVocab} className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-400 hover:bg-white/10 transition-colors">
                 {refreshIcon} Refresh
@@ -244,7 +244,7 @@ export default function PracticePage() {
         {/* ── DISCUSSION ── */}
         {activeTab === "discussion" && (
           <div className="space-y-4">
-            <div className="flex items-center justify-between">
+            <div className="sticky top-14 z-10 -mx-4 px-4 py-2 bg-[#0f1629]/95 backdrop-blur flex items-center justify-between">
               <p className="text-xs text-slate-500">5 random discussions</p>
               <button onClick={refreshDiscussions} className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-400 hover:bg-white/10 transition-colors">
                 {refreshIcon} Refresh
