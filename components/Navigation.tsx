@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/essential-4", label: "Essential 4" },
   { href: "/essential-5", label: "Essential 5" },
   { href: "/essential-6", label: "Essential 6" },
+  { href: "/grammar", label: "Grammar" },
   { href: "/topics", label: "Topics" },
   { href: "/sentences", label: "Sentences" },
   { href: "/vocab", label: "My Words" },
