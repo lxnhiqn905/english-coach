@@ -3,7 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Eko English Coach",
+  title: "English Coach",
   description: "Practice English with Speech Recognition",
 };
 
