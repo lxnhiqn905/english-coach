@@ -7,12 +7,34 @@ import { grammarContent, type GrammarContent } from "@/lib/data/grammarContent";
 type Tab = "definition" | "structure" | "notes" | "exercises" | "reading";
 
 const TABS: { key: Tab; label: string; vi: string }[] = [
-  { key: "definition", label: "Definition", vi: "Định nghĩa" },
-  { key: "structure",  label: "Structure",  vi: "Cấu trúc" },
-  { key: "notes",      label: "Notes",      vi: "Lưu ý" },
-  { key: "exercises",  label: "Exercises",  vi: "Bài tập" },
-  { key: "reading",    label: "Reading",    vi: "Bài đọc" },
+  { key: "definition", label: "Definition", vi: "Definition" },
+  { key: "structure",  label: "Structure",  vi: "Structure" },
+  { key: "notes",      label: "Notes",      vi: "Notes" },
+  { key: "exercises",  label: "Exercises",  vi: "Exercises" },
+  { key: "reading",    label: "Reading",    vi: "Reading" },
 ];
+
+function speak(text: string) {
+  if (typeof window === "undefined") return;
+  window.speechSynthesis.cancel();
+  const utt = new SpeechSynthesisUtterance(text);
+  utt.lang = "en-US";
+  window.speechSynthesis.speak(utt);
+}
+
+function SpeakButton({ text, color = "text-slate-400 hover:text-emerald-300 hover:border-emerald-500/30" }: { text: string; color?: string }) {
+  return (
+    <button
+      onClick={() => speak(text)}
+      className={`shrink-0 rounded-lg border border-white/10 bg-white/5 p-1.5 transition-all ${color}`}
+      title="Listen"
+    >
+      <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+      </svg>
+    </button>
+  );
+}
 
 const TAB_COLORS: Record<Tab, string> = {
   definition: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
@@ -27,13 +49,19 @@ function DefinitionTab({ unit }: { unit: GrammarContent }) {
   return (
     <div className="space-y-4">
       <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/5 px-4 py-3">
-        <p className="text-sm text-slate-200 leading-relaxed">{unit.definition.description}</p>
+        <div className="flex items-start gap-2">
+          <p className="text-sm text-slate-200 leading-relaxed flex-1">{unit.definition.description}</p>
+          <SpeakButton text={unit.definition.description} />
+        </div>
       </div>
       <div className="space-y-2">
         {unit.definition.situations.map((s, i) => (
           <div key={i} className="rounded-xl border border-white/10 bg-[#0f1629] px-4 py-3">
             <p className="text-xs font-semibold text-emerald-400 mb-1">{s.situation}</p>
-            <p className="text-sm text-slate-300 italic">"{s.example}"</p>
+            <div className="flex items-start gap-2">
+              <p className="text-sm text-slate-300 italic flex-1">"{s.example}"</p>
+              <SpeakButton text={s.example} />
+            </div>
           </div>
         ))}
       </div>
@@ -61,7 +89,10 @@ function StructureTab({ unit }: { unit: GrammarContent }) {
                   <span className={`text-[10px] font-semibold uppercase tracking-wide ${color}`}>{label}</span>
                 </div>
                 <p className="text-xs font-mono text-slate-300 bg-white/5 rounded-lg px-3 py-1.5 mb-1.5">{pattern}</p>
-                <p className="text-sm text-slate-400 italic">→ {example}</p>
+                <div className="flex items-start gap-2">
+                  <p className="text-sm text-slate-400 italic flex-1">→ {example}</p>
+                  <SpeakButton text={example} color="text-slate-400 hover:text-blue-300 hover:border-blue-500/30" />
+                </div>
               </div>
             ))}
           </div>
@@ -80,7 +111,8 @@ function NotesTab({ unit }: { unit: GrammarContent }) {
           <span className="mt-0.5 shrink-0 flex h-5 w-5 items-center justify-center rounded-full bg-amber-500/20 text-[10px] font-bold text-amber-400">
             {i + 1}
           </span>
-          <p className="text-sm text-slate-300 leading-relaxed">{note}</p>
+          <p className="text-sm text-slate-300 leading-relaxed flex-1">{note}</p>
+          <SpeakButton text={note} color="text-slate-400 hover:text-amber-300 hover:border-amber-500/30" />
         </div>
       ))}
     </div>
@@ -119,7 +151,7 @@ function ExercisesTab({ unit }: { unit: GrammarContent }) {
           >
             <div className="flex items-start gap-2 mb-2">
               <span className="mt-0.5 shrink-0 flex h-5 w-5 items-center justify-center rounded-full bg-purple-500/20 text-[10px] font-bold text-purple-400">{i + 1}</span>
-              <div className="flex-1 flex flex-wrap items-center gap-1 text-sm text-slate-200">
+              <div className="flex-1 flex flex-wrap items-center gap-1 text-sm text-slate-200 min-w-0">
                 <span>{parts[0]}</span>
                 {checked ? (
                   <span className={`font-semibold px-1.5 py-0.5 rounded ${isCorrect ? "text-emerald-300" : "text-red-300"}`}>
@@ -136,6 +168,9 @@ function ExercisesTab({ unit }: { unit: GrammarContent }) {
                 )}
                 <span>{parts[1]}</span>
               </div>
+              {checked && (
+                <SpeakButton text={ex.sentence.replace("_____", ex.answer)} color="text-slate-400 hover:text-purple-300 hover:border-purple-500/30" />
+              )}
             </div>
             <div className="flex items-center justify-between pl-7">
               <span className="text-[10px] text-slate-600 italic">Hint: {ex.hint}</span>
@@ -172,7 +207,6 @@ function ExercisesTab({ unit }: { unit: GrammarContent }) {
 
 /* ──────────── Reading tab ──────────── */
 function ReadingTab({ unit }: { unit: GrammarContent }) {
-  const highlighted = new Set(unit.reading.highlight);
 
   // highlight sentences that appear in the text
   function renderText(text: string) {
@@ -192,8 +226,9 @@ function ReadingTab({ unit }: { unit: GrammarContent }) {
   return (
     <div className="space-y-4">
       <div className="rounded-2xl border border-teal-500/20 bg-[#0f1629] overflow-hidden">
-        <div className="px-4 py-2.5 border-b border-white/5 bg-teal-500/5">
-          <p className="text-sm font-bold text-teal-300">{unit.reading.title}</p>
+        <div className="px-4 py-2.5 border-b border-white/5 bg-teal-500/5 flex items-center gap-2">
+          <p className="text-sm font-bold text-teal-300 flex-1">{unit.reading.title}</p>
+          <SpeakButton text={unit.reading.text} color="text-slate-400 hover:text-teal-300 hover:border-teal-500/30" />
         </div>
         <div className="px-4 py-4">
           <p className="text-sm leading-relaxed">{renderText(unit.reading.text)}</p>
