@@ -169,7 +169,7 @@ function ExercisesTab({ unit }: { unit: GrammarContent }) {
                 <span>{parts[1]}</span>
               </div>
               {checked && (
-                <SpeakButton text={ex.sentence.replace("_____", ex.answer)} color="text-slate-400 hover:text-purple-300 hover:border-purple-500/30" />
+                <SpeakButton text={ex.sentence.replace("_____", ex.answer).replace(/\s*\([^)]+\)/g, "")} color="text-slate-400 hover:text-purple-300 hover:border-purple-500/30" />
               )}
             </div>
             <div className="flex items-center justify-between pl-7">
